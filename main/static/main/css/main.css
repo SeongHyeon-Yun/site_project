@@ -1,0 +1,51 @@
+.game-btn {
+    transition: 0.3s;
+}
+
+.btn-check:checked+.game-btn {
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+#casino:checked+label {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#slot:checked+label {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.img-fluid,
+.card {
+    transition: 0.4s;
+    border-radius: 8px;
+}
+
+/* hover 시 빛나면서 회전 */
+.img-fluid:hover,
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.8);
+    transition: 0.3s;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.notice-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.notice-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-end {
+    width: 80px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-dark d-flex align-items-center justify-content-center">
+    <div class="card shadow p-4" style="width: 350px">
+      <h3 class="text-center mb-3">회원가입</h3>
+
+      <!-- 아이디 입력 -->
+      <div class="mb-3">
+        <label for="user_id" class="form-label">아이디</label>
+        <input type="text" class="form-control" id="user_id" placeholder="아이디" />
+      </div>
+
+      <div class="mb-3">
+        <label for="nick_name" class="form-label">닉네임</label>
+        <input type="text" class="form-control" id="nick_name" placeholder="닉네임" />
+      </div>
+
+      <!-- 비밀번호 입력 -->
+      <div class="mb-3">
+        <label for="password_1" class="form-label">비밀번호</label>
+        <input type="password" class="form-control" id="password_1" placeholder="비밀번호" />
+      </div>
+
+      <div class="mb-3">
+        <label for="password_2" class="form-label">비밀번호 확인</label>
+        <input type="password" class="form-control" id="password_2" placeholder="비밀번호 확인" />
+      </div>
+
+      <div class="mb-3">
+        <label for="user_phone" class="form-label">전화번호</label>
+        <input type="text" class="form-control" id="user_phone" placeholder="전화번호" />
+      </div>
+
+      <div class="mb-3">
+        <label for="select_bank" class="form-label">은행</label>
+        <select class="form-select form-control mb-3" id="select_bank">
+          <option selected>선택하세요</option>
+          <option value="kb">국민은행</option>
+          <option value="shinhan">신한은행</option>
+          <option value="hana">하나은행</option>
+          <option value="woori">우리은행</option>
+          <option value="ibk">기업은행</option>
+          <option value="nh">농협은행</option>
+          <option value="sc">SC제일은행</option>
+          <option value="keb">외환은행</option>
+          <option value="citi">씨티은행</option>
+          <option value="kbank">케이뱅크</option>
+          <option value="kakao">카카오뱅크</option>
+          <option value="post">우체국</option>
+          <option value="saemaul">새마을금고</option>
+          <option value="suhyup">수협은행</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="bank_num" class="form-label">계좌번호</label>
+        <input type="text" class="form-control" id="bank_num" placeholder="계좌번호" />
+      </div>
+
+      <div class="mb-3">
+        <label for="bank_username" class="form-label">예금주</label>
+        <input type="text" class="form-control" id="bank_username" placeholder="예금주" />
+      </div>
+
+      <div class="mb-3">
+        <label for="bank_pass" class="form-label">환전 비밀번호</label>
+        <input type="password" class="form-control" id="bank_pass" placeholder="환전 비밀번호" />
+      </div>
+
+      <!-- 로그인 버튼 -->
+      <a href="{% url "login" %}"><button class="btn btn-primary w-100 mb-2">회원가입</button></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.d-con-area {
+    background-color: #111111;
+    border: 1px solid #ffffff55;
+    max-width: 600px;
+}
+
+.text-align-l {
+    text-align: left;
+}
+
+.fs-7 {
+    font-size: 0.875rem;
+}
+
+/* 14px */
+.fs-8 {
+    font-size: 0.75rem;
+}
+
+/* 12px */
+.fs-big {
+    font-size: 4rem;
+}
+
+/* 64px */

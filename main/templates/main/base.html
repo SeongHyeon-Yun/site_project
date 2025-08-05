@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>원픽</title>
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+        <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+        {% block extra_css %}
+        {% endblock extra_css %}
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="top-wrap">
+                    <div class="top-menus">
+                        <div class="top-left-menus">
+                            <div class="logo">ONEPICK</div>
+                            <div class="top-left-menu left-item" id="service">
+                                <span>서비스 소개</span>
+                                <div class="top-sub-menu hidden" id="service_menu">
+                                    <span>카지노 서비스 소개</span>
+                                    <span>슬롯 서비스 소개</span>
+                                </div>
+                            </div>
+                            <div class="top-left-menu left-item" id="use-menual">
+                                <span>이용 안내</span>
+                                <div class="top-sub-menu hidden" id="use_menu">
+                                    <span>공지/규정</span>
+                                    <span>고객센터</span>
+                                    <span>출석체크</span>
+                                    <span>입/출금</span>
+                                    <span>이벤트</span>
+                                    <span>쪽지</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-right-menus">
+                            <div class="top-left-menu join-item">회원가입</div>
+                            <div class="top-left-menu login-item">로그인</div>
+                            <div class="top-left-menu">고객센터</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                {% block extra_con %}
+                {% endblock extra_con %}
+            </main>
+            <footer>
+                <div class="bt-wrap">
+                    <div class="bt-top-menus">
+                        <div class="bt-top-menu">회사소새</div>
+                        <div class="bt-top-menu">이용약관</div>
+                        <div class="bt-top-menu">개인정보처리방침</div>
+                        <div class="bt-top-menu">청소년보호정책</div>
+                        <div class="bt-top-menu">스팸방지정책</div>
+                        <div class="bt-top-menu">이메일무단수집거부</div>
+                    </div>
+                    <div class="bt-ft-menus">
+                        <div class="bt-left-menu">
+                            <h1>ONEPICK</h1>
+                            <p class="casino-info">
+                                저희는 정식 카지노·슬롯 게임만을 취급하며,
+                                <br>
+                                공정하고 안전한 게임 환경을 제공합니다.
+                                <br>
+                                24시간 안정적인 서비스와 다양한 이벤트를 경험해보세요.
+                            </p>
+                        </div>
+                        <div class="bt-right-menu">
+                            <h1>고객센터</h1>
+                            <div class="bt-icons">
+                                <div class="bt-icon">
+                                    <img src="{% static "main/img/ft_icon_1.png" %}" alt="">
+                                    <span>고객센터</span>
+                                </div>
+                                <div class="bt-icon">
+                                    <img src="{% static "main/img/ft_icon_2.png" %}" alt="">
+                                    <span>1:1문의</span>
+                                </div>
+                                <div class="bt-icon">
+                                    <img src="{% static "main/img/ft_icon_3.png" %}" alt="">
+                                    <span>텔레문의</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="{% static 'main/js/base.js' %}"></script>
+        {% block extra_js %}
+        {% endblock extra_js %}
+    </body>
+</html>
