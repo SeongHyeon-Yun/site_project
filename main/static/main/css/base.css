@@ -114,7 +114,8 @@ footer {
     border-top: 1px solid #e5e8eb;
 }
 
-.bt-wrap {
+.bt-wrap,
+.main-wrap {
     width: 1200px;
     margin: auto;
     color: #2a2a2a;
