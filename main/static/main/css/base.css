@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    text-decoration: none;
 }
 
 .wrap {
@@ -172,4 +173,119 @@ footer {
     color: #2a2a2a;
     font-weight: 600;
     margin-right: 10px;
+}
+
+
+@media (max-width: 430px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .wrap,
+    .top-wrap,
+    main,
+    footer {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .top-wrap {
+        height: auto;
+        padding: 10px;
+    }
+
+    .top-menus {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .top-left-menus,
+    .top-right-menus {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .top-left-menu {
+        margin: 0;
+        padding: 8px 12px;
+        font-size: 14px;
+        position: relative; /* ✅ 이게 있어야 span absolute 사용 가능 */
+    }
+
+    .top-sub-menu {
+        position: absolute;  /* ✅ 다시 absolute로 해야 "펼쳐지는 메뉴" 느낌 */
+        top: 100%;
+        left: 0;
+        width: max-content;
+        border-radius: 10px;
+        box-shadow: none;
+        padding: 0;
+        z-index: 100;
+        background: #fff;
+    }
+
+    .top-sub-menu span {
+        padding: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 28px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .join-item,
+    .login-item {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .bt-wrap,
+    .main-wrap {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .bt-top-menus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bt-ft-menus {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .bt-left-menu,
+    .bt-right-menu {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bt-icons {
+        justify-content: center;
+    }
+
+    .bt-icon {
+        justify-content: center;
+        padding: 8px 0;
+    }
+
+    .bt-icon img {
+        width: 18px;
+        height: auto;
+    }
+
+    .bt-icon span {
+        font-size: 13px;
+    }
 }

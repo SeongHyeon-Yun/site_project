@@ -19,21 +19,41 @@
                         <br>
                         다양한 이벤트와 혜택을 지금 경험해보세요
                     </span>
-                    <div class="game-start">게임 시작하기</div>
+                    <a href="{% url "games:sport" %}">
+                        <div class="game-start">게임 시작하기</div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="main-header-right">
-            <span class="main-right-title">
-                ONEPICK
-                <br>
-                처음이신가요?
-            </span>
-            <div class="main-btn main-service-btn">서비스 시작</div>
-            <div class="main-btn main-sign-btn">회원가입</div>
-            <div class="main-header-user-check">
-                이미 회원이신가요? <a href="#">로그인</a>
-            </div>
+            {% if user.is_authenticated %}
+                <span class="main-right-title">
+                    {{ user.nickname }} 님
+                    <br>
+                    환영 합니다.
+                </span>
+                <a href="{% url "games:sport" %}">
+                    <div class="main-btn main-service-btn">게임 시작하기</div>
+                </a>
+                <div class="main-header-user-check">
+                    이제 그만하시겠어요? <a href="{% url "accounts:logout" %}">로그아웃</a>
+                </div>
+            {% else %}
+                <span class="main-right-title">
+                    ONEPICK
+                    <br>
+                    처음이신가요?
+                </span>
+                <a href="{% url "games:sport" %}">
+                    <div class="main-btn main-service-btn">게임 시작하기</div>
+                </a>
+                <a href="{% url "accounts:sign_up" %}">
+                    <div class="main-btn main-sign-btn">회원가입</div>
+                </a>
+                <div class="main-header-user-check">
+                    이미 회원이신가요? <a href="{% url "accounts:login" %}">로그인</a>
+                </div>
+            {% endif %}
             <div class="main-icons">
                 <div class="main-icon">
                     <img src="{% static "main/img/게임.png" %}" alt="" width="" height="">

@@ -20,10 +20,13 @@
                 <div class="top-wrap">
                     <div class="top-menus">
                         <div class="top-left-menus">
-                            <div class="logo">ONEPICK</div>
+                            <a href="{% url "main:home" %}">
+                                <div class="logo">ONEPICK</div>
+                            </a>
                             <div class="top-left-menu left-item" id="service">
                                 <span>서비스 소개</span>
                                 <div class="top-sub-menu hidden" id="service_menu">
+                                    <span>스포츠 서비스 소개</span>
                                     <span>카지노 서비스 소개</span>
                                     <span>슬롯 서비스 소개</span>
                                 </div>
@@ -32,7 +35,7 @@
                                 <span>이용 안내</span>
                                 <div class="top-sub-menu hidden" id="use_menu">
                                     <span>공지/규정</span>
-                                    <span>고객센터</span>
+                                    <a href="{% url "accounts:customer" %}"><span>고객센터</span></a>
                                     <span>출석체크</span>
                                     <span>입/출금</span>
                                     <span>이벤트</span>
@@ -41,9 +44,24 @@
                             </div>
                         </div>
                         <div class="top-right-menus">
-                            <div class="top-left-menu join-item">회원가입</div>
-                            <div class="top-left-menu login-item">로그인</div>
-                            <div class="top-left-menu">고객센터</div>
+                            {% if user.is_authenticated %}
+                                <a href="{% url "accounts:logout" %}">
+                                    <div class="top-left-menu login-item">로그아웃</div>
+                                </a>
+                                <a href="{% url "accounts:customer" %}">
+                                    <div class="top-left-menu">고객센터</div>
+                                </a>
+                            {% else %}
+                                <a href="{% url "accounts:sign_up" %}">
+                                    <div class="top-left-menu join-item">회원가입</div>
+                                </a>
+                                <a href="{% url "accounts:login" %}">
+                                    <div class="top-left-menu login-item">로그인</div>
+                                </a>
+                                <a href="{% url "accounts:customer" %}">
+                                    <div class="top-left-menu">고객센터</div>
+                                </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -57,7 +75,7 @@
             <footer>
                 <div class="bt-wrap">
                     <div class="bt-top-menus">
-                        <div class="bt-top-menu">회사소새</div>
+                        <div class="bt-top-menu">회사소개</div>
                         <div class="bt-top-menu">이용약관</div>
                         <div class="bt-top-menu">개인정보처리방침</div>
                         <div class="bt-top-menu">청소년보호정책</div>
