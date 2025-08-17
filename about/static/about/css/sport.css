@@ -1,0 +1,10 @@
+.sport_about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sport_about img {
+    width: 100%;
+}

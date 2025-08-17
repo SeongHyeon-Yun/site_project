@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "accounts",
     "payment",
     "games",
+    "about",
 ]
 
 AUTH_USER_MODEL = "accounts.User"

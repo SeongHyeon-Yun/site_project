@@ -26,9 +26,15 @@
                             <div class="top-left-menu left-item" id="service">
                                 <span>서비스 소개</span>
                                 <div class="top-sub-menu hidden" id="service_menu">
-                                    <span>스포츠 서비스 소개</span>
-                                    <span>카지노 서비스 소개</span>
-                                    <span>슬롯 서비스 소개</span>
+                                    <a href="{% url "about:sport" %}">
+                                        <span>스포츠 서비스 소개</span>
+                                    </a>
+                                    <a href="{% url "about:casino" %}">
+                                        <span>카지노 서비스 소개</span>
+                                    </a>
+                                    <a href="{% url "about:slot" %}">
+                                        <span>슬롯 서비스 소개</span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="top-left-menu left-item" id="use-menual">

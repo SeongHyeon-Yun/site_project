@@ -1,0 +1,11 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'about/css/sport.css' %}">
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="sport_about">
+        <img src="{% static "about/img/스포츠.jpg" %}" alt="" width="" height="">
+    </div>
+{% endblock extra_con %}
