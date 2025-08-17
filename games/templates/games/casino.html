@@ -1,0 +1,25 @@
+{% extends "games/sub_base.html" %}
+{% load static %}
+{% block sub_extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'games/css/casino.css' %}">
+{% endblock sub_extra_css %}
+{% block sub_content %}
+    <h1 class="casino-h1">카지노</h1>
+    <div class="casino-area">
+        {% for game in casino_data %}
+            <form action="{% url "games:casino_start" %}" method="post" target="_blank">
+                {% csrf_token %}
+                <input type="hidden" name="key" value="{{ game.key }}">
+                <input type="hidden" name="skin" value="{{ game.skin }}">
+                <input type="hidden" name="ip" value="{{ ip }}">
+                <input type="hidden" name="username" value="{{ user.username }}">
+                <input type="image" class="casino-img"
+                       src="{% static 'games/img/casino/' %}{{ game.vendor }}.png"
+                       alt="{{ game.vendor }}"
+                       width="200"
+                       height="200">
+            </form>
+        {% endfor %}
+    </div>
+{% endblock sub_content %}

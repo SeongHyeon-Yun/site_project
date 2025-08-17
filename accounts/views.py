@@ -51,6 +51,7 @@ def sign_up(request):
 
     return render(request, "accounts/sign_up.html", {"form": form})
 
+@never_cache
 @login_required(login_url='accounts:login')
 def customer(request):
     return render(request, "accounts/customer.html")

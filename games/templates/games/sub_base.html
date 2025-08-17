@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "games/css/sub_base.css" %}">
+    {% block sub_extra_css %}
+    {% endblock sub_extra_css %}
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="titles">
+        <a href="{% url "games:sport" %}">
+            <span class="title">스포츠(크로스)</span>
+        </a>
+        <a href="{% url "games:special" %}">
+            <span class="title">스포츠(스페셜)</span>
+        </a>
+        <a href="{% url "games:casino" %}">
+            <span class="title">카지노</span>
+        </a>
+        <a href="{% url "games:slot" %}">
+            <span class="title">슬롯</span>
+        </a>
+    </div>
+    {% block sub_content %}
+    {% endblock sub_content %}
+{% endblock extra_con %}

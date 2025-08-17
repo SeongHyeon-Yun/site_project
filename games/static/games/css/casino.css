@@ -1,0 +1,49 @@
+.casino-h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffcc00; /* 골드 톤 */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  position: relative;
+  letter-spacing: 2px;
+}
+
+/* 아래 라인 장식 */
+.casino-h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9900, #ffcc00, #ff9900);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.casino-area {
+    width: 1020px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.casino-img {
+  display: flex;
+}
+
+form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:500px) {
+    .casino-area {
+        width: 370px;
+    }
+
+    .casino-img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        aspect-ratio: 1 / 1;
+    }
+}

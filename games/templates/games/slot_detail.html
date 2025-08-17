@@ -1,0 +1,24 @@
+{% extends "games/sub_base.html" %}
+{% load static %}
+{% block sub_extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'games/css/slot_detail.css' %}">
+{% endblock sub_extra_css %}
+{% block sub_content %}
+    <h1>{{ data.vendor }}</h1>
+    <div class="slot_list">
+        {% for game in slot_detail.games %}
+            <form action="{% url "games:slot_start" %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="key" value="{{ game.key }}">
+                <input type="hidden" name="gameName" value="{{ data.key }}">
+                <input type="hidden" name="username" value="{{ user.username }}">
+                <input type="hidden" name="ip" value="{{ data.ip }}">
+                <div class="slot_game">
+                    <input class="img" type="image" src="{{ game.image }}">
+                    <h4>{{ game.names.ko }}</h4>
+                </div>
+            </form>
+        {% endfor %}
+    </div>
+{% endblock sub_content %}

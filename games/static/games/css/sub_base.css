@@ -1,3 +1,23 @@
 .titles {
-    background-color: antiquewhite;
+    background-color: #F5F7F8;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #4a4a4a;
+}
+
+.title:hover {
+    cursor: pointer;
+    background-color: #FFFCFB;
+}
+
+@media (max-width:500px) {
+    .title {
+        font-size: 12px;
+    }
 }

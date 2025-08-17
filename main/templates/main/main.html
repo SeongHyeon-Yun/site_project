@@ -55,14 +55,18 @@
                 </div>
             {% endif %}
             <div class="main-icons">
-                <div class="main-icon">
-                    <img src="{% static "main/img/게임.png" %}" alt="" width="" height="">
-                    <span>게임</span>
-                </div>
-                <div class="main-icon">
-                    <img src="{% static "main/img/고객센터.png" %}" alt="" width="" height="">
-                    <span>고객센터</span>
-                </div>
+                <a href="{% url "games:sport" %}">
+                    <div class="main-icon">
+                        <img src="{% static "main/img/게임.png" %}" alt="" width="" height="">
+                        <span>게임</span>
+                    </div>
+                </a>
+                <a href="{% url "accounts:customer" %}">
+                    <div class="main-icon">
+                        <img src="{% static "main/img/고객센터.png" %}" alt="" width="" height="">
+                        <span>고객센터</span>
+                    </div>
+                </a>
                 <div class="main-icon">
                     <img src="{% static "main/img/쪽지.png" %}" alt="" width="" height="">
                     <span>쪽지</span>

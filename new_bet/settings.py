@@ -127,3 +127,6 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+GAME_SECRET_KEY = "319a6412ffdfa757efec34f5cc9242b0"
+GAME_API_BASE = "https://gate.nxzone.net"
