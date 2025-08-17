@@ -16,8 +16,108 @@
     background-color: #FFFCFB;
 }
 
+.money-change {
+    width: 100%;
+}
+
+.current-money {
+    background: #13367d;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.money-btn-area {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.money-top-menu {
+    padding: 10px;
+    background-color: #312d2d;
+    color: #FFFFFF;
+    border-radius: 3px 3px 0 0;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.money-price-btn {
+    background-color: #312d2d;
+    border-top: 2px solid #e01010;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.active {
+    background-color: #e01010;
+    color: #ffeb82;
+    font-weight: 700;
+}
+
+.money-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 4px;
+    justify-content: center;
+}
+
+.money-btns span {
+    background-color: #434343;
+    color: #ebebeb;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: #115a90 !important;
+}
+
+.money-input {
+    margin-bottom: 10px;
+}
+
+.money-input input {
+    padding: 4px;
+    background: #292929;
+    border: 1px solid #676767;
+    color: #fff;
+    text-align: right;
+    height: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.money-input button {
+    height: 30px;
+    border: 0 solid #676767;
+    padding: 0 10px;
+    background: #ffeb00;
+    margin: 0 0 0 4px;
+    border-radius: 4px;
+}
+
 @media (max-width:500px) {
     .title {
         font-size: 12px;
+    }
+
+    .money-top-menu {
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .money-btns {
+        font-size: 12px;
+        grid-template-columns: repeat(4, 90px);
+    }
+
+    .money-input input {
+        height: 30px;
     }
 }

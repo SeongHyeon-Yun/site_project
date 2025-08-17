@@ -1,0 +1,50 @@
+{% extends "main/base.html" %}
+{% load humanize %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "games/css/sub_base.css" %}">
+    {% block sub_extra_css %}
+    {% endblock sub_extra_css %}
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="titles">
+        <a href="{% url "games:sport" %}">
+            <span class="title">스포츠(크로스)</span>
+        </a>
+        <a href="{% url "games:special" %}">
+            <span class="title">스포츠(스페셜)</span>
+        </a>
+        <a href="{% url "games:casino" %}">
+            <span class="title">카지노</span>
+        </a>
+        <a href="{% url "games:slot" %}">
+            <span class="title">슬롯</span>
+        </a>
+    </div>
+    <div class="money-change">
+        <div id="currenMoney" class="current-money">현재 카지노·슬롯 머니 : {{ money|intcomma }}</div>
+        <div class="money-btn-area">
+            <div class="money-top-menu active">카지노·슬롯 머니로 이동</div>
+            <div class="money-top-menu">보유머니로 이동</div>
+        </div>
+        <div class="money-price-btn">
+            <div class="money-input">
+                <input id="moneyinput" type="text" value=0>
+                <button>전환 하기</button>
+            </div>
+            <div class="money-btns">
+                <span class="moneyBtn">5천원</span>
+                <span class="moneyBtn">1만원</span>
+                <span class="moneyBtn">3만원</span>
+                <span class="moneyBtn">5만원</span>
+                <span class="moneyBtn">10만원</span>
+                <span class="moneyBtn">50만원</span>
+                <span class="moneyBtn">100만원</span>
+                <span class="moneyBtn blue">전액</span>
+            </div>
+        </div>
+    </div>
+    {% block sub_content %}
+    {% endblock sub_content %}
+    <script src="{% static "games/js/bacara.js" %}"></script>
+{% endblock extra_con %}

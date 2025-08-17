@@ -140,6 +140,7 @@ def get_slot_list(secret_key, url):
     return result
 
 
+# 슬롯 게임 리스트 페이지 이동
 def get_slot_page(secret_key, url, vendorKey):
     url = f"{url}/games"
 
@@ -154,7 +155,7 @@ def get_slot_page(secret_key, url, vendorKey):
         "hash": hash,
         "Content-Type": "application/x-www-form-urlencoded",
     }
-    
+
     try:
         resp = requests.post(url, headers=headers, data=body, timeout=10)
         resp.raise_for_status()
@@ -165,6 +166,7 @@ def get_slot_page(secret_key, url, vendorKey):
     return resp_data
 
 
+# 카지노 게임시작
 def casino_run(key, skin, ip, username, secret_key, url):
     url = f"{url}/play"
     requestKey = make_request_key()
@@ -197,3 +199,31 @@ def casino_run(key, skin, ip, username, secret_key, url):
         print("request error:", e)
 
     return {"url": game_url}
+
+
+# 게임 유저 머니 조회
+def bacara_money(secret_key, url, username):
+    url = f"{url}/balance"
+
+    body = {
+        "username": username,
+    }
+
+    hash = make_hash(body, secret_key)
+
+    headers = {
+        "agent": "onePiece",
+        "secretKey": secret_key,
+        "User-agent": "Mozilla",
+        "hash": hash,
+        "Content-Type": "application/x-www-form-urlencoded",
+    }
+
+    try:
+        resp = requests.post(url, data=body, headers=headers, timeout=10)
+        resp.raise_for_status()
+        resp_data = resp.json()
+    except Exception as e:
+        return e
+    
+    return resp_data['balance']

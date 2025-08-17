@@ -4,7 +4,13 @@ from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_POST
 from django.shortcuts import redirect
 from django.conf import settings as set
-from .casino_fun import get_casino_list, get_slot_list, casino_run, get_slot_page
+from .casino_fun import (
+    get_casino_list,
+    get_slot_list,
+    casino_run,
+    get_slot_page,
+    bacara_money,
+)
 
 
 # 스포츠 크로스
@@ -27,7 +33,13 @@ def special(request):
 def casino(request):
     casino_data = get_casino_list(set.GAME_SECRET_KEY, set.GAME_API_BASE)
     ip = get_client_ip(request)
-    return render(request, "games/casino.html", {"casino_data": casino_data, "ip": ip})
+    username = request.user.get_username()
+    money = bacara_money(set.GAME_SECRET_KEY, set.GAME_API_BASE, username)
+    return render(
+        request,
+        "games/casino.html",
+        {"casino_data": casino_data, "ip": ip, "money": money},
+    )
 
 
 # 슬롯 벤더 리스트
@@ -36,7 +48,11 @@ def casino(request):
 def slot(request):
     slot_data = get_slot_list(set.GAME_SECRET_KEY, set.GAME_API_BASE)
     ip = get_client_ip(request)
-    return render(request, "games/slot.html", {"slot_data": slot_data, "ip": ip})
+    username = request.user.get_username()
+    money = bacara_money(set.GAME_SECRET_KEY, set.GAME_API_BASE, username)
+    return render(
+        request, "games/slot.html", {"slot_data": slot_data, "ip": ip, "money": money}
+    )
 
 
 # 슬롯 게임 목록 페이지
@@ -78,7 +94,6 @@ def slot_start(request):
     username = request.POST.get("username")
     ip = request.POST.get("ip")
     gameName = request.POST.get("gameName")
-
 
     payload = casino_run(
         gameName, key, ip, username, set.GAME_SECRET_KEY, set.GAME_API_BASE
