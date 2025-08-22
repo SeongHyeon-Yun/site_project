@@ -67,18 +67,24 @@
                         <span>고객센터</span>
                     </div>
                 </a>
-                <div class="main-icon">
-                    <img src="{% static "main/img/쪽지.png" %}" alt="" width="" height="">
-                    <span>쪽지</span>
-                </div>
-                <div class="main-icon">
-                    <img src="{% static "main/img/입출금.png" %}" alt="" width="" height="">
-                    <span>입출금</span>
-                </div>
-                <div class="main-icon">
-                    <img src="{% static "main/img/공지규정.png" %}" alt="" width="" height="">
-                    <span>공지규정</span>
-                </div>
+                <a href="{% url "accounts:message" %}">
+                    <div class="main-icon">
+                        <img src="{% static "main/img/쪽지.png" %}" alt="" width="" height="">
+                        <span>쪽지</span>
+                    </div>
+                </a>
+                <a href="{% url "accounts:deposit" %}">
+                    <div class="main-icon">
+                        <img src="{% static "main/img/입출금.png" %}" alt="" width="" height="">
+                        <span>입출금</span>
+                    </div>
+                </a>
+                <a href="{% url "notes:notice" %}">
+                    <div class="main-icon">
+                        <img src="{% static "main/img/공지규정.png" %}" alt="" width="" height="">
+                        <span>공지규정</span>
+                    </div>
+                </a>
                 <div class="main-icon">
                     <img src="{% static "main/img/텔레.png" %}" alt="" width="" height="">
                     <span>텔레</span>

@@ -51,7 +51,23 @@ def sign_up(request):
 
     return render(request, "accounts/sign_up.html", {"form": form})
 
+
+# 고객센터 페이지
 @never_cache
-@login_required(login_url='accounts:login')
+@login_required(login_url="accounts:login")
 def customer(request):
     return render(request, "accounts/customer.html")
+
+
+# 입출금 페이지
+@never_cache
+@login_required(login_url="accounts:login")
+def deposit(request):
+    return render(request, "accounts/deposit.html")
+
+
+# 쪽지함 페이지
+@never_cache
+@login_required(login_url="accounts:login")
+def message(request):
+    return render(request, "accounts/message.html")

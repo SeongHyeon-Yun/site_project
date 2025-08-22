@@ -1,0 +1,10 @@
+from django.urls import path
+from . import views
+
+app_name = "notes"
+
+urlpatterns = [
+    path("notice/", views.notice, name="notice"),
+    path("check_day/", views.check_day, name="check_day"),
+    path("event/", views.event, name="event"),
+]

@@ -40,12 +40,12 @@
                             <div class="top-left-menu left-item" id="use-menual">
                                 <span>이용 안내</span>
                                 <div class="top-sub-menu hidden" id="use_menu">
-                                    <span>공지/규정</span>
+                                    <a href="{% url "notes:notice" %}"><span>공지/규정</span></a>
                                     <a href="{% url "accounts:customer" %}"><span>고객센터</span></a>
-                                    <span>출석체크</span>
-                                    <span>입/출금</span>
-                                    <span>이벤트</span>
-                                    <span>쪽지</span>
+                                    <a href="{% url "notes:check_day" %}"><span>출석체크</span></a>
+                                    <a href="{% url "accounts:deposit" %}"><span>입/출금</span></a>
+                                    <a href="{% url "notes:event" %}"><span>이벤트</span></a>
+                                    <a href="{% url "accounts:message" %}"><span>쪽지함</span></a>
                                 </div>
                             </div>
                         </div>

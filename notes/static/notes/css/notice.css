@@ -1,0 +1,27 @@
+.notice-title {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 1px solid #dce0e6;
+    border-bottom: 1px solid #dce0e6;
+}
+
+.notice-con {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.notice-titles {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px 200px;
+    background-color: #F7F7F7;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.notice-titles span {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
