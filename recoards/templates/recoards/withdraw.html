@@ -1,0 +1,40 @@
+{% extends "recoards/deposit_base.html" %}
+{% load static humanize %}
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "recoards/css/deposit.css" %}">
+{% endblock extra_css %}
+{% block deposit_base %}
+    <div class="deposit">
+        <h1>출금</h1>
+        <div class="doeposit_money">
+            <span>보유머니</span>
+            <span>{{ user.money|intcomma }} 원</span>
+        </div>
+        <div class="doeposit_bank_number">
+            <span>출금계좌</span>
+            <button type="button">{{ user.bank }} {{ user.account_number }}</button>
+        </div>
+        <div class="doeposit_btns">
+            <div>
+                <span>충전 금액</span>
+                <input type="text" id="price_input" placeholder="금액을 입력하세요">
+                <button type="button" id="deposit_btn">출금 하기</button>
+            </div>
+            <div class="btn-area">
+                <button class="price_btn" data-amount="10000">1만원</button>
+                <button class="price_btn" data-amount="30000">3만원</button>
+                <button class="price_btn" data-amount="50000">5만원</button>
+                <button class="price_btn" data-amount="100000">10만원</button>
+                <button class="price_btn" data-amount="200000">20만원</button>
+                <button class="price_btn" data-amount="300000">30만원</button>
+                <button class="price_btn" data-amount="500000">50만원</button>
+                <button class="price_btn" data-amount="1000000">100만원</button>
+                <button class="price_btn" data-amount="0">정정하기</button>
+            </div>
+        </div>
+    </div>
+{% endblock deposit_base %}
+{% block extra_js %}
+    <script src="{% static "recoards/js/deposit.js" %}"></script>
+{% endblock extra_js %}

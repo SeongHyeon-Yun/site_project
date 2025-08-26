@@ -1,0 +1,30 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "notes/css/notice.css" %}">
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="notice-title">
+        <h1>고객센터</h1>
+    </div>
+    <div class="notice-con">
+        <form action="" method="post">
+            {% csrf_token %}
+            <button>작성하기</button>
+            <div class="customer_create">
+                {% if error_message %}
+                <div class="error-message">
+                    {{ error_message }}
+                </div>
+                {% endif %}
+                <input type="hidden" value="customer" name="customer">
+                <input type="hidden" value="{{ user.username }}" name="username">
+                <input type="text" class="title-input" name="title" placeholder="제목을 입력하세요">
+                <textarea id="content"
+                          class="content-input"
+                          name="contents"
+                          placeholder="내용을 입력하세요"></textarea>
+            </div>
+        </form>
+    </div>
+{% endblock extra_con %}

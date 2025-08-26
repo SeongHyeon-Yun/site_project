@@ -1,0 +1,16 @@
+.detail {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.detail img {
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .detail {
+        width: 100%;
+    }
+}

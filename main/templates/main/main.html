@@ -36,7 +36,7 @@
                     <div class="main-btn main-service-btn">게임 시작하기</div>
                 </a>
                 <div class="main-header-user-check">
-                    이제 그만하시겠어요? <a href="{% url "accounts:logout" %}">로그아웃</a>
+                    이제 그만하시겠어요? <a href="{% url "recoards:logout" %}">로그아웃</a>
                 </div>
             {% else %}
                 <span class="main-right-title">
@@ -47,11 +47,11 @@
                 <a href="{% url "games:sport" %}">
                     <div class="main-btn main-service-btn">게임 시작하기</div>
                 </a>
-                <a href="{% url "accounts:sign_up" %}">
+                <a href="{% url "recoards:sign_up" %}">
                     <div class="main-btn main-sign-btn">회원가입</div>
                 </a>
                 <div class="main-header-user-check">
-                    이미 회원이신가요? <a href="{% url "accounts:login" %}">로그인</a>
+                    이미 회원이신가요? <a href="{% url "recoards:login" %}">로그인</a>
                 </div>
             {% endif %}
             <div class="main-icons">
@@ -61,19 +61,19 @@
                         <span>게임</span>
                     </div>
                 </a>
-                <a href="{% url "accounts:customer" %}">
+                <a href="{% url "recoards:customer" %}">
                     <div class="main-icon">
                         <img src="{% static "main/img/고객센터.png" %}" alt="" width="" height="">
                         <span>고객센터</span>
                     </div>
                 </a>
-                <a href="{% url "accounts:message" %}">
+                <a href="{% url "recoards:message" %}">
                     <div class="main-icon">
                         <img src="{% static "main/img/쪽지.png" %}" alt="" width="" height="">
                         <span>쪽지</span>
                     </div>
                 </a>
-                <a href="{% url "accounts:deposit" %}">
+                <a href="{% url "recoards:deposit" %}">
                     <div class="main-icon">
                         <img src="{% static "main/img/입출금.png" %}" alt="" width="" height="">
                         <span>입출금</span>

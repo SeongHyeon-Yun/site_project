@@ -4,13 +4,21 @@
     <link rel="stylesheet" href="{% static "notes/css/notice.css" %}">
 {% endblock extra_css %}
 {% block extra_con %}
-    <div class="notice-title"><h1>공지/규정</h1></div>
+    <div class="notice-title">
+        <h1>공지/규정</h1>
+    </div>
     <div class="notice-con">
         <div class="notice-titles">
             <span>번호</span>
             <span>제목</span>
             <span>등록일</span>
-            <span>조회수</span>
+        </div>
+        <div class="notice-list">
+            {% for list in post %}
+                <span>{{ forloop.counter }}</span>
+                <a href="{% url "notes:post_detail" list.id %}">{{ list.title }}</a>
+                <span>{{ list.created_at|date:"y-m-d" }}</span>
+            {% endfor %}
         </div>
         <div class="notice-cols"></div>
     </div>

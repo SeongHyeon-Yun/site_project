@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'recoards/css/deposit_base.css' %}">
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="deposit_area">
+        <div class="deposit_btns">
+            <a href="{% url "recoards:deposit" %}">
+                <button>입금</button>
+            </a>
+            <a href="{% url "recoards:withdraw" %}">
+                <button>출금</button>
+            </a>
+            <a href="{% url "recoards:deposit_list" %}">
+                <button>입금 내역</button>
+            </a>
+            <a href="{% url "recoards:withdraw_list" %}">
+                <button>출금 내역</button>
+            </a>
+        </div>
+        {% block deposit_base %}
+        {% endblock deposit_base %}
+    </div>
+{% endblock extra_con %}

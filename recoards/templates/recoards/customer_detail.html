@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "notes/css/notice.css" %}">
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="notice-title">
+        <h1>고객센터</h1>
+    </div>
+    <div class="notice-con">
+        <div class="customer_detail">
+            <div class="title_detail">{{ post.title }}</div>
+            <div class="content_detail">{{ post.content }}</div>
+        </div>
+    </div>
+{% endblock extra_con %}

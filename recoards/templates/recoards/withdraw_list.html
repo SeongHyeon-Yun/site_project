@@ -1,0 +1,11 @@
+{% extends "recoards/deposit_base.html" %}
+{% load static %}
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "recoards/css/deposit.css" %}">
+{% endblock extra_css %}
+{% block deposit_base %}
+    <div class="test">
+        출금 내역
+    </div>
+{% endblock deposit_base %}
