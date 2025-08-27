@@ -22,7 +22,7 @@ sys.path.append(str(ROOT_DIR))
 SECRET_KEY = "django-insecure-y%(5@7-!uvm$lm@cyihac&ay49wli=!u@6y7xcdtj%jykk(90y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False").lower() in ("true", "1", "yes")
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
