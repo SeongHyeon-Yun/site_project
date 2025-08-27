@@ -1,13 +1,18 @@
 from pathlib import Path
-import os
+import os, sys
 from dotenv import load_dotenv
+from pathlib import Path
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# 현재 settings.py 기준
 BASE_DIR = Path(__file__).resolve().parent.parent
-ROOT_DIR = BASE_DIR.parent
-REPO_ROOT = BASE_DIR.parent
+ROOT_DIR = BASE_DIR.parent   # /srv/onepick
+
+# .env 로드
 load_dotenv(ROOT_DIR / ".env")
+
+# accounts 같은 공통 앱 경로 추가
+sys.path.append(str(ROOT_DIR))
 
 
 # Quick-start development settings - unsuitable for production
@@ -137,4 +142,3 @@ GAME_SECRET_KEY = "319a6412ffdfa757efec34f5cc9242b0"
 GAME_API_BASE = "https://gate.nxzone.net"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = REPO_ROOT / "media"
