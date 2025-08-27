@@ -15,21 +15,21 @@ from .casino_fun import (
 
 # 스포츠 크로스
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def sport(request):
     return render(request, "games/sport.html")
 
 
 # 스포츠 스페셜
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def special(request):
     return render(request, "games/special.html")
 
 
 # 카지노 벤더 리스트
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def casino(request):
     casino_data = get_casino_list(set.GAME_SECRET_KEY, set.GAME_API_BASE)
     ip = get_client_ip(request)
@@ -44,7 +44,7 @@ def casino(request):
 
 # 슬롯 벤더 리스트
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def slot(request):
     slot_data = get_slot_list(set.GAME_SECRET_KEY, set.GAME_API_BASE)
     ip = get_client_ip(request)
@@ -57,7 +57,7 @@ def slot(request):
 
 # 슬롯 게임 목록 페이지
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def slot_detail(request):
     key = request.POST.get("key")
     vendor = request.POST.get("vendor")

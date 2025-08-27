@@ -6,7 +6,7 @@ from accounts.models import Post
 
 # 공지/규정 페이지
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def notice(request):
     post = Post.objects.filter(type="note")
     return render(request, "notes/notice.html", {"post": post})
@@ -14,14 +14,14 @@ def notice(request):
 
 # 출석체크 페이지
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def check_day(request):
     return render(request, "notes/check_day.html")
 
 
 # 이벤트 페이지
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def event(request):
     post = Post.objects.filter(type="event")
     return render(request, "notes/event.html", {"post": post})
