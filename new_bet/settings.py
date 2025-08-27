@@ -132,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "/static/"
+STATIC_ROOT = os.getenv("DJANGO_STATIC_ROOT", BASE_DIR / "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -142,4 +143,4 @@ GAME_SECRET_KEY = "319a6412ffdfa757efec34f5cc9242b0"
 GAME_API_BASE = "https://gate.nxzone.net"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = ROOT_DIR / "media"
+MEDIA_ROOT  = os.getenv("DJANGO_MEDIA_ROOT", BASE_DIR / "media")
