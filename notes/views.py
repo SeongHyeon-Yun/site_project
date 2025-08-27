@@ -6,7 +6,7 @@ from accounts.models import Post
 
 # 공지/규정 페이지
 @never_cache
-@login_required(login_url="accounts:login")
+@login_required(login_url="recoards:login")
 def notice(request):
     post = Post.objects.filter(type="note")
     return render(request, "notes/notice.html", {"post": post})
