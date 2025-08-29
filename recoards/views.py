@@ -49,6 +49,7 @@ def user_login(request):
 
                 user.ip_address = ip
                 user.save(update_fields=["ip_address"])
+                # git cicd 추가
 
                 return redirect("main:home")
             else:
