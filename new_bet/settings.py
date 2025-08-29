@@ -144,3 +144,8 @@ GAME_API_BASE = "https://gate.nxzone.net"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT  = os.getenv("DJANGO_MEDIA_ROOT", BASE_DIR / "media")
+
+USE_X_FORWARDED_HOST = True
+
+# client IP 가져올 때 X-Forwarded-For 신뢰할지 여부
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
