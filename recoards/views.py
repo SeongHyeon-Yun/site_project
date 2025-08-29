@@ -9,13 +9,18 @@ from accounts.models import Post, Deposit
 
 # IP 주소 가져오기
 def get_client_ip(request):
+    # Cloudflare 우선
+    cf_ip = request.META.get("HTTP_CF_CONNECTING_IP")
+    if cf_ip:
+        return cf_ip
+
+    # 일반적인 프록시 (Nginx)
     x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
     if x_forwarded_for:
-        ip = x_forwarded_for.split(",")[0]  # 첫 번째 IP만 사용
-    else:
-        ip = request.META.get("REMOTE_ADDR")
-    return ip
+        return x_forwarded_for.split(",")[0].strip()
 
+    # 마지막 fallback
+    return request.META.get("REMOTE_ADDR")
 
 @never_cache
 def user_login(request):
