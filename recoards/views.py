@@ -4,7 +4,17 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from accounts.forms import SignUpForm, LoginForm
-from accounts.models import Post
+from accounts.models import Post, Deposit
+
+
+# IP 주소 가져오기
+def get_client_ip(request):
+    x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(",")[0]  # 첫 번째 IP만 사용
+    else:
+        ip = request.META.get("REMOTE_ADDR")
+    return ip
 
 
 @never_cache
@@ -22,6 +32,12 @@ def user_login(request):
 
             if user is not None:
                 login(request, user)
+
+                # ✅ 로그인 성공 시 IP 저장
+                ip = get_client_ip(request)
+                user.ip_address = ip
+                user.save(update_fields=["ip_address"])
+
                 return redirect("main:home")
             else:
                 messages.error(request, "아이디 또는 비밀번호가 올바르지 않습니다.")
@@ -103,6 +119,44 @@ def customer_detail(request, pk):
 @never_cache
 @login_required(login_url="recoards:login")
 def deposit(request):
+    if request.method == "POST":
+        amount = request.POST.get("amount", "0").replace(",", "")
+        bonus = request.POST.get("bonus")
+        username = request.POST.get("username")
+        yes_no = "no"
+        type = "deposit"
+
+        if amount is None or amount == "":
+            messages.error(request, "금액을 입력하세요.")
+            return redirect("recoards:deposit")
+
+        if duplicate := Deposit.objects.filter(
+            username=username, yes_no=yes_no
+        ).exists():
+            messages.error(request, "이미 입금 신청이 대기중입니다.")
+            return redirect("recoards:deposit")
+
+        if bonus == "yes":
+            check_object = Deposit.objects.filter(username=username).exists()
+            if not check_object:
+                bonus_money = int(amount) * 0.05
+            else:
+                bonus_money = int(amount) * 0.03
+        else:
+            bonus_money = 0
+
+        deposit = Deposit.objects.create(
+            user_id=request.user.id,
+            username=username,
+            amount=int(amount),
+            bouns=bonus_money,
+            yes_no=yes_no,
+            type=type,
+        )
+
+        deposit.save()
+
+        return redirect("recoards:deposit_list")
     return render(request, "recoards/deposit.html")
 
 
@@ -110,6 +164,40 @@ def deposit(request):
 @never_cache
 @login_required(login_url="recoards:login")
 def withdraw(request):
+    if request.method == "POST":
+        money = int(request.POST.get("get_money"))
+        amount_str = request.POST.get("amount", "0").replace(",", "")
+        username = request.POST.get("username")
+        type = "withdraw"
+        yes_no = "no"
+
+        if amount_str == "":
+            amount = 0
+        else:
+            amount = int(amount_str)
+
+        if amount == 0:
+            messages.error(request, "금액을 확인하세요.")
+        elif amount > money:
+            messages.error(request, "보유머니가 부족합니다.")
+
+            return redirect("recoards:withdraw")
+
+        print(amount)
+        print(username)
+        print(type)
+
+        withdraw = Deposit.objects.create(
+            user_id=request.user.id,
+            username=username,
+            amount=amount,
+            type=type,
+            yes_no=yes_no,
+        )
+        request.user.money -= amount
+        withdraw.save()
+
+        return redirect("recoards:withdraw")
     return render(request, "recoards/withdraw.html")
 
 
@@ -117,14 +205,18 @@ def withdraw(request):
 @never_cache
 @login_required(login_url="recoards:login")
 def deposit_list(request):
-    return render(request, "recoards/deposit_list.html")
+    username = request.user.username
+    deposits = Deposit.objects.filter(username=username).order_by("-created_at")
+    return render(request, "recoards/deposit_list.html", {"deposits": deposits})
 
 
 # 출금내역 페이지
 @never_cache
 @login_required(login_url="recoards:login")
 def withdraw_list(request):
-    return render(request, "recoards/withdraw_list.html")
+    username = request.user.username
+    deposits = Deposit.objects.filter(username=username).order_by("-created_at")
+    return render(request, "recoards/withdraw_list.html", {"deposits": deposits})
 
 
 # 쪽지함 페이지

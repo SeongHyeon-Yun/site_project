@@ -204,6 +204,12 @@
     box-shadow: 0 6px 18px rgba(239, 68, 68, .25);
 }
 
+.error {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
 /* 반응형 */
 @media (max-width: 500px) {
 

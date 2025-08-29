@@ -15,33 +15,44 @@
             <span>입금계좌</span>
             <button type="button" id="bank_answer">입금계좌문의</button>
         </div>
-        <div class="doeposit_bonus">
-            <span>보너스 선택</span>
-            <div>
-                <input type="radio" id="sport" name="bonus" value="yes" checked>
-                <label for="sport">보너스 지급</label>
-                <input type="radio" id="no" name="bonus" value="no">
-                <label for="no">보너스 미지급</label>
+        <form action="" method="post" id="deposit_form">
+            {% csrf_token %}
+            <input type="hidden" name="username" value="{{ user.username }}">
+            <div class="doeposit_bonus">
+                <span>보너스 선택</span>
+                <div>
+                    <input type="radio" id="sport" name="bonus" value="yes" checked>
+                    <label for="sport">보너스 지급</label>
+                    <input type="radio" id="no" name="bonus" value="no">
+                    <label for="no">보너스 미지급</label>
+                </div>
             </div>
-        </div>
-        <div class="doeposit_btns">
-            <div>
-                <span>충전 금액</span>
-                <input type="text" id="price_input" placeholder="금액을 입력하세요">
-                <button type="button" id="deposit_btn">입금 하기</button>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="doeposit_bonus error">
+                        <div>{{ message }}</div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div class="doeposit_btns">
+                <div>
+                    <span>충전 금액</span>
+                    <input type="text" id="price_input" name="amount" placeholder="금액을 입력하세요">
+                    <button type="button" id="deposit_btn">입금 하기</button>
+                </div>
+                <div class="btn-area">
+                    <button class="price_btn" type="button" data-amount="10000">1만원</button>
+                    <button class="price_btn" type="button" data-amount="30000">3만원</button>
+                    <button class="price_btn" type="button" data-amount="50000">5만원</button>
+                    <button class="price_btn" type="button" data-amount="100000">10만원</button>
+                    <button class="price_btn" type="button" data-amount="200000">20만원</button>
+                    <button class="price_btn" type="button" data-amount="300000">30만원</button>
+                    <button class="price_btn" type="button" data-amount="500000">50만원</button>
+                    <button class="price_btn" type="button" data-amount="1000000">100만원</button>
+                    <button class="price_btn" type="button" data-amount="0">정정하기</button>
+                </div>
             </div>
-            <div class="btn-area">
-                <button class="price_btn" data-amount="10000">1만원</button>
-                <button class="price_btn" data-amount="30000">3만원</button>
-                <button class="price_btn" data-amount="50000">5만원</button>
-                <button class="price_btn" data-amount="100000">10만원</button>
-                <button class="price_btn" data-amount="200000">20만원</button>
-                <button class="price_btn" data-amount="300000">30만원</button>
-                <button class="price_btn" data-amount="500000">50만원</button>
-                <button class="price_btn" data-amount="1000000">100만원</button>
-                <button class="price_btn" data-amount="0">정정하기</button>
-            </div>
-        </div>
+        </form>
     </div>
 {% endblock deposit_base %}
 {% block extra_js %}

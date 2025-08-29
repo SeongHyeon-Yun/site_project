@@ -50,8 +50,12 @@ const deposit_btn = document.getElementById('deposit_btn');
 deposit_btn.addEventListener('click', function () {
     const text = deposit_btn.textContent.trim(); // 공백 제거
     if (text === "입금 하기") {
-        confirm("입금을 진행하시겠습니까?");
+        if (confirm("입금을 진행하시겠습니까?")) {
+            deposit_form.submit(); // Django 뷰로 POST 전송
+        }
     } else if (text === "출금 하기") {
-        confirm("출금을 진행하시겠습니까?");
+        if (confirm("출금을 진행하시겠습니까?")) {
+            deposit_form.submit();
+        }
     }
 });

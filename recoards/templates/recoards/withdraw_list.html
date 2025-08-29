@@ -1,11 +1,39 @@
 {% extends "recoards/deposit_base.html" %}
-{% load static %}
+{% load static humanize %}
 {% block extra_css %}
     {{ block.super }}
-    <link rel="stylesheet" href="{% static "recoards/css/deposit.css" %}">
+    <link rel="stylesheet" href="{% static "recoards/css/deposit_list.css" %}">
 {% endblock extra_css %}
 {% block deposit_base %}
-    <div class="test">
-        출금 내역
+    <div class="deposit">
+        <h1>출금 내역</h1>
+        <div class="doeposit_money">
+            <table class="deposit_table">
+                <thead>
+                    <tr>
+                        <td>입금 금액</td>
+                        <td>입금 날짜</td>
+                        <td>승인 여부</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for list in deposits %}
+                        {% if list.type == "withdraw" %}
+                            <tr>
+                                <td>{{ list.amount|intcomma }}</td>
+                                <td>{{ list.created_at|date:"Y-m-d H:d" }}</td>
+                                {% if list.yes_no == 'no' %}
+                                    <td>대기</td>
+                                {% elif list.yes_no == 'false' %}
+                                    <td class="false">거절</td>
+                                {% else %}
+                                    <td class="true">승인</td>
+                                {% endif %}
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
 {% endblock deposit_base %}

@@ -11,28 +11,44 @@
             <span>보유머니</span>
             <span>{{ user.money|intcomma }} 원</span>
         </div>
-        <div class="doeposit_bank_number">
-            <span>출금계좌</span>
-            <button type="button">{{ user.bank }} {{ user.account_number }}</button>
-        </div>
-        <div class="doeposit_btns">
-            <div>
-                <span>충전 금액</span>
-                <input type="text" id="price_input" placeholder="금액을 입력하세요">
-                <button type="button" id="deposit_btn">출금 하기</button>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="doeposit_bank_number">
+                <span>출금계좌</span>
+                <span name="bank_info">{{ user.bank }} {{ user.account_number }}</span>
+                <input type="hidden" name="bank" value="{{ user.bank }}">
+                <input type="hidden" name="account_number" value="{{ user.account_number }}">
+                <input type="hidden" name="get_money" value="{{ user.money }}">
+                <input type="hidden" name="username" value="{{ user.username }}">
             </div>
-            <div class="btn-area">
-                <button class="price_btn" data-amount="10000">1만원</button>
-                <button class="price_btn" data-amount="30000">3만원</button>
-                <button class="price_btn" data-amount="50000">5만원</button>
-                <button class="price_btn" data-amount="100000">10만원</button>
-                <button class="price_btn" data-amount="200000">20만원</button>
-                <button class="price_btn" data-amount="300000">30만원</button>
-                <button class="price_btn" data-amount="500000">50만원</button>
-                <button class="price_btn" data-amount="1000000">100만원</button>
-                <button class="price_btn" data-amount="0">정정하기</button>
+            
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="doeposit_bonus error">
+                        <div>{{ message }}</div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="doeposit_btns">
+                <div>
+                    <span>충전 금액</span>
+                    <input type="text" id="price_input" name="amount" placeholder="금액을 입력하세요">
+                    <button id="deposit_btn">출금 하기</button>
+                </div>
+                <div class="btn-area">
+                    <button class="price_btn" type="button" data-amount="10000">1만원</button>
+                    <button class="price_btn" type="button" data-amount="30000">3만원</button>
+                    <button class="price_btn" type="button" data-amount="50000">5만원</button>
+                    <button class="price_btn" type="button" data-amount="100000">10만원</button>
+                    <button class="price_btn" type="button" data-amount="200000">20만원</button>
+                    <button class="price_btn" type="button" data-amount="300000">30만원</button>
+                    <button class="price_btn" type="button" data-amount="500000">50만원</button>
+                    <button class="price_btn" type="button" data-amount="1000000">100만원</button>
+                    <button class="price_btn" type="button" data-amount="0">정정하기</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 {% endblock deposit_base %}
 {% block extra_js %}
