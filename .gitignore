@@ -1,0 +1,7 @@
+*.gif
+myvenv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+games/json/
