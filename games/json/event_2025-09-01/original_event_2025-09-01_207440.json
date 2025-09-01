@@ -1,0 +1,165 @@
+{
+  "timestamp": "2025-09-01T08:37:44.869392",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683462,
+    "last_call": 1756683462,
+    "events": [
+      {
+        "event_id": 1614586452,
+        "sport_id": 1,
+        "league_id": 207440,
+        "league_name": "England - National League South Corners",
+        "starts": "2025-09-01T18:45:00",
+        "last": 1756682092,
+        "home": "Chelmsford City (Corners)",
+        "away": "Farnborough (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614203909,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238143420,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T18:45:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": null,
+                "home": 1.934,
+                "away": 1.781,
+                "max": 50.0
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537657471,
+                "home": 2.45,
+                "away": 1.469,
+                "max": 50
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537657472,
+                "home": 2.13,
+                "away": 1.625,
+                "max": 50
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537657473,
+                "home": 1.74,
+                "away": 1.97,
+                "max": 50
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50537657474,
+                "home": 1.574,
+                "away": 2.22,
+                "max": 50
+              }
+            },
+            "totals": {
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": null,
+                "over": 1.833,
+                "under": 1.884,
+                "max": 50.0
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50537657481,
+                "over": 1.45,
+                "under": 2.5,
+                "max": 50
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537657482,
+                "over": 1.588,
+                "under": 2.2,
+                "max": 50
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537657483,
+                "over": 2.03,
+                "under": 1.689,
+                "max": 50
+              },
+              "10.5": {
+                "points": 10.5,
+                "alt_line_id": 50537657484,
+                "over": 2.25,
+                "under": 1.561,
+                "max": 50
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238143421,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T18:45:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.833,
+                "under": 1.819,
+                "max": 50.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537657504,
+                "over": 1.549,
+                "under": 2.16,
+                "max": 50
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537657505,
+                "over": 2.15,
+                "under": 1.558,
+                "max": 50
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_total": 50.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

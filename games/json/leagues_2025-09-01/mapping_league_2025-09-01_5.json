@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-01T08:28:49.253122",
+  "data": [
+    {
+      "id": 227864,
+      "sport_id": 5,
+      "name": "Pan American Cup Final Six",
+      "event_count": 4
+    },
+    {
+      "id": 4494,
+      "sport_id": 5,
+      "name": "World Championship - Women",
+      "event_count": 4
+    }
+  ]
+}

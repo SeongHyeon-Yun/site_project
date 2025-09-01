@@ -1,0 +1,633 @@
+{
+  "timestamp": "2025-09-01T08:28:50.168856",
+  "data": {
+    "sport_id": 5,
+    "sport_name": "Volleyball",
+    "last": 1756682917,
+    "last_call": 1756682924,
+    "events": [
+      {
+        "event_id": 1614582316,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-08-31T20:00:00",
+        "last": 1756682883,
+        "home": "Cuba (Points)",
+        "away": "Puerto Rico (Points)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614534012,
+        "resulting_unit": "Points",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133054,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238133055,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876909,
+            "settled_at": "2025-08-31T22:32:31Z",
+            "team_1_score": 94,
+            "team_2_score": 89,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876910,
+            "settled_at": "2025-08-31T22:32:31Z",
+            "team_1_score": 25,
+            "team_2_score": 20,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614534012,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-08-31T20:00:00",
+        "last": 1756682883,
+        "home": "Cuba",
+        "away": "Puerto Rico",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133056,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238133053,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876908,
+            "settled_at": "2025-08-31T22:32:31Z",
+            "team_1_score": 3,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876907,
+            "settled_at": "2025-08-31T22:32:31Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614582684,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-09-01T00:00:00",
+        "last": 1756682917,
+        "home": "Canada (Points)",
+        "away": "Colombia (Points)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614565874,
+        "resulting_unit": "Points",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_1": {
+            "line_id": 3238168498,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-09-01T00:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.833,
+              "draw": null,
+              "away": 1.99
+            },
+            "spreads": {
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": null,
+                "home": 2.39,
+                "away": 1.534,
+                "max": 200.0
+              },
+              "-3.5": {
+                "hdp": -3.5,
+                "alt_line_id": 50538156708,
+                "home": 2.83,
+                "away": 1.395,
+                "max": 200
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50538156709,
+                "home": 2.67,
+                "away": 1.438,
+                "max": 200
+              },
+              "2.5": {
+                "hdp": 2.5,
+                "alt_line_id": 50538156710,
+                "home": 1.454,
+                "away": 2.61,
+                "max": 200
+              },
+              "3.0": {
+                "hdp": 3.0,
+                "alt_line_id": 50538156711,
+                "home": 1.367,
+                "away": 2.96,
+                "max": 200
+              }
+            },
+            "totals": {
+              "46.0": {
+                "points": 46.0,
+                "alt_line_id": null,
+                "over": 1.909,
+                "under": 1.833,
+                "max": 200.0
+              },
+              "45.0": {
+                "points": 45.0,
+                "alt_line_id": 50538156712,
+                "over": 1.54,
+                "under": 2.38,
+                "max": 200
+              },
+              "45.5": {
+                "points": 45.5,
+                "alt_line_id": 50538156713,
+                "over": 1.714,
+                "under": 2.06,
+                "max": 200
+              },
+              "46.5": {
+                "points": 46.5,
+                "alt_line_id": 50538156714,
+                "over": 2.14,
+                "under": 1.657,
+                "max": 200
+              },
+              "47.0": {
+                "points": 47.0,
+                "alt_line_id": 50538156715,
+                "over": 2.62,
+                "under": 1.452,
+                "max": 200
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 24.5,
+                "over": 1.671,
+                "under": 2.12
+              },
+              "away": {
+                "points": 24.5,
+                "over": 1.787,
+                "under": 1.961
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 200.0,
+              "max_spread": 200.0,
+              "max_total": 200.0,
+              "max_team_total": 200.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614582685,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-09-01T02:00:00",
+        "last": 1756682214,
+        "home": "Mexico (Points)",
+        "away": "Venezuela (Points)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614565875,
+        "resulting_unit": "Points",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_1": {
+            "line_id": 3238054898,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-09-01T02:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.917,
+              "draw": null,
+              "away": 1.9
+            },
+            "spreads": {
+              "2.5": {
+                "hdp": 2.5,
+                "alt_line_id": null,
+                "home": 1.497,
+                "away": 2.48,
+                "max": 200.0
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50535852664,
+                "home": 2.82,
+                "away": 1.396,
+                "max": 200
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50535852665,
+                "home": 2.51,
+                "away": 1.49,
+                "max": 200
+              },
+              "3.0": {
+                "hdp": 3.0,
+                "alt_line_id": 50535852666,
+                "home": 1.404,
+                "away": 2.79,
+                "max": 200
+              },
+              "3.5": {
+                "hdp": 3.5,
+                "alt_line_id": 50535852667,
+                "home": 1.366,
+                "away": 2.96,
+                "max": 200
+              }
+            },
+            "totals": {
+              "46.0": {
+                "points": 46.0,
+                "alt_line_id": null,
+                "over": 1.909,
+                "under": 1.833,
+                "max": 200.0
+              },
+              "45.0": {
+                "points": 45.0,
+                "alt_line_id": 50535852678,
+                "over": 1.54,
+                "under": 2.38,
+                "max": 200
+              },
+              "45.5": {
+                "points": 45.5,
+                "alt_line_id": 50535852679,
+                "over": 1.709,
+                "under": 2.06,
+                "max": 200
+              },
+              "46.5": {
+                "points": 46.5,
+                "alt_line_id": 50535852680,
+                "over": 2.14,
+                "under": 1.657,
+                "max": 200
+              },
+              "47.0": {
+                "points": 47.0,
+                "alt_line_id": 50535852681,
+                "over": 2.62,
+                "under": 1.452,
+                "max": 200
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 24.5,
+                "over": 1.735,
+                "under": 2.03
+              },
+              "away": {
+                "points": 24.5,
+                "over": 1.719,
+                "under": 2.05
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 200.0,
+              "max_spread": 200.0,
+              "max_total": 200.0,
+              "max_team_total": 200.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614565874,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-09-01T00:00:00",
+        "last": 1756682917,
+        "home": "Canada",
+        "away": "Colombia",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238168495,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T00:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.8,
+              "draw": null,
+              "away": 2.03
+            },
+            "spreads": {
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": null,
+                "home": 2.09,
+                "away": 1.694,
+                "max": 500.0
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50538156660,
+                "home": 3.61,
+                "away": 1.261,
+                "max": 500
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50538156661,
+                "home": 2.43,
+                "away": 1.518,
+                "max": 500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50538156662,
+                "home": 1.518,
+                "away": 2.43,
+                "max": 500
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50538156663,
+                "home": 1.403,
+                "away": 2.8,
+                "max": 500
+              }
+            },
+            "totals": {
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": null,
+                "over": 1.869,
+                "under": 1.869,
+                "max": 500.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50538156665,
+                "over": 1.429,
+                "under": 2.7,
+                "max": 500
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50538156666,
+                "over": 2.69,
+                "under": 1.431,
+                "max": 500
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614565875,
+        "sport_id": 5,
+        "league_id": 227864,
+        "league_name": "Pan American Cup Final Six",
+        "starts": "2025-09-01T02:00:00",
+        "last": 1756682214,
+        "home": "Mexico",
+        "away": "Venezuela",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238141722,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T02:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.925,
+              "draw": null,
+              "away": 1.892
+            },
+            "spreads": {
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": null,
+                "home": 2.27,
+                "away": 1.588,
+                "max": 500.0
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537622044,
+                "home": 4.16,
+                "away": 1.205,
+                "max": 500
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537622045,
+                "home": 2.63,
+                "away": 1.45,
+                "max": 500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537622046,
+                "home": 1.588,
+                "away": 2.27,
+                "max": 500
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537622047,
+                "home": 1.438,
+                "away": 2.67,
+                "max": 500
+              }
+            },
+            "totals": {
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": null,
+                "over": 1.751,
+                "under": 2.0,
+                "max": 500.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537622049,
+                "over": 1.371,
+                "under": 2.94,
+                "max": 500
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537622050,
+                "over": 2.6,
+                "under": 1.46,
+                "max": 500
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

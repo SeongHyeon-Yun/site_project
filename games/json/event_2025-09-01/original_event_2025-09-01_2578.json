@@ -1,0 +1,258 @@
+{
+  "timestamp": "2025-09-01T07:48:21.952668",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680499,
+    "last_call": 1756680499,
+    "events": [
+      {
+        "event_id": 1613864884,
+        "sport_id": 1,
+        "league_id": 2578,
+        "league_name": "Turkey - 1st League",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Serik Belediyespor",
+        "away": "Bodrumspor",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_1": {
+            "line_id": 3237942807,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-25T04:52:41",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": 3238042163,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-25T04:52:41",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876021,
+            "settled_at": "2025-08-31T20:32:19Z",
+            "team_1_score": 2,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875184,
+            "settled_at": "2025-08-31T19:24:19Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1613974261,
+        "sport_id": 1,
+        "league_id": 2578,
+        "league_name": "Turkey - 1st League",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Adana Demirspor",
+        "away": "Amed Sportif Faliyetler",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238038573,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 375.0,
+              "max_spread": 500.0,
+              "max_total": 375.0,
+              "max_team_total": 62.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237937766,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 125.0,
+              "max_spread": 125.0,
+              "max_total": 125.0,
+              "max_team_total": 50.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875989,
+            "settled_at": "2025-08-31T20:28:52Z",
+            "team_1_score": 1,
+            "team_2_score": 8,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875138,
+            "settled_at": "2025-08-31T19:21:48Z",
+            "team_1_score": 1,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064445,
+        "sport_id": 1,
+        "league_id": 2578,
+        "league_name": "Turkey - 1st League",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Serik Belediyespor",
+        "away": "Bodrumspor",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238043328,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 1500.0,
+              "max_spread": 1325.0,
+              "max_total": 1000.0,
+              "max_team_total": 175.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237945227,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 325.0,
+              "max_spread": 325.0,
+              "max_total": 325.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876032,
+            "settled_at": "2025-08-31T20:33:40Z",
+            "team_1_score": 2,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875209,
+            "settled_at": "2025-08-31T19:25:32Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

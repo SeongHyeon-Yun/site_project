@@ -1,3 +1,8 @@
+a {
+    color: #000;
+    font-weight: 500;
+}
+
 .titles {
     background-color: #F5F7F8;
 }
@@ -54,12 +59,6 @@
     padding: 10px;
 }
 
-.active {
-    background-color: #e01010;
-    color: #ffeb82;
-    font-weight: 700;
-}
-
 .money-btns {
     display: grid;
     grid-template-columns: repeat(4, 150px);
@@ -102,6 +101,172 @@
     border-radius: 4px;
 }
 
+.contents {
+    display: flex;
+    height: 800px;
+}
+
+/* 경기 일정 */
+.left_con {
+    width: calc(100% - 300px);
+}
+
+/* 베팅 창 */
+.right_con {
+    width: 300px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.right_con .top_menu,
+.cart_info {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #ddd;
+    overflow: hidden;
+}
+
+.right_con .top_menu .item,
+.cart_info .item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+
+.right_con .top_menu .item:last-child {
+    border-bottom: none;
+    /* 마지막 줄 구분선 제거 */
+}
+
+.right_con .top_menu .item.button:hover,
+.cart_info .item.button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.right_con .top_menu .item span,
+.cart_info .item span {
+    flex: 1;
+}
+
+.right_con .top_menu .item i {
+    margin-left: 10px;
+    font-size: 1rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.right_con .top_menu .item:hover i {
+    opacity: 1;
+}
+
+.display_center {
+    text-align: center !important;
+}
+
+.bt_menu {
+    width: 100%;
+    height: 350px;
+    background-color: #000000be;
+    font-size: 12px;
+    overflow-y: auto;
+}
+
+.game_list {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.teams {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.order,
+.odds {
+    width: 40px;
+    text-align: center;
+}
+
+.odds {
+    width: 40px
+}
+
+.open {
+    display: none;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    /* 텍스트 드래그 방지 */
+}
+
+.open:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.open:active {
+    background: #00408d;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#bet_price {
+    width: 140px;
+}
+
+.left_con .game_items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    gap: 2px;
+}
+
+.left_con .game_items .item {
+    width: 80px;
+    padding: 5px;
+    font-weight: 800;
+}
+
+/* hover 시 */
+.left_con .game_items .item:hover {
+    background-color: #e01010;
+    color: #ffeb82;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #e01010;
+    color: #ffeb82;
+    font-weight: 700;
+}
+
 @media (max-width:500px) {
     .title {
         font-size: 12px;
@@ -119,5 +284,59 @@
 
     .money-input input {
         height: 30px;
+    }
+
+    .contents {
+        display: block;
+        position: relative;
+        height: 700px;
+    }
+
+    /* 경기 일정 */
+    .left_con {
+        width: 100%;
+        height: calc(100% - 100px);
+        position: absolute;
+        top: 100px;
+    }
+
+    /* 베팅 창 */
+    .right_con {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .right_con .top_menu .item,
+    .cart_info .item {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .bt_menu {
+        height: 150px;
+    }
+
+    .game_list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    #bet_price {
+        width: 50%;
+    }
+
+    .left_con .game_items .item {
+        font-size: 10px;
+        width: 55px;
+        padding: 2px;
     }
 }

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-09-01T08:28:45.483847",
+  "data": [
+    {
+      "id": 578,
+      "sport_id": 3,
+      "name": "WNBA",
+      "event_count": 2
+    },
+    {
+      "id": 215513,
+      "sport_id": 3,
+      "name": "Paraguay - Primera",
+      "event_count": 3
+    },
+    {
+      "id": 199670,
+      "sport_id": 3,
+      "name": "FIBA - AmeriCup",
+      "event_count": 1
+    },
+    {
+      "id": 216284,
+      "sport_id": 3,
+      "name": "Puerto Rico - Superior Nacional Women",
+      "event_count": 1
+    },
+    {
+      "id": 206146,
+      "sport_id": 3,
+      "name": "Brazil - Campeonato Paulista",
+      "event_count": 1
+    },
+    {
+      "id": 375,
+      "sport_id": 3,
+      "name": "FIBA - Eurobasket",
+      "event_count": 6
+    },
+    {
+      "id": 217273,
+      "sport_id": 3,
+      "name": "Brazil - Paulista FPB U20",
+      "event_count": 1
+    }
+  ]
+}

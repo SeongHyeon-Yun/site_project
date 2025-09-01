@@ -1,0 +1,658 @@
+{
+  "timestamp": "2025-09-01T08:37:56.296661",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683474,
+    "last_call": 1756683474,
+    "events": [
+      {
+        "event_id": 1614178786,
+        "sport_id": 1,
+        "league_id": 2395,
+        "league_name": "Romania - Liga 1",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756683429,
+        "home": "CFR Cluj",
+        "away": "FCSB",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238041469,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 1875.0,
+              "max_spread": 1675.0,
+              "max_total": 1250.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237938875,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876014,
+            "settled_at": "2025-08-31T20:31:44Z",
+            "team_1_score": 2,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875152,
+            "settled_at": "2025-08-31T19:22:19Z",
+            "team_1_score": 2,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614178785,
+        "sport_id": 1,
+        "league_id": 2395,
+        "league_name": "Romania - Liga 1",
+        "starts": "2025-09-01T18:00:00",
+        "last": 1756682092,
+        "home": "Farul Constanta",
+        "away": "Petrolul Ploiesti",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238145635,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T18:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.07,
+              "draw": 3.23,
+              "away": 3.88
+            },
+            "spreads": {
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": null,
+                "home": 2.07,
+                "away": 1.793,
+                "max": 500.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537705603,
+                "home": 4.04,
+                "away": 1.248,
+                "max": 500
+              },
+              "-1.25": {
+                "hdp": -1.25,
+                "alt_line_id": 50537705604,
+                "home": 3.6,
+                "away": 1.296,
+                "max": 500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537705605,
+                "home": 3.16,
+                "away": 1.371,
+                "max": 500
+              },
+              "-0.75": {
+                "hdp": -0.75,
+                "alt_line_id": 50537705606,
+                "home": 2.43,
+                "away": 1.581,
+                "max": 500
+              },
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": 50537705608,
+                "home": 1.763,
+                "away": 2.1,
+                "max": 500
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50537705609,
+                "home": 1.458,
+                "away": 2.77,
+                "max": 500
+              },
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": 50537705611,
+                "home": 1.337,
+                "away": 3.31,
+                "max": 500
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537705613,
+                "home": 1.267,
+                "away": 3.85,
+                "max": 500
+              }
+            },
+            "totals": {
+              "2.25": {
+                "points": 2.25,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.9,
+                "max": 375.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537705624,
+                "over": 3.98,
+                "under": 1.243,
+                "max": 375
+              },
+              "2.75": {
+                "points": 2.75,
+                "alt_line_id": 50537705625,
+                "over": 2.58,
+                "under": 1.51,
+                "max": 375
+              },
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": 50537705626,
+                "over": 2.22,
+                "under": 1.675,
+                "max": 375
+              },
+              "2.0": {
+                "points": 2.0,
+                "alt_line_id": 50537705627,
+                "over": 1.632,
+                "under": 2.3,
+                "max": 375
+              },
+              "1.75": {
+                "points": 1.75,
+                "alt_line_id": 50537705628,
+                "over": 1.473,
+                "under": 2.69,
+                "max": 375
+              },
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": 50537705629,
+                "over": 1.373,
+                "under": 3.06,
+                "max": 375
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 1.5,
+                "over": 2.27,
+                "under": 1.632
+              },
+              "away": {
+                "points": 0.5,
+                "over": 1.518,
+                "under": 2.54
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 375.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238145643,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T18:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.78,
+              "draw": 2.14,
+              "away": 4.34
+            },
+            "spreads": {
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": null,
+                "home": 2.17,
+                "away": 1.699,
+                "max": 150.0
+              },
+              "-0.75": {
+                "hdp": -0.75,
+                "alt_line_id": 50537705769,
+                "home": 3.76,
+                "away": 1.27,
+                "max": 150
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537705770,
+                "home": 2.77,
+                "away": 1.446,
+                "max": 150
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50537705771,
+                "home": 1.549,
+                "away": 2.46,
+                "max": 150
+              },
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": 50537705772,
+                "home": 1.316,
+                "away": 3.39,
+                "max": 150
+              }
+            },
+            "totals": {
+              "1.0": {
+                "points": 1.0,
+                "alt_line_id": null,
+                "over": 2.1,
+                "under": 1.735,
+                "max": 150.0
+              },
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": 50537705775,
+                "over": 1.444,
+                "under": 2.73,
+                "max": 150
+              },
+              "0.75": {
+                "points": 0.75,
+                "alt_line_id": 50537705776,
+                "over": 1.641,
+                "under": 2.24,
+                "max": 150
+              },
+              "1.25": {
+                "points": 1.25,
+                "alt_line_id": 50537705777,
+                "over": 2.69,
+                "under": 1.458,
+                "max": 150
+              },
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": 50537705778,
+                "over": 3.26,
+                "under": 1.328,
+                "max": 150
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 0.5,
+                "over": 2.03,
+                "under": 1.775
+              },
+              "away": {
+                "points": 0.5,
+                "over": 2.67,
+                "under": 1.465
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 150.0,
+              "max_spread": 150.0,
+              "max_total": 150.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614178671,
+        "sport_id": 1,
+        "league_id": 2395,
+        "league_name": "Romania - Liga 1",
+        "starts": "2025-09-01T15:00:00",
+        "last": 1756682092,
+        "home": "Csikszereda",
+        "away": "Otelul Galati",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3237759274,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T15:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.27,
+              "draw": 3.14,
+              "away": 2.35
+            },
+            "spreads": {
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": null,
+                "home": 1.854,
+                "away": 2.01,
+                "max": 500.0
+              },
+              "-0.75": {
+                "hdp": -0.75,
+                "alt_line_id": 50529840281,
+                "home": 4.19,
+                "away": 1.234,
+                "max": 500
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50529840282,
+                "home": 3.25,
+                "away": 1.348,
+                "max": 500
+              },
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": 50529840283,
+                "home": 2.79,
+                "away": 1.456,
+                "max": 500
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50529840284,
+                "home": 2.3,
+                "away": 1.641,
+                "max": 500
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50529840285,
+                "home": 1.617,
+                "away": 2.35,
+                "max": 500
+              },
+              "0.75": {
+                "hdp": 0.75,
+                "alt_line_id": 50529840286,
+                "home": 1.44,
+                "away": 2.85,
+                "max": 500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50529840287,
+                "home": 1.263,
+                "away": 3.88,
+                "max": 500
+              },
+              "1.25": {
+                "hdp": 1.25,
+                "alt_line_id": 50529840288,
+                "home": 1.218,
+                "away": 4.39,
+                "max": 500
+              }
+            },
+            "totals": {
+              "2.25": {
+                "points": 2.25,
+                "alt_line_id": null,
+                "over": 1.961,
+                "under": 1.877,
+                "max": 375.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50529840292,
+                "over": 4.09,
+                "under": 1.234,
+                "max": 375
+              },
+              "2.75": {
+                "points": 2.75,
+                "alt_line_id": 50529840293,
+                "over": 2.63,
+                "under": 1.492,
+                "max": 375
+              },
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": 50529840294,
+                "over": 2.25,
+                "under": 1.657,
+                "max": 375
+              },
+              "2.0": {
+                "points": 2.0,
+                "alt_line_id": 50529840295,
+                "over": 1.653,
+                "under": 2.26,
+                "max": 375
+              },
+              "1.75": {
+                "points": 1.75,
+                "alt_line_id": 50529840296,
+                "over": 1.485,
+                "under": 2.65,
+                "max": 375
+              },
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": 50529840297,
+                "over": 1.381,
+                "under": 3.02,
+                "max": 375
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 0.5,
+                "over": 1.436,
+                "under": 2.8
+              },
+              "away": {
+                "points": 1.5,
+                "over": 2.55,
+                "under": 1.515
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 375.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3237407988,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T15:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.95,
+              "draw": 2.11,
+              "away": 3.03
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 2.22,
+                "away": 1.675,
+                "max": 150.0
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50522484973,
+                "home": 3.92,
+                "away": 1.253,
+                "max": 150
+              },
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": 50522484974,
+                "home": 3.09,
+                "away": 1.373,
+                "max": 150
+              },
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": 50522484975,
+                "home": 1.595,
+                "away": 2.35,
+                "max": 150
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50522484976,
+                "home": 1.386,
+                "away": 3.0,
+                "max": 150
+              }
+            },
+            "totals": {
+              "1.0": {
+                "points": 1.0,
+                "alt_line_id": null,
+                "over": 2.12,
+                "under": 1.724,
+                "max": 150.0
+              },
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": 50522484979,
+                "over": 1.452,
+                "under": 2.7,
+                "max": 150
+              },
+              "0.75": {
+                "points": 0.75,
+                "alt_line_id": 50522484980,
+                "over": 1.649,
+                "under": 2.22,
+                "max": 150
+              },
+              "1.25": {
+                "points": 1.25,
+                "alt_line_id": 50522484981,
+                "over": 2.71,
+                "under": 1.454,
+                "max": 150
+              },
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": 50522484982,
+                "over": 3.28,
+                "under": 1.325,
+                "max": 150
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 0.5,
+                "over": 2.51,
+                "under": 1.518
+              },
+              "away": {
+                "points": 0.5,
+                "over": 2.13,
+                "under": 1.699
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 150.0,
+              "max_spread": 150.0,
+              "max_total": 150.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

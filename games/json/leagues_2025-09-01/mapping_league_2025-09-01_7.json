@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-01T08:28:51.104832",
+  "data": [
+    {
+      "id": 880,
+      "sport_id": 7,
+      "name": "NCAA",
+      "event_count": 51
+    },
+    {
+      "id": 889,
+      "sport_id": 7,
+      "name": "NFL",
+      "event_count": 32
+    },
+    {
+      "id": 876,
+      "sport_id": 7,
+      "name": "Canadian Football",
+      "event_count": 3
+    },
+    {
+      "id": 200920,
+      "sport_id": 7,
+      "name": "NFL - Alternate Lines",
+      "event_count": 2
+    }
+  ]
+}

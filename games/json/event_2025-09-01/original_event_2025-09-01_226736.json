@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-09-01T08:37:04.792854",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683420,
+    "last_call": 1756683420,
+    "events": [
+      {
+        "event_id": 1614294376,
+        "sport_id": 1,
+        "league_id": 226736,
+        "league_name": "USA - Major League Soccer Bookings",
+        "starts": "2025-09-01T02:45:00",
+        "last": 1756682092,
+        "home": "Los Angeles FC (Bookings)",
+        "away": "San Diego FC (Bookings)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613985569,
+        "resulting_unit": "Bookings",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3237863579,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T02:45:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": null,
+                "home": 1.714,
+                "away": 2.05,
+                "max": 200.0
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 2.06,
+                "under": 1.751,
+                "max": 500.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 200.0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

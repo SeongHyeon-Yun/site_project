@@ -1,0 +1,426 @@
+{
+  "timestamp": "2025-09-01T08:36:21.205846",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683378,
+    "last_call": 1756683378,
+    "events": [
+      {
+        "event_id": 1614269227,
+        "sport_id": 1,
+        "league_id": 198494,
+        "league_name": "Uruguay - Primera Division Corners",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756683368,
+        "home": "Juventud (Corners)",
+        "away": "Cerro (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614158026,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238033371,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 250.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237931519,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875930,
+            "settled_at": "2025-08-31T20:23:55Z",
+            "team_1_score": 4,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875078,
+            "settled_at": "2025-08-31T19:18:50Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614277634,
+        "sport_id": 1,
+        "league_id": 198494,
+        "league_name": "Uruguay - Primera Division Corners",
+        "starts": "2025-08-31T21:00:00",
+        "last": 1756683368,
+        "home": "Racing Club de Montevideo (Corners)",
+        "away": "Penarol (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614068687,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238146870,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:58:20",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 250.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238105263,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:58:20",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876989,
+            "settled_at": "2025-08-31T22:53:07Z",
+            "team_1_score": 7,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876678,
+            "settled_at": "2025-08-31T21:48:53Z",
+            "team_1_score": 3,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614287815,
+        "sport_id": 1,
+        "league_id": 198494,
+        "league_name": "Uruguay - Primera Division Corners",
+        "starts": "2025-08-31T23:30:00",
+        "last": 1756683000,
+        "home": "Boston River (Corners)",
+        "away": "CA Progreso (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614194219,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238169211,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T23:28:58",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 250.0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false,
+              "max_team_total": 125.0
+            }
+          },
+          "num_1": {
+            "line_id": 3238169210,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T23:28:58",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614348539,
+        "sport_id": 1,
+        "league_id": 198494,
+        "league_name": "Uruguay - Primera Division Corners",
+        "starts": "2025-09-01T22:00:00",
+        "last": 1756682092,
+        "home": "Cerro Largo (Corners)",
+        "away": "Montevideo Wanderers (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614107237,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3233116880,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T22:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": null,
+                "home": 1.884,
+                "away": 1.84,
+                "max": 100.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50440856211,
+                "home": 2.32,
+                "away": 1.523,
+                "max": 100
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50440856212,
+                "home": 2.1,
+                "away": 1.645,
+                "max": 100
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50440856213,
+                "home": 1.675,
+                "away": 2.06,
+                "max": 100
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50440856214,
+                "home": 1.54,
+                "away": 2.28,
+                "max": 100
+              }
+            },
+            "totals": {
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": null,
+                "over": 1.884,
+                "under": 1.917,
+                "max": 100.0
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50440856221,
+                "over": 1.48,
+                "under": 2.56,
+                "max": 100
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50440856222,
+                "over": 1.68,
+                "under": 2.15,
+                "max": 100
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50440856223,
+                "over": 2.1,
+                "under": 1.704,
+                "max": 100
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50440856224,
+                "over": 2.45,
+                "under": 1.518,
+                "max": 100
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.793,
+                "under": 1.925
+              },
+              "away": {
+                "points": 4.5,
+                "over": 2.11,
+                "under": 1.649
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3233116881,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T22:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.719,
+                "away": 2.01,
+                "max": 100.0
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50440856230,
+                "home": 2.06,
+                "away": 1.671,
+                "max": 100
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50440856231,
+                "home": 1.502,
+                "away": 2.39,
+                "max": 100
+              }
+            },
+            "totals": {
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": null,
+                "over": 1.769,
+                "under": 1.952,
+                "max": 100.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50440856240,
+                "over": 1.552,
+                "under": 2.28,
+                "max": 100
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50440856241,
+                "over": 2.07,
+                "under": 1.666,
+                "max": 100
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

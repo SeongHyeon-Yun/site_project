@@ -1,0 +1,257 @@
+{
+  "timestamp": "2025-09-01T07:48:50.297987",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680523,
+    "last_call": 1756680527,
+    "events": [
+      {
+        "event_id": 1614255576,
+        "sport_id": 1,
+        "league_id": 6600,
+        "league_name": "Portugal - Primeira Liga Corners",
+        "starts": "2025-08-31T17:00:00",
+        "last": 1756680500,
+        "home": "Alverca (Corners)",
+        "away": "Benfica (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613974236,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3237890234,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237769930,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21874852,
+            "settled_at": "2025-08-31T19:00:46Z",
+            "team_1_score": 5,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21873926,
+            "settled_at": "2025-08-31T17:50:54Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614274511,
+        "sport_id": 1,
+        "league_id": 6600,
+        "league_name": "Portugal - Primeira Liga Corners",
+        "starts": "2025-08-31T19:30:00",
+        "last": 1756680500,
+        "home": "Rio Ave (Corners)",
+        "away": "Braga (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613978110,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238092562,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238030236,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876535,
+            "settled_at": "2025-08-31T21:32:09Z",
+            "team_1_score": 1,
+            "team_2_score": 7,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875906,
+            "settled_at": "2025-08-31T20:21:19Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614274568,
+        "sport_id": 1,
+        "league_id": 6600,
+        "league_name": "Portugal - Primeira Liga Corners",
+        "starts": "2025-08-31T19:30:00",
+        "last": 1756680500,
+        "home": "Santa Clara (Corners)",
+        "away": "Estrela da Amadora (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613974271,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238091547,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238032217,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876524,
+            "settled_at": "2025-08-31T21:30:55Z",
+            "team_1_score": 8,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875922,
+            "settled_at": "2025-08-31T20:22:57Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+.calendar-area {
+    width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #5a5a5a;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.calender-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.calender-header .month-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.calender-header button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.calender-header button:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 7일(일~토) */
+    gap: 6px;
+}
+
+.day {
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    background: #000;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+
+}
+
+.check_img {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .calendar-area {
+        width: 100%;
+    }
+
+    .day {
+        font-size: 8px;
+        padding: 2px;
+
+    }
+}

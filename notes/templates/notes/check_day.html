@@ -1,10 +1,22 @@
 {% extends "main/base.html" %}
 {% load static %}
-
 {% block extra_css %}
-{{ block.super }}
+    <link rel="stylesheet" href="{% static "notes/css/check.css" %}">
 {% endblock extra_css %}
-
 {% block extra_con %}
-출석체크
+    <div class="calendar-area">
+        <div class="calender-header">
+            <button id="prev" class="prev">&lt;</button>
+            <h1 id="month" data-month="{{ month }}" class="month-title">{{ month }}월</h1>
+            <button id="next" class="next">&gt;</button>
+        </div>
+        <div class="calender">
+            {% for day in days %}<div class="day">{{ day }}
+                <img class="check_img" src="{% static "notes/img/출석 완료.png" %}" alt="" width="" height="">
+            </div>{% endfor %}
+        </div>
+    </div>
 {% endblock extra_con %}
+{% block extra_js %}
+    <script src="{% static "notes/js/calender.js" %}"></script>
+{% endblock extra_js %}

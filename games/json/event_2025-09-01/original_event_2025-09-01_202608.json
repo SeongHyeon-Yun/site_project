@@ -1,0 +1,959 @@
+{
+  "timestamp": "2025-09-01T07:47:52.010799",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680469,
+    "last_call": 1756680469,
+    "events": [
+      {
+        "event_id": 1614064460,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Argentino Monte Maiz",
+        "away": "Costa Brava",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238077389,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238077404,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 3,
+            "settlement_id": 21876424,
+            "settled_at": "2025-08-31T21:14:23Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          },
+          {
+            "number": 1,
+            "status": 3,
+            "settlement_id": 21876425,
+            "settled_at": "2025-08-31T21:14:24Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          }
+        ]
+      },
+      {
+        "event_id": 1614064459,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "El Linqueno",
+        "away": "Crucero del Norte",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238076432,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238076462,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 3,
+            "settlement_id": 21876415,
+            "settled_at": "2025-08-31T21:13:04Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          },
+          {
+            "number": 1,
+            "status": 3,
+            "settlement_id": 21876416,
+            "settled_at": "2025-08-31T21:13:05Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          }
+        ]
+      },
+      {
+        "event_id": 1614059030,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680317,
+        "home": "Sarmiento de la Banda",
+        "away": "San Martin Formosa",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238072327,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237882794,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876384,
+            "settled_at": "2025-08-31T21:07:46Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875666,
+            "settled_at": "2025-08-31T19:56:53Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614068676,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Juventud Unida Universitario",
+        "away": "San Martin de Mendoza",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238040295,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237937166,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876006,
+            "settled_at": "2025-08-31T20:30:30Z",
+            "team_1_score": 2,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875135,
+            "settled_at": "2025-08-31T19:21:29Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614068675,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680317,
+        "home": "Huracan Las Heras",
+        "away": "Guillermo Brown",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238075187,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237885458,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 3,
+            "settlement_id": 21876406,
+            "settled_at": "2025-08-31T21:11:27Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          },
+          {
+            "number": 1,
+            "status": 3,
+            "settlement_id": 21876408,
+            "settled_at": "2025-08-31T21:11:28Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          }
+        ]
+      },
+      {
+        "event_id": 1614059031,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Club Cipolletti",
+        "away": "Club Ciudad de Bolivar",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238050766,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238050765,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876097,
+            "settled_at": "2025-08-31T20:40:51Z",
+            "team_1_score": 0,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876095,
+            "settled_at": "2025-08-31T20:40:50Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059032,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T20:00:00",
+        "last": 1756680317,
+        "home": "Juventud Antoniana",
+        "away": "Atletico Rafaela",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238108795,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238058205,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876733,
+            "settled_at": "2025-08-31T21:54:47Z",
+            "team_1_score": 2,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876138,
+            "settled_at": "2025-08-31T20:48:07Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064462,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680317,
+        "home": "Defensores de Belgrano de Villa Ramallo",
+        "away": "Sarmiento de Resistencia",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238067369,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237997890,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876288,
+            "settled_at": "2025-08-31T21:00:26Z",
+            "team_1_score": 2,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875617,
+            "settled_at": "2025-08-31T19:54:34Z",
+            "team_1_score": 1,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614068677,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T20:30:00",
+        "last": 1756680317,
+        "home": "Ben Hur",
+        "away": "Sol de America de Formosa",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238127766,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238083057,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876871,
+            "settled_at": "2025-08-31T22:23:14Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876451,
+            "settled_at": "2025-08-31T21:19:32Z",
+            "team_1_score": 0,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614068678,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Olimpo",
+        "away": "Sportivo y Biblioteca Atenas",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238037444,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237934162,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875962,
+            "settled_at": "2025-08-31T20:27:36Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875095,
+            "settled_at": "2025-08-31T19:20:05Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614068679,
+        "sport_id": 1,
+        "league_id": 202608,
+        "league_name": "Argentina - Torneo Federal A",
+        "starts": "2025-08-31T18:30:00",
+        "last": 1756680317,
+        "home": "Independiente Chivilcoy",
+        "away": "Douglas Haig",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238084263,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 300.0,
+              "max_spread": 300.0,
+              "max_total": 300.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238084270,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 3,
+            "settlement_id": 21876457,
+            "settled_at": "2025-08-31T21:21:01Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          },
+          {
+            "number": 1,
+            "status": 3,
+            "settlement_id": 21876458,
+            "settled_at": "2025-08-31T21:21:02Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_1020",
+              "details": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-09-01T08:28:51.093884",
+  "data": {
+    "leagues": [
+      {
+        "id": 880,
+        "sport_id": 7,
+        "name": "NCAA",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 23,
+        "event_count": 51,
+        "has_offerings": true,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 4347,
+        "sport_id": 7,
+        "name": "NFL Pre Season",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 207706,
+        "sport_id": 7,
+        "name": "XFL Football",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 881,
+        "sport_id": 7,
+        "name": "NCAA Added",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 220795,
+        "sport_id": 7,
+        "name": "United Football League",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 234331,
+        "sport_id": 7,
+        "name": "NFL Draft",
+        "home_team_type": "Team1",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team1"
+      },
+      {
+        "id": 202331,
+        "sport_id": 7,
+        "name": "NCAA FCS",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 889,
+        "sport_id": 7,
+        "name": "NFL",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 82,
+        "event_specials_count": 429,
+        "event_count": 32,
+        "has_offerings": true,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 204168,
+        "sport_id": 7,
+        "name": "Alliance of American Football",
+        "home_team_type": "Team2",
+        "container": "Undefined",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 876,
+        "sport_id": 7,
+        "name": "Canadian Football",
+        "home_team_type": "Team2",
+        "container": "Canada",
+        "league_specials_count": 1,
+        "event_specials_count": 0,
+        "event_count": 3,
+        "has_offerings": true,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 220689,
+        "sport_id": 7,
+        "name": "RichTest",
+        "home_team_type": "Team2",
+        "container": "Canada",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 0,
+        "has_offerings": false,
+        "homeTeamType": "Team2"
+      },
+      {
+        "id": 200920,
+        "sport_id": 7,
+        "name": "NFL - Alternate Lines",
+        "home_team_type": "Team2",
+        "container": "USA",
+        "league_specials_count": 0,
+        "event_specials_count": 0,
+        "event_count": 2,
+        "has_offerings": true,
+        "homeTeamType": "Team2"
+      }
+    ]
+  }
+}

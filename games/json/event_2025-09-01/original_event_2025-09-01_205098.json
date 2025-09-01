@@ -1,0 +1,350 @@
+{
+  "timestamp": "2025-09-01T08:36:37.545064",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683396,
+    "last_call": 1756683396,
+    "events": [
+      {
+        "event_id": 1614059013,
+        "sport_id": 1,
+        "league_id": 205098,
+        "league_name": "Canada - Premier League",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756683368,
+        "home": "Valour",
+        "away": "Pacific",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238074731,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 750.0,
+              "max_spread": 750.0,
+              "max_total": 750.0,
+              "max_team_total": 150.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238008037,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876400,
+            "settled_at": "2025-08-31T21:10:57Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875781,
+            "settled_at": "2025-08-31T20:04:11Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614107184,
+        "sport_id": 1,
+        "league_id": 205098,
+        "league_name": "Canada - Premier League",
+        "starts": "2025-09-01T19:00:00",
+        "last": 1756682092,
+        "home": "HFX Wanderers",
+        "away": "York United",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238041158,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T19:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.18,
+              "draw": 3.1,
+              "away": 3.31
+            },
+            "spreads": {
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": null,
+                "home": 1.869,
+                "away": 1.917,
+                "max": 150.0
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50535534546,
+                "home": 3.41,
+                "away": 1.279,
+                "max": 150
+              },
+              "-0.75": {
+                "hdp": -0.75,
+                "alt_line_id": 50535534547,
+                "home": 2.55,
+                "away": 1.467,
+                "max": 150
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50535534548,
+                "home": 2.16,
+                "away": 1.662,
+                "max": 150
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50535534549,
+                "home": 1.552,
+                "away": 2.38,
+                "max": 150
+              },
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": 50535534550,
+                "home": 1.396,
+                "away": 2.79,
+                "max": 150
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50535534551,
+                "home": 1.309,
+                "away": 3.21,
+                "max": 150
+              }
+            },
+            "totals": {
+              "2.0": {
+                "points": 2.0,
+                "alt_line_id": null,
+                "over": 1.787,
+                "under": 2.01,
+                "max": 150.0
+              },
+              "1.25": {
+                "points": 1.25,
+                "alt_line_id": 50535534562,
+                "over": 1.277,
+                "under": 3.42,
+                "max": 150
+              },
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": 50535534563,
+                "over": 1.438,
+                "under": 2.64,
+                "max": 150
+              },
+              "1.75": {
+                "points": 1.75,
+                "alt_line_id": 50535534564,
+                "over": 1.568,
+                "under": 2.34,
+                "max": 150
+              },
+              "2.25": {
+                "points": 2.25,
+                "alt_line_id": 50535534565,
+                "over": 2.08,
+                "under": 1.709,
+                "max": 150
+              },
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": 50535534566,
+                "over": 2.36,
+                "under": 1.537,
+                "max": 150
+              },
+              "2.75": {
+                "points": 2.75,
+                "alt_line_id": 50535534567,
+                "over": 2.79,
+                "under": 1.396,
+                "max": 150
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 1.5,
+                "over": 2.52,
+                "under": 1.497
+              },
+              "away": {
+                "points": 0.5,
+                "over": 1.487,
+                "under": 2.55
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 150.0,
+              "max_spread": 150.0,
+              "max_total": 150.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238041159,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T19:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-0.25": {
+                "hdp": -0.25,
+                "alt_line_id": null,
+                "home": 2.23,
+                "away": 1.632,
+                "max": 100.0
+              },
+              "-0.75": {
+                "hdp": -0.75,
+                "alt_line_id": 50535534555,
+                "home": 3.72,
+                "away": 1.233,
+                "max": 100
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50535534556,
+                "home": 2.8,
+                "away": 1.401,
+                "max": 100
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50535534557,
+                "home": 1.578,
+                "away": 2.29,
+                "max": 100
+              },
+              "0.25": {
+                "hdp": 0.25,
+                "alt_line_id": 50535534558,
+                "home": 1.317,
+                "away": 3.12,
+                "max": 100
+              }
+            },
+            "totals": {
+              "0.75": {
+                "points": 0.75,
+                "alt_line_id": null,
+                "over": 1.714,
+                "under": 2.09,
+                "max": 100.0
+              },
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": 50535534581,
+                "over": 1.49,
+                "under": 2.5,
+                "max": 100
+              },
+              "1.0": {
+                "points": 1.0,
+                "alt_line_id": 50535534582,
+                "over": 2.19,
+                "under": 1.628,
+                "max": 100
+              },
+              "1.25": {
+                "points": 1.25,
+                "alt_line_id": 50535534584,
+                "over": 2.74,
+                "under": 1.401,
+                "max": 100
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 0.5,
+                "over": 2.09,
+                "under": 1.689
+              },
+              "away": {
+                "points": 0.5,
+                "over": 2.62,
+                "under": 1.452
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

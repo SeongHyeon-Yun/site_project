@@ -1,0 +1,403 @@
+{
+  "timestamp": "2025-09-01T08:28:48.285554",
+  "data": {
+    "sport_id": 4,
+    "sport_name": "Hockey",
+    "last": 1756682826,
+    "last_call": 1756682924,
+    "events": [
+      {
+        "event_id": 1614203860,
+        "sport_id": 4,
+        "league_id": 5154,
+        "league_name": "Russia - Vysshaya hokkeinaya Liga",
+        "starts": "2025-09-03T15:30:00",
+        "last": 1756682826,
+        "home": "Zvezda Moscow",
+        "away": "HC Akm Tula",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238167494,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-03T15:30:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.671,
+              "draw": null,
+              "away": 2.22
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 50.0,
+              "open_money_line": true,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238167495,
+            "number": 1,
+            "description": "1st Period",
+            "cutoff": "2025-09-03T15:30:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.709,
+              "draw": null,
+              "away": 2.2
+            },
+            "spreads": {
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": null,
+                "home": 2.7,
+                "away": 1.465,
+                "max": 50.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50538138329,
+                "home": 6.99,
+                "away": 1.075,
+                "max": 50
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50538138330,
+                "home": 5.71,
+                "away": 1.116,
+                "max": 50
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50538138331,
+                "home": 1.299,
+                "away": 3.4,
+                "max": 50
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50538138332,
+                "home": 1.056,
+                "away": 8.08,
+                "max": 50
+              }
+            },
+            "totals": {
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": null,
+                "over": 2.15,
+                "under": 1.714,
+                "max": 50.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 50.0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          },
+          "num_6": {
+            "line_id": 3238167496,
+            "number": 6,
+            "description": "Regulation Time",
+            "cutoff": "2025-09-03T15:30:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.13,
+              "draw": 3.92,
+              "away": 2.95
+            },
+            "spreads": {
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": null,
+                "home": 2.13,
+                "away": 1.724,
+                "max": 50.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50538138335,
+                "home": 2.88,
+                "away": 1.414,
+                "max": 50
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50538138336,
+                "home": 2.55,
+                "away": 1.515,
+                "max": 50
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50538138337,
+                "home": 1.632,
+                "away": 2.29,
+                "max": 50
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50538138338,
+                "home": 1.396,
+                "away": 2.95,
+                "max": 50
+              }
+            },
+            "totals": {
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": null,
+                "over": 1.917,
+                "under": 1.9,
+                "max": 50.0
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50538138348,
+                "over": 1.636,
+                "under": 2.28,
+                "max": 50
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50538138349,
+                "over": 2.29,
+                "under": 1.628,
+                "max": 50
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 6,
+              "max_money_line": 50.0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614198711,
+        "sport_id": 4,
+        "league_id": 5154,
+        "league_name": "Russia - Vysshaya hokkeinaya Liga",
+        "starts": "2025-09-03T16:00:00",
+        "last": 1756682214,
+        "home": "HC Rostov",
+        "away": "HC Tambov",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3237567724,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-03T16:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.909,
+              "draw": null,
+              "away": 1.909
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 50.0,
+              "open_money_line": true,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237567721,
+            "number": 1,
+            "description": "1st Period",
+            "cutoff": "2025-09-03T16:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.925,
+              "draw": null,
+              "away": 1.925
+            },
+            "spreads": {
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": null,
+                "home": 1.383,
+                "away": 3.01,
+                "max": 50.0
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50525775466,
+                "home": 6.64,
+                "away": 1.083,
+                "max": 50
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50525775468,
+                "home": 2.99,
+                "away": 1.375,
+                "max": 50
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50525775470,
+                "home": 1.086,
+                "away": 6.69,
+                "max": 50
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50525775472,
+                "home": 1.058,
+                "away": 7.96,
+                "max": 50
+              }
+            },
+            "totals": {
+              "1.5": {
+                "points": 1.5,
+                "alt_line_id": null,
+                "over": 2.1,
+                "under": 1.746,
+                "max": 50.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 50.0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          },
+          "num_6": {
+            "line_id": 3238147774,
+            "number": 6,
+            "description": "Regulation Time",
+            "cutoff": "2025-09-03T16:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.49,
+              "draw": 3.88,
+              "away": 2.49
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.909,
+                "away": 1.909,
+                "max": 50.0
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537749401,
+                "home": 3.16,
+                "away": 1.352,
+                "max": 50
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537749402,
+                "home": 2.49,
+                "away": 1.54,
+                "max": 50
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537749403,
+                "home": 1.54,
+                "away": 2.49,
+                "max": 50
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537749404,
+                "home": 1.35,
+                "away": 3.16,
+                "max": 50
+              }
+            },
+            "totals": {
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": null,
+                "over": 1.847,
+                "under": 1.97,
+                "max": 50.0
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537749408,
+                "over": 1.598,
+                "under": 2.36,
+                "max": 50
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537749409,
+                "over": 2.22,
+                "under": 1.671,
+                "max": 50
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 6,
+              "max_money_line": 50.0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

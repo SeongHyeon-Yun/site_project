@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-09-01T07:50:11.196279",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680607,
+    "last_call": 1756680608,
+    "events": [
+      {
+        "event_id": 1614178822,
+        "sport_id": 1,
+        "league_id": 201371,
+        "league_name": "Brazil - Serie D",
+        "starts": "2025-08-31T18:00:00",
+        "last": 1756680561,
+        "home": "Cianorte",
+        "away": "Barra",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238002151,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T18:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 500.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237876952,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 150.0,
+              "max_total": 150.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875701,
+            "settled_at": "2025-08-31T19:58:21Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21874701,
+            "settled_at": "2025-08-31T18:52:36Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

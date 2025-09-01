@@ -1,0 +1,472 @@
+{
+  "timestamp": "2025-09-01T08:38:15.129035",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683492,
+    "last_call": 1756683492,
+    "events": [
+      {
+        "event_id": 1613981102,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T21:00:00",
+        "last": 1756683490,
+        "home": "Hercules",
+        "away": "Cacahuatique",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876976,
+            "settled_at": "2025-08-31T22:51:57Z",
+            "team_1_score": 0,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876700,
+            "settled_at": "2025-08-31T21:50:21Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ],
+        "periods": {
+          "num_0": {
+            "line_id": 3238146165,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-26T19:30:58",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1613978115,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T21:15:00",
+        "last": 1756683490,
+        "home": "Platense",
+        "away": "Fuerte San Francisco",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238160194,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-26T19:31:02",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877143,
+            "settled_at": "2025-08-31T23:15:18Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1613978114,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T23:05:00",
+        "last": 1756682092,
+        "home": "Isidro Metapan",
+        "away": "Luis Angel Firpo",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238157223,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T23:05:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 750.0,
+              "max_spread": 750.0,
+              "max_total": 750.0,
+              "max_team_total": 150.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238157222,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T23:05:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614059043,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T21:00:00",
+        "last": 1756682092,
+        "home": "Hercules",
+        "away": "Cacahuatique",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238065707,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 750.0,
+              "max_spread": 750.0,
+              "max_total": 750.0,
+              "max_team_total": 150.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238065708,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614068688,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T21:15:00",
+        "last": 1756683490,
+        "home": "Platense",
+        "away": "Fuerte San Francisco",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238157027,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:15:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 750.0,
+              "max_spread": 750.0,
+              "max_total": 750.0,
+              "max_team_total": 150.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238114923,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:15:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877104,
+            "settled_at": "2025-08-31T23:10:32Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876801,
+            "settled_at": "2025-08-31T22:05:00Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064474,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T22:00:00",
+        "last": 1756683490,
+        "home": "Municipal Limeno",
+        "away": "Zacatecoluca",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238091329,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T22:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 750.0,
+              "max_spread": 750.0,
+              "max_total": 750.0,
+              "max_team_total": 150.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238148292,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T22:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "max_team_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21877015,
+            "settled_at": "2025-08-31T22:55:34Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064475,
+        "sport_id": 1,
+        "league_id": 196742,
+        "league_name": "El Salvador - Primera Division",
+        "starts": "2025-08-31T21:00:00",
+        "last": 1756683490,
+        "home": "Aguila",
+        "away": "Alianza",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238159595,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-29T05:29:43",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 3,
+            "settlement_id": 21877139,
+            "settled_at": "2025-08-31T23:14:26Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_253",
+              "details": {}
+            }
+          },
+          {
+            "number": 1,
+            "status": 3,
+            "settlement_id": 21877140,
+            "settled_at": "2025-08-31T23:14:26Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": {
+              "code": "FBS_CW_253",
+              "details": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

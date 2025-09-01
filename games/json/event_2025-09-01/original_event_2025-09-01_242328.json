@@ -1,0 +1,575 @@
+{
+  "timestamp": "2025-09-01T08:29:13.728741",
+  "data": {
+    "sport_id": 10,
+    "sport_name": "E Sports",
+    "last": 1756682931,
+    "last_call": 1756682931,
+    "events": [
+      {
+        "event_id": 1614522056,
+        "sport_id": 10,
+        "league_id": 242328,
+        "league_name": "Valorant - Challengers EMEA",
+        "starts": "2025-09-01T18:00:00",
+        "last": 1756682369,
+        "home": "The Ultimates",
+        "away": "deti ulice",
+        "event_type": "prematch",
+        "live_status_id": null,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "home_team_type": "Team1",
+        "periods": {
+          "num_1": {
+            "line_id": null,
+            "number": 1,
+            "description": "Map 1",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.806,
+              "draw": null,
+              "away": 1.943
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_2": {
+            "line_id": null,
+            "number": 2,
+            "description": "Map 2",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.806,
+              "draw": null,
+              "away": 1.943
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 2,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": null,
+            "number": 3,
+            "description": "Map 3",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.806,
+              "draw": null,
+              "away": 1.943
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": null,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.775,
+              "draw": null,
+              "away": 1.98
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 3.08,
+                "away": 1.316,
+                "max": null
+              }
+            },
+            "totals": {
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": null,
+                "over": 1.925,
+                "under": 1.813,
+                "max": null
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": true,
+              "open_total": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614522054,
+        "sport_id": 10,
+        "league_id": 242328,
+        "league_name": "Valorant - Challengers EMEA",
+        "starts": "2025-09-01T18:00:00",
+        "last": 1756682369,
+        "home": "Mandatory",
+        "away": "BBL PCIFIC",
+        "event_type": "prematch",
+        "live_status_id": null,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "home_team_type": "Team1",
+        "periods": {
+          "num_1": {
+            "line_id": null,
+            "number": 1,
+            "description": "Map 1",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.25,
+              "draw": null,
+              "away": 1.591
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_2": {
+            "line_id": null,
+            "number": 2,
+            "description": "Map 2",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.25,
+              "draw": null,
+              "away": 1.591
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 2,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": null,
+            "number": 3,
+            "description": "Map 3",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.2,
+              "draw": null,
+              "away": 1.621
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": null,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T18:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.45,
+              "draw": null,
+              "away": 1.5
+            },
+            "spreads": {
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": null,
+                "home": 1.478,
+                "away": 2.51,
+                "max": null
+              }
+            },
+            "totals": {
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": null,
+                "over": 1.99,
+                "under": 1.763,
+                "max": null
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": true,
+              "open_total": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614522055,
+        "sport_id": 10,
+        "league_id": 242328,
+        "league_name": "Valorant - Challengers EMEA",
+        "starts": "2025-09-01T15:00:00",
+        "last": 1756682368,
+        "home": "KOI Fenix",
+        "away": "Twisted Minds",
+        "event_type": "prematch",
+        "live_status_id": null,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "home_team_type": "Team1",
+        "periods": {
+          "num_1": {
+            "line_id": null,
+            "number": 1,
+            "description": "Map 1",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.645,
+              "draw": null,
+              "away": 2.16
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_2": {
+            "line_id": null,
+            "number": 2,
+            "description": "Map 2",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.645,
+              "draw": null,
+              "away": 2.16
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 2,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": null,
+            "number": 3,
+            "description": "Map 3",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.684,
+              "draw": null,
+              "away": 2.09
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": null,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.571,
+              "draw": null,
+              "away": 2.29
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.65,
+                "away": 1.427,
+                "max": null
+              }
+            },
+            "totals": {
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": null,
+                "over": 1.952,
+                "under": 1.793,
+                "max": null
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": true,
+              "open_total": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614525462,
+        "sport_id": 10,
+        "league_id": 242328,
+        "league_name": "Valorant - Challengers EMEA",
+        "starts": "2025-09-01T15:00:00",
+        "last": 1756682369,
+        "home": "Liquid Academy",
+        "away": "Eintracht Frankfurt",
+        "event_type": "prematch",
+        "live_status_id": null,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "home_team_type": "Team1",
+        "periods": {
+          "num_1": {
+            "line_id": null,
+            "number": 1,
+            "description": "Map 1",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.06,
+              "draw": null,
+              "away": 1.709
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_2": {
+            "line_id": null,
+            "number": 2,
+            "description": "Map 2",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.06,
+              "draw": null,
+              "away": 1.709
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 2,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": null,
+            "number": 3,
+            "description": "Map 3",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.0,
+              "draw": null,
+              "away": 1.757
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": null,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T15:00:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.13,
+              "draw": null,
+              "away": 1.662
+            },
+            "spreads": {
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": null,
+                "home": 1.374,
+                "away": 2.83,
+                "max": null
+              }
+            },
+            "totals": {
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": null,
+                "over": 1.943,
+                "under": 1.8,
+                "max": null
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": true,
+              "open_total": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

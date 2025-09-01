@@ -1,0 +1,152 @@
+{
+  "timestamp": "2025-09-01T08:39:39.606593",
+  "data": {
+    "sport_id": 10,
+    "sport_name": "E Sports",
+    "last": 1756683406,
+    "last_call": 1756683406,
+    "events": [
+      {
+        "event_id": 1614508321,
+        "sport_id": 10,
+        "league_id": 228002,
+        "league_name": "CS2 - ESL Challenger League North America",
+        "starts": "2025-09-01T01:15:00",
+        "last": 1756682368,
+        "home": "NRG",
+        "away": "BLUEJAYS",
+        "event_type": "prematch",
+        "live_status_id": null,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "home_team_type": "Team1",
+        "periods": {
+          "num_1": {
+            "line_id": null,
+            "number": 1,
+            "description": "Map 1",
+            "cutoff": "2025-09-01T06:15:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.5,
+              "draw": null,
+              "away": 2.45
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_2": {
+            "line_id": null,
+            "number": 2,
+            "description": "Map 2",
+            "cutoff": "2025-09-01T06:15:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.469,
+              "draw": null,
+              "away": 2.53
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 2,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": null,
+            "number": 3,
+            "description": "Map 3",
+            "cutoff": "2025-09-01T06:15:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.529,
+              "draw": null,
+              "away": 2.38
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": false,
+              "open_total": false,
+              "open_team_total": false
+            }
+          },
+          "num_0": {
+            "line_id": null,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T06:15:00Z",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.384,
+              "draw": null,
+              "away": 2.8
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.19,
+                "away": 1.625,
+                "max": null
+              }
+            },
+            "totals": {
+              "2.5": {
+                "points": 2.5,
+                "alt_line_id": null,
+                "over": 2.13,
+                "under": 1.662,
+                "max": null
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": null,
+              "max_spread": null,
+              "max_total": null,
+              "max_team_total": null,
+              "open_money_line": true,
+              "open_spread": true,
+              "open_total": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

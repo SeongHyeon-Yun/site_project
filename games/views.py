@@ -11,20 +11,40 @@ from .casino_fun import (
     get_slot_page,
     bacara_money,
 )
+from accounts.models import Leagues
+
+# 스포츠 종목 리스트
+def game_base(request, template_name):
+    sport_type = request.GET.get("type", "1")
+    type_list = {
+        "1": "축구",
+        "3": "농구",
+        "4": "하키",
+        "5": "배구",
+        "7": "미식축구",
+        "9": "야구",
+        "10": "E스포츠"
+    }
+
+    leagues = Leagues.objects.count()
+    print(leagues)
+
+    context = {"type_list": type_list, "sport_type": sport_type}
+    return render(request, template_name, context)
 
 
 # 스포츠 크로스
 @never_cache
 @login_required(login_url="recoards:login")
 def sport(request):
-    return render(request, "games/sport.html")
+    return game_base(request, "games/sport.html")
 
 
 # 스포츠 스페셜
 @never_cache
 @login_required(login_url="recoards:login")
 def special(request):
-    return render(request, "games/special.html")
+    return game_base(request, "games/special.html")
 
 
 # 카지노 벤더 리스트

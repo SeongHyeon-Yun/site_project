@@ -1,4 +1,136 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'GmarketSansMedium', "Malgun Gothic", sans-serif;
+}
+
 .sport_area {
-    background-color: rgb(255, 145, 0);
-    margin-top: 5px;
+    height: calc(100% - 35px);
+    background-color: #000;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.sport_title {
+    display: inline-block;
+    padding: 10px;
+}
+
+.sport_info {
+    width: 100%;
+    background-color: #191919;
+    position: relative;
+
+}
+
+.sport_info .time {
+    background: #1e2428;
+    position: absolute;
+    z-index: 10;
+    top: -12px;
+    left: 4px;
+    font-size: 12px;
+    padding: 4px 9px;
+}
+
+.sport_info .game_info {
+    width: 100%;
+    background-color: #191919;
+    border: 2px solid #222733;
+    position: relative;
+    padding: 15px 2px 5px 2px;
+    margin: 5px 0 4px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sport_info .game_info>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.game {
+    background: #1b1f20;
+    border-radius: 3px;
+    border: 1px solid #2d353c;
+    border-color: #2d353c #000 #000 #2d353c;
+    color: #a2adbd;
+    text-align: center;
+}
+
+.game.home,
+.game.away {
+    width: 350px;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game span {
+    display: inline-block;
+    padding: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.sport_odd {
+    width: 45px;
+    position: relative;
+}
+
+.red {
+    position: absolute;
+    right: 32px;
+    color: red;
+    font-weight: 400;
+}
+
+.up {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: rgb(67, 67, 255);
+    font-weight: 400;
+}
+
+.red.green,
+.up.green {
+    color: rgb(2, 255, 2);
+}
+
+@media (max-width:500px) {
+
+    .sport_list {
+        font-size: 10px;
+    }
+
+    .game.home,
+    .game.away {
+        width: 130px;
+    }
+
+    .red {
+        position: absolute;
+        left: 2px;
+        color: red;
+        font-weight: 400;
+    }
+
+    .up {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        color: rgb(67, 67, 255);
+        font-weight: 400;
+    }
 }

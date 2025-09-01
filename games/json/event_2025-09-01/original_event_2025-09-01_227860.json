@@ -1,0 +1,251 @@
+{
+  "timestamp": "2025-09-01T07:49:38.529116",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680571,
+    "last_call": 1756680577,
+    "events": [
+      {
+        "event_id": 1614497562,
+        "sport_id": 1,
+        "league_id": 227860,
+        "league_name": "Italy - Serie C Group C Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680561,
+        "home": "Benevento (Corners)",
+        "away": "Casertana (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614107177,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238065915,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237992976,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876261,
+            "settled_at": "2025-08-31T20:58:08Z",
+            "team_1_score": 5,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875533,
+            "settled_at": "2025-08-31T19:50:58Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614497561,
+        "sport_id": 1,
+        "league_id": 227860,
+        "league_name": "Italy - Serie C Group C Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680561,
+        "home": "Siracusa (Corners)",
+        "away": "Monopoli (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614105924,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238065681,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237993397,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876237,
+            "settled_at": "2025-08-31T20:57:44Z",
+            "team_1_score": 6,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875538,
+            "settled_at": "2025-08-31T19:51:16Z",
+            "team_1_score": 3,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614497560,
+        "sport_id": 1,
+        "league_id": 227860,
+        "league_name": "Italy - Serie C Group C Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680561,
+        "home": "Cosenza (Corners)",
+        "away": "Salernitana (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614103664,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238068226,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237997150,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_total": 100.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876308,
+            "settled_at": "2025-08-31T21:01:51Z",
+            "team_1_score": 4,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875610,
+            "settled_at": "2025-08-31T19:53:56Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

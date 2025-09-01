@@ -1,0 +1,672 @@
+{
+  "timestamp": "2025-09-01T08:36:30.243586",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683384,
+    "last_call": 1756683384,
+    "events": [
+      {
+        "event_id": 1614272945,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756683368,
+        "home": "Santos (Corners)",
+        "away": "Fluminense (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613974268,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238069444,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237995924,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876349,
+            "settled_at": "2025-08-31T21:03:38Z",
+            "team_1_score": 6,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875593,
+            "settled_at": "2025-08-31T19:53:04Z",
+            "team_1_score": 3,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614274093,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756683368,
+        "home": "Flamengo (Corners)",
+        "away": "Gremio (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613981100,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238065489,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237992481,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876228,
+            "settled_at": "2025-08-31T20:57:29Z",
+            "team_1_score": 13,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875524,
+            "settled_at": "2025-08-31T19:50:37Z",
+            "team_1_score": 7,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614280881,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T21:30:00",
+        "last": 1756683368,
+        "home": "Mirassol (Corners)",
+        "away": "Bahia (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613985575,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238162997,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238123818,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877158,
+            "settled_at": "2025-08-31T23:19:52Z",
+            "team_1_score": 4,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876832,
+            "settled_at": "2025-08-31T22:17:51Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614281841,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T21:30:00",
+        "last": 1756683368,
+        "home": "Vitoria (Corners)",
+        "away": "Atletico Mineiro (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613978140,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238170916,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false,
+              "max_team_total": 200.0
+            }
+          },
+          "num_1": {
+            "line_id": 3238126681,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877249,
+            "settled_at": "2025-08-31T23:32:22Z",
+            "team_1_score": 2,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876849,
+            "settled_at": "2025-08-31T22:21:38Z",
+            "team_1_score": 0,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614280895,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T21:30:00",
+        "last": 1756683368,
+        "home": "Corinthians (Corners)",
+        "away": "Palmeiras (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613978139,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238170693,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false,
+              "max_team_total": 200.0
+            }
+          },
+          "num_1": {
+            "line_id": 3238128081,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:30:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877238,
+            "settled_at": "2025-08-31T23:32:03Z",
+            "team_1_score": 3,
+            "team_2_score": 10,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876873,
+            "settled_at": "2025-08-31T22:23:48Z",
+            "team_1_score": 1,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614286858,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T23:30:00",
+        "last": 1756682844,
+        "home": "Internacional (Corners)",
+        "away": "Fortaleza (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614003767,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238167687,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T23:30:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 1.862,
+                "away": 1.917,
+                "max": 375.0
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50538141911,
+                "home": 2.17,
+                "away": 1.625,
+                "max": 375
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50538141912,
+                "home": 2.02,
+                "away": 1.746,
+                "max": 375
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50538141913,
+                "home": 1.657,
+                "away": 2.15,
+                "max": 375
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50538141914,
+                "home": 1.523,
+                "away": 2.37,
+                "max": 375
+              }
+            },
+            "totals": {
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": null,
+                "over": 1.806,
+                "under": 2.0,
+                "max": 750.0
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50538141921,
+                "over": 1.434,
+                "under": 2.67,
+                "max": 750
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50538141922,
+                "over": 1.628,
+                "under": 2.23,
+                "max": 750
+              },
+              "10.5": {
+                "points": 10.5,
+                "alt_line_id": 50538141923,
+                "over": 2.02,
+                "under": 1.775,
+                "max": 750
+              },
+              "11.0": {
+                "points": 11.0,
+                "alt_line_id": 50538141924,
+                "over": 2.31,
+                "under": 1.578,
+                "max": 750
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 5.5,
+                "over": 1.694,
+                "under": 2.11
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.675,
+                "under": 2.13
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238162660,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T23:30:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": null,
+                "home": 2.01,
+                "away": 1.775,
+                "max": 200.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50538045766,
+                "home": 2.33,
+                "away": 1.552,
+                "max": 200
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50538045767,
+                "home": 1.704,
+                "away": 2.07,
+                "max": 200
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.775,
+                "under": 2.0,
+                "max": 375.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50538045803,
+                "over": 1.507,
+                "under": 2.43,
+                "max": 375
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50538045806,
+                "over": 2.05,
+                "under": 1.719,
+                "max": 375
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614287245,
+        "sport_id": 1,
+        "league_id": 6310,
+        "league_name": "Brazil - Serie A Corners",
+        "starts": "2025-08-31T23:30:00",
+        "last": 1756682988,
+        "home": "Sport Recife (Corners)",
+        "away": "Vasco da Gama (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614003766,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238169063,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T23:28:43",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238169064,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T23:28:43",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

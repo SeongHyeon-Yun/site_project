@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-09-01T07:49:24.274206",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680559,
+    "last_call": 1756680559,
+    "events": [
+      {
+        "event_id": 1613978121,
+        "sport_id": 1,
+        "league_id": 2366,
+        "league_name": "Peru - Liga 1",
+        "starts": "2025-08-31T20:00:00",
+        "last": 1756680500,
+        "home": "Atletico Grau",
+        "away": "Asociacion Deportiva Tarma",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238112595,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 1250.0,
+              "max_spread": 1500.0,
+              "max_total": 1250.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238062023,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_money_line": 500.0,
+              "max_spread": 500.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876783,
+            "settled_at": "2025-08-31T22:01:30Z",
+            "team_1_score": 2,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876155,
+            "settled_at": "2025-08-31T20:52:30Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "timestamp": "2025-09-01T08:36:20.215697",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756683378,
+    "last_call": 1756683378,
+    "events": [
+      {
+        "event_id": 1614382417,
+        "sport_id": 1,
+        "league_id": 205940,
+        "league_name": "North America - Leagues Cup Corners",
+        "starts": "2025-08-31T21:00:00",
+        "last": 1756683368,
+        "home": "Los Angeles Galaxy (Corners)",
+        "away": "Orlando City (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614247391,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238158081,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T21:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 250.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238112594,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T21:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877124,
+            "settled_at": "2025-08-31T23:12:42Z",
+            "team_1_score": 5,
+            "team_2_score": 7,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876775,
+            "settled_at": "2025-08-31T22:01:27Z",
+            "team_1_score": 0,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614383587,
+        "sport_id": 1,
+        "league_id": 205940,
+        "league_name": "North America - Leagues Cup Corners",
+        "starts": "2025-09-01T00:00:00",
+        "last": 1756683378,
+        "home": "Seattle Sounders (Corners)",
+        "away": "Inter Miami (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614247127,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238171591,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T00:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": null,
+                "home": 1.826,
+                "away": 1.909,
+                "max": 250.0
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50538215578,
+                "home": 2.25,
+                "away": 1.568,
+                "max": 250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50538215582,
+                "home": 2.03,
+                "away": 1.704,
+                "max": 250
+              },
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": 50538215586,
+                "home": 1.636,
+                "away": 2.13,
+                "max": 250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50538215590,
+                "home": 1.52,
+                "away": 2.35,
+                "max": 250
+              }
+            },
+            "totals": {
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": null,
+                "over": 1.826,
+                "under": 1.99,
+                "max": 500.0
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50538215579,
+                "over": 1.454,
+                "under": 2.68,
+                "max": 500
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50538215583,
+                "over": 1.645,
+                "under": 2.23,
+                "max": 500
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50538215587,
+                "over": 2.05,
+                "under": 1.763,
+                "max": 500
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50538215591,
+                "over": 2.37,
+                "under": 1.571,
+                "max": 500
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.729,
+                "under": 2.01
+              },
+              "away": {
+                "points": 4.5,
+                "over": 2.1,
+                "under": 1.657
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_spread": 250.0,
+              "max_total": 500.0,
+              "max_team_total": 125.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238173310,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T00:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.704,
+                "away": 2.04,
+                "max": 125.0
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50538247310,
+                "home": 2.05,
+                "away": 1.694,
+                "max": 125
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50538247311,
+                "home": 1.485,
+                "away": 2.43,
+                "max": 125
+              }
+            },
+            "totals": {
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": null,
+                "over": 1.819,
+                "under": 1.909,
+                "max": 250.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50538247316,
+                "over": 1.558,
+                "under": 2.27,
+                "max": 250
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50538247317,
+                "over": 2.17,
+                "under": 1.617,
+                "max": 250
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 125.0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "timestamp": "2025-09-01T07:51:00.723839",
+  "data": {
+    "sport_id": 1,
+    "sport_name": "Soccer",
+    "last": 1756680655,
+    "last_call": 1756680655,
+    "events": [
+      {
+        "event_id": 1614255449,
+        "sport_id": 1,
+        "league_id": 5896,
+        "league_name": "Italy - Serie B Corners",
+        "starts": "2025-08-31T17:00:00",
+        "last": 1756680622,
+        "home": "Carrarese (Corners)",
+        "away": "Padova (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613973456,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3237635573,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237770282,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21874815,
+            "settled_at": "2025-08-31T18:58:04Z",
+            "team_1_score": 4,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21873933,
+            "settled_at": "2025-08-31T17:51:07Z",
+            "team_1_score": 2,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614255575,
+        "sport_id": 1,
+        "league_id": 5896,
+        "league_name": "Italy - Serie B Corners",
+        "starts": "2025-08-31T17:00:00",
+        "last": 1756680622,
+        "home": "Sudtirol (Corners)",
+        "away": "Sampdoria (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613974237,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3237878601,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237766929,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21874740,
+            "settled_at": "2025-08-31T18:53:37Z",
+            "team_1_score": 2,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21873883,
+            "settled_at": "2025-08-31T17:49:06Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614273173,
+        "sport_id": 1,
+        "league_id": 5896,
+        "league_name": "Italy - Serie B Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680622,
+        "home": "Modena (Corners)",
+        "away": "Avellino (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613981095,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238067367,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237995025,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876286,
+            "settled_at": "2025-08-31T21:00:25Z",
+            "team_1_score": 7,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875578,
+            "settled_at": "2025-08-31T19:52:23Z",
+            "team_1_score": 1,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614273158,
+        "sport_id": 1,
+        "league_id": 5896,
+        "league_name": "Italy - Serie B Corners",
+        "starts": "2025-08-31T19:00:00",
+        "last": 1756680622,
+        "home": "Bari (Corners)",
+        "away": "Monza (Corners)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1613981096,
+        "resulting_unit": "Corners",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238064235,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 375.0,
+              "max_total": 750.0,
+              "max_team_total": 200.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237989847,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:00:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 200.0,
+              "max_total": 375.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876197,
+            "settled_at": "2025-08-31T20:55:24Z",
+            "team_1_score": 3,
+            "team_2_score": 6,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875482,
+            "settled_at": "2025-08-31T19:48:50Z",
+            "team_1_score": 1,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          }
+        ]
+      }
+    ]
+  }
+}

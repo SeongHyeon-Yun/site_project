@@ -1,0 +1,5116 @@
+{
+  "timestamp": "2025-09-01T08:39:08.590642",
+  "data": {
+    "sport_id": 9,
+    "sport_name": "Baseball",
+    "last": 1756683493,
+    "last_call": 1756683546,
+    "events": [
+      {
+        "event_id": 1614056644,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:35:00",
+        "last": 1756683434,
+        "home": "Boston Red Sox",
+        "away": "Pittsburgh Pirates",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238012643,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237894704,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237769934,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875830,
+            "settled_at": "2025-08-31T20:09:06Z",
+            "team_1_score": 2,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21874894,
+            "settled_at": "2025-08-31T19:02:55Z",
+            "team_1_score": 1,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21873931,
+            "settled_at": "2025-08-31T17:50:57Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064432,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:35:00",
+        "last": 1756683434,
+        "home": "Washington Nationals",
+        "away": "Tampa Bay Rays",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238005918,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237886857,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237765602,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875762,
+            "settled_at": "2025-08-31T20:02:38Z",
+            "team_1_score": 7,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21874834,
+            "settled_at": "2025-08-31T18:59:01Z",
+            "team_1_score": 7,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21873876,
+            "settled_at": "2025-08-31T17:48:19Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064433,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:37:00",
+        "last": 1756683434,
+        "home": "Toronto Blue Jays",
+        "away": "Milwaukee Brewers",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238034944,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:37:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 20000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237947462,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:37:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237784814,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T17:37:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875941,
+            "settled_at": "2025-08-31T20:25:56Z",
+            "team_1_score": 4,
+            "team_2_score": 8,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875224,
+            "settled_at": "2025-08-31T19:26:46Z",
+            "team_1_score": 4,
+            "team_2_score": 8,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874154,
+            "settled_at": "2025-08-31T18:01:41Z",
+            "team_1_score": 2,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064436,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:40:00",
+        "last": 1756683434,
+        "home": "New York Mets",
+        "away": "Miami Marlins",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238033971,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237913506,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237786666,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875934,
+            "settled_at": "2025-08-31T20:25:12Z",
+            "team_1_score": 5,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21874985,
+            "settled_at": "2025-08-31T19:11:19Z",
+            "team_1_score": 5,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874184,
+            "settled_at": "2025-08-31T18:02:58Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614057771,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:40:00",
+        "last": 1756683434,
+        "home": "Cleveland Guardians",
+        "away": "Seattle Mariners",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238011375,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237886333,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237782703,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875822,
+            "settled_at": "2025-08-31T20:07:58Z",
+            "team_1_score": 4,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21874829,
+            "settled_at": "2025-08-31T18:58:41Z",
+            "team_1_score": 2,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874132,
+            "settled_at": "2025-08-31T18:00:17Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614057782,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Houston Astros",
+        "away": "Los Angeles Angels",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238063746,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237960451,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237841499,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876191,
+            "settled_at": "2025-08-31T20:55:17Z",
+            "team_1_score": 3,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875327,
+            "settled_at": "2025-08-31T19:33:50Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874524,
+            "settled_at": "2025-08-31T18:35:14Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059006,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Chicago White Sox",
+        "away": "New York Yankees",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238055759,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237963848,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237827055,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876122,
+            "settled_at": "2025-08-31T20:46:36Z",
+            "team_1_score": 2,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875357,
+            "settled_at": "2025-08-31T19:35:36Z",
+            "team_1_score": 2,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874454,
+            "settled_at": "2025-08-31T18:27:53Z",
+            "team_1_score": 1,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064442,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Kansas City Royals",
+        "away": "Detroit Tigers",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238050301,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3237954454,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237823949,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876091,
+            "settled_at": "2025-08-31T20:40:45Z",
+            "team_1_score": 5,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21875270,
+            "settled_at": "2025-08-31T19:30:31Z",
+            "team_1_score": 4,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21874430,
+            "settled_at": "2025-08-31T18:25:48Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059014,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T19:10:00",
+        "last": 1756683434,
+        "home": "Colorado Rockies",
+        "away": "Chicago Cubs",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238105670,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T19:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 10000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238040962,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T19:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3237941635,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T19:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876690,
+            "settled_at": "2025-08-31T21:49:58Z",
+            "team_1_score": 5,
+            "team_2_score": 6,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876010,
+            "settled_at": "2025-08-31T20:31:10Z",
+            "team_1_score": 2,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21875181,
+            "settled_at": "2025-08-31T19:23:45Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059026,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:05:00",
+        "last": 1756683434,
+        "home": "Athletics",
+        "away": "Texas Rangers",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238158882,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 15000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238093878,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3238037941,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877137,
+            "settled_at": "2025-08-31T23:14:02Z",
+            "team_1_score": 9,
+            "team_2_score": 6,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876560,
+            "settled_at": "2025-08-31T21:33:50Z",
+            "team_1_score": 5,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21875979,
+            "settled_at": "2025-08-31T20:28:09Z",
+            "team_1_score": 2,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059027,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:05:00",
+        "last": 1756683434,
+        "home": "San Francisco Giants",
+        "away": "Baltimore Orioles",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238163590,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 20000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238114993,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3238038404,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877174,
+            "settled_at": "2025-08-31T23:21:02Z",
+            "team_1_score": 2,
+            "team_2_score": 13,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876806,
+            "settled_at": "2025-08-31T22:05:09Z",
+            "team_1_score": 0,
+            "team_2_score": 7,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21875987,
+            "settled_at": "2025-08-31T20:28:37Z",
+            "team_1_score": 0,
+            "team_2_score": 1,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614059037,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:10:00",
+        "last": 1756683434,
+        "home": "Los Angeles Dodgers",
+        "away": "Arizona Diamondbacks",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238137519,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 10000.0,
+              "max_spread": 10000.0,
+              "max_total": 7500.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238099205,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T20:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3238041815,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T20:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876950,
+            "settled_at": "2025-08-31T22:40:02Z",
+            "team_1_score": 4,
+            "team_2_score": 5,
+            "cancellation_reason": null
+          },
+          {
+            "number": 1,
+            "status": 1,
+            "settlement_id": 21876617,
+            "settled_at": "2025-08-31T21:40:33Z",
+            "team_1_score": 1,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          },
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21876016,
+            "settled_at": "2025-08-31T20:32:02Z",
+            "team_1_score": 0,
+            "team_2_score": 2,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614064491,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T23:10:00",
+        "last": 1756683434,
+        "home": "Philadelphia Phillies",
+        "away": "Atlanta Braves",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238156313,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T23:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.641,
+              "draw": null,
+              "away": 2.44
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.32,
+                "away": 1.684,
+                "max": 15000.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537920517,
+                "home": 1.374,
+                "away": 3.15,
+                "max": 9000
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537920518,
+                "home": 1.452,
+                "away": 2.86,
+                "max": 15000
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537920519,
+                "home": 1.9,
+                "away": 1.99,
+                "max": 15000
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537920520,
+                "home": 2.71,
+                "away": 1.51,
+                "max": 15000
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537920521,
+                "home": 2.97,
+                "away": 1.423,
+                "max": 15000
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537920522,
+                "home": 3.6,
+                "away": 1.299,
+                "max": 9000
+              }
+            },
+            "totals": {
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": null,
+                "over": 2.0,
+                "under": 1.892,
+                "max": 10000.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537920524,
+                "over": 1.231,
+                "under": 4.21,
+                "max": 3325
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537920525,
+                "over": 1.581,
+                "under": 2.51,
+                "max": 10000
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537920526,
+                "over": 1.662,
+                "under": 2.33,
+                "max": 10000
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50537920527,
+                "over": 1.793,
+                "under": 2.12,
+                "max": 10000
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537920528,
+                "over": 2.23,
+                "under": 1.719,
+                "max": 10000
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537920529,
+                "over": 2.48,
+                "under": 1.591,
+                "max": 10000
+              },
+              "10.5": {
+                "points": 10.5,
+                "alt_line_id": 50537920530,
+                "over": 2.67,
+                "under": 1.523,
+                "max": 10000
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537920531,
+                "over": 4.12,
+                "under": 1.24,
+                "max": 3325
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.884,
+                "under": 1.97
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.781,
+                "under": 2.09
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 20000.0,
+              "max_spread": 15000.0,
+              "max_total": 10000.0,
+              "max_team_total": 2000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_1": {
+            "line_id": 3238156164,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-08-31T23:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.632,
+                "away": 2.37,
+                "max": 5000.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537917401,
+                "home": 1.306,
+                "away": 3.48,
+                "max": 5000
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537917402,
+                "home": 1.48,
+                "away": 2.73,
+                "max": 5000
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537917403,
+                "home": 1.9,
+                "away": 1.952,
+                "max": 5000
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537917404,
+                "home": 2.24,
+                "away": 1.675,
+                "max": 5000
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.98,
+                "under": 1.884,
+                "max": 3750.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537917407,
+                "over": 1.558,
+                "under": 2.54,
+                "max": 3750
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537917408,
+                "over": 1.719,
+                "under": 2.21,
+                "max": 3750
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537917409,
+                "over": 2.27,
+                "under": 1.684,
+                "max": 3750
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537917410,
+                "over": 2.53,
+                "under": 1.558,
+                "max": 3750
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.08,
+                "under": 1.757
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.8,
+                "under": 2.03
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 5000.0,
+              "max_total": 3750.0,
+              "max_team_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          },
+          "num_3": {
+            "line_id": 3238166796,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-08-31T23:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 1000.0,
+              "max_spread": 1000.0,
+              "max_total": 1000.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 3,
+            "status": 1,
+            "settlement_id": 21877205,
+            "settled_at": "2025-08-31T23:25:54Z",
+            "team_1_score": 0,
+            "team_2_score": 0,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614103633,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T17:10:00",
+        "last": 1756682460,
+        "home": "Detroit Tigers",
+        "away": "New York Mets",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133216,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.97,
+              "draw": null,
+              "away": 1.934
+            },
+            "spreads": {
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": null,
+                "home": 1.584,
+                "away": 2.5,
+                "max": 2500.0
+              },
+              "3.0": {
+                "hdp": 3.0,
+                "alt_line_id": 50537448565,
+                "home": 1.244,
+                "away": 3.98,
+                "max": 2500
+              },
+              "2.5": {
+                "hdp": 2.5,
+                "alt_line_id": 50537448566,
+                "home": 1.355,
+                "away": 3.25,
+                "max": 2500
+              },
+              "2.0": {
+                "hdp": 2.0,
+                "alt_line_id": 50537448567,
+                "home": 1.421,
+                "away": 2.98,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537448568,
+                "home": 1.724,
+                "away": 2.2,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537448569,
+                "home": 2.44,
+                "away": 1.588,
+                "max": 2500
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537448570,
+                "home": 2.87,
+                "away": 1.429,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": null,
+                "over": 1.877,
+                "under": 2.0,
+                "max": 1875.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537448572,
+                "over": 1.242,
+                "under": 4.0,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537448573,
+                "over": 1.446,
+                "under": 2.88,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537448574,
+                "over": 1.628,
+                "under": 2.37,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537448575,
+                "over": 1.729,
+                "under": 2.19,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537448576,
+                "over": 2.1,
+                "under": 1.793,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537448577,
+                "over": 2.34,
+                "under": 1.645,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537448578,
+                "over": 2.6,
+                "under": 1.534,
+                "max": 1875
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537448579,
+                "over": 4.21,
+                "under": 1.222,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 2.19,
+                "under": 1.699
+              },
+              "away": {
+                "points": 4.5,
+                "over": 2.04,
+                "under": 1.806
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238132356,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.862,
+                "away": 2.0,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537431337,
+                "home": 1.434,
+                "away": 2.81,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537431338,
+                "home": 1.636,
+                "away": 2.31,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537431339,
+                "home": 2.16,
+                "away": 1.724,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537431340,
+                "home": 2.6,
+                "away": 1.497,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.854,
+                "under": 2.0,
+                "max": 950.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537431347,
+                "over": 1.492,
+                "under": 2.69,
+                "max": 950
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537431348,
+                "over": 1.621,
+                "under": 2.36,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537431349,
+                "over": 2.11,
+                "under": 1.769,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537431350,
+                "over": 2.38,
+                "under": 1.613,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.15,
+                "under": 1.699
+              },
+              "away": {
+                "points": 2.5,
+                "over": 2.24,
+                "under": 1.645
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238132355,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.61,
+              "draw": 1.813,
+              "away": 3.95
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.826,
+                "away": 2.02,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.917,
+                "under": 1.917,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614103634,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T17:10:00",
+        "last": 1756682460,
+        "home": "Cincinnati Reds",
+        "away": "Toronto Blue Jays",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238134270,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.787,
+              "draw": null,
+              "away": 2.15
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.62,
+                "away": 1.537,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537469665,
+                "home": 1.454,
+                "away": 2.77,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537469666,
+                "home": 1.561,
+                "away": 2.5,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537469667,
+                "home": 2.16,
+                "away": 1.751,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537469668,
+                "home": 3.16,
+                "away": 1.383,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537469669,
+                "home": 3.44,
+                "away": 1.323,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537469670,
+                "home": 4.26,
+                "away": 1.218,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": null,
+                "over": 1.869,
+                "under": 2.0,
+                "max": 1875.0
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537469672,
+                "over": 1.144,
+                "under": 5.43,
+                "max": 1875
+              },
+              "6.5": {
+                "points": 6.5,
+                "alt_line_id": 50537469673,
+                "over": 1.446,
+                "under": 2.88,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537469674,
+                "over": 1.546,
+                "under": 2.57,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537469675,
+                "over": 1.746,
+                "under": 2.17,
+                "max": 1875
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50537469676,
+                "over": 2.03,
+                "under": 1.847,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537469677,
+                "over": 2.3,
+                "under": 1.662,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537469678,
+                "over": 2.55,
+                "under": 1.552,
+                "max": 1875
+              },
+              "11.5": {
+                "points": 11.5,
+                "alt_line_id": 50537469679,
+                "over": 3.84,
+                "under": 1.259,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 2.17,
+                "under": 1.714
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.793,
+                "under": 2.06
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238134410,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.709,
+                "away": 2.2,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537472233,
+                "home": 1.323,
+                "away": 3.31,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537472234,
+                "home": 1.515,
+                "away": 2.59,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537472235,
+                "home": 2.02,
+                "away": 1.819,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537472236,
+                "home": 2.45,
+                "away": 1.558,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": null,
+                "over": 1.917,
+                "under": 1.934,
+                "max": 950.0
+              },
+              "3.0": {
+                "points": 3.0,
+                "alt_line_id": 50537472239,
+                "over": 1.46,
+                "under": 2.79,
+                "max": 950
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537472240,
+                "over": 1.704,
+                "under": 2.21,
+                "max": 950
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537472241,
+                "over": 2.2,
+                "under": 1.714,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537472242,
+                "over": 2.58,
+                "under": 1.529,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 1.5,
+                "over": 1.632,
+                "under": 2.26
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.877,
+                "under": 1.925
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238134273,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.67,
+              "draw": 1.724,
+              "away": 4.32
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.751,
+                "away": 2.12,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 2.03,
+                "under": 1.813,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614099549,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T17:35:00",
+        "last": 1756682460,
+        "home": "Boston Red Sox",
+        "away": "Cleveland Guardians",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133188,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T17:35:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.657,
+              "draw": null,
+              "away": 2.37
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.37,
+                "away": 1.645,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537448053,
+                "home": 1.383,
+                "away": 3.06,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537448054,
+                "home": 1.462,
+                "away": 2.78,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537448055,
+                "home": 1.943,
+                "away": 1.925,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537448056,
+                "home": 2.79,
+                "away": 1.471,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537448057,
+                "home": 3.05,
+                "away": 1.395,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537448058,
+                "home": 3.71,
+                "away": 1.275,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": null,
+                "over": 1.917,
+                "under": 1.952,
+                "max": 1875.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537448060,
+                "over": 1.262,
+                "under": 3.82,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537448061,
+                "over": 1.48,
+                "under": 2.76,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537448062,
+                "over": 1.666,
+                "under": 2.3,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537448063,
+                "over": 1.769,
+                "under": 2.13,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537448064,
+                "over": 2.16,
+                "under": 1.751,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537448065,
+                "over": 2.39,
+                "under": 1.621,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537448066,
+                "over": 2.66,
+                "under": 1.512,
+                "max": 1875
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537448067,
+                "over": 4.32,
+                "under": 1.213,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.961,
+                "under": 1.869
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.833,
+                "under": 2.01
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238111914,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T17:35:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.641,
+                "away": 2.33,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537027165,
+                "home": 1.304,
+                "away": 3.43,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537027166,
+                "home": 1.483,
+                "away": 2.68,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537027167,
+                "home": 1.917,
+                "away": 1.917,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537027168,
+                "home": 2.24,
+                "away": 1.657,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.909,
+                "under": 1.943,
+                "max": 950.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537027171,
+                "over": 1.54,
+                "under": 2.55,
+                "max": 950
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537027172,
+                "over": 1.675,
+                "under": 2.26,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537027173,
+                "over": 2.2,
+                "under": 1.714,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537027174,
+                "over": 2.48,
+                "under": 1.568,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.03,
+                "under": 1.787
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.806,
+                "under": 2.01
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238111845,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T17:35:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.4,
+              "draw": 1.8,
+              "away": 4.31
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.689,
+                "away": 2.21,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.9,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614105920,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T18:10:00",
+        "last": 1756682460,
+        "home": "Houston Astros",
+        "away": "Los Angeles Angels",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133233,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T18:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.719,
+              "draw": null,
+              "away": 2.26
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.49,
+                "away": 1.591,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537448929,
+                "home": 1.408,
+                "away": 2.95,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537448930,
+                "home": 1.502,
+                "away": 2.66,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537448931,
+                "home": 2.04,
+                "away": 1.84,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537448932,
+                "home": 2.97,
+                "away": 1.425,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537448933,
+                "home": 3.23,
+                "away": 1.358,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537448934,
+                "home": 3.98,
+                "away": 1.245,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": null,
+                "over": 1.98,
+                "under": 1.884,
+                "max": 1875.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537448940,
+                "over": 1.281,
+                "under": 3.66,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537448941,
+                "over": 1.518,
+                "under": 2.64,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537448942,
+                "over": 1.714,
+                "under": 2.22,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537448943,
+                "over": 1.833,
+                "under": 2.05,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537448944,
+                "over": 2.25,
+                "under": 1.689,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537448945,
+                "over": 2.51,
+                "under": 1.571,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537448946,
+                "over": 2.81,
+                "under": 1.465,
+                "max": 1875
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537448948,
+                "over": 4.64,
+                "under": 1.189,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 2.07,
+                "under": 1.781
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.826,
+                "under": 2.02
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238113534,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T18:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.746,
+                "away": 2.14,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537057839,
+                "home": 1.361,
+                "away": 3.11,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537057840,
+                "home": 1.555,
+                "away": 2.48,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537057841,
+                "home": 2.04,
+                "away": 1.813,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537057842,
+                "home": 2.41,
+                "away": 1.574,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.909,
+                "under": 1.943,
+                "max": 950.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537057851,
+                "over": 1.531,
+                "under": 2.57,
+                "max": 950
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537057852,
+                "over": 1.671,
+                "under": 2.26,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537057853,
+                "over": 2.19,
+                "under": 1.714,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537057854,
+                "over": 2.46,
+                "under": 1.574,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.1,
+                "under": 1.735
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.719,
+                "under": 2.12
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238113435,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T18:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.5,
+              "draw": 1.8,
+              "away": 4.15
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.746,
+                "away": 2.12,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.9,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614103660,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T18:15:00",
+        "last": 1756682460,
+        "home": "St. Louis Cardinals",
+        "away": "Athletics",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133221,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T18:15:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.714,
+              "draw": null,
+              "away": 2.26
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.51,
+                "away": 1.581,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537448677,
+                "home": 1.4,
+                "away": 2.98,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537448678,
+                "home": 1.495,
+                "away": 2.68,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537448679,
+                "home": 2.05,
+                "away": 1.833,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537448680,
+                "home": 3.01,
+                "away": 1.414,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537448681,
+                "home": 3.29,
+                "away": 1.348,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537448682,
+                "home": 4.08,
+                "away": 1.234,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": null,
+                "over": 1.99,
+                "under": 1.884,
+                "max": 1875.0
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537448684,
+                "over": 1.162,
+                "under": 5.08,
+                "max": 1875
+              },
+              "6.5": {
+                "points": 6.5,
+                "alt_line_id": 50537448685,
+                "over": 1.5,
+                "under": 2.7,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537448686,
+                "over": 1.617,
+                "under": 2.4,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537448687,
+                "over": 1.833,
+                "under": 2.04,
+                "max": 1875
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50537448688,
+                "over": 2.15,
+                "under": 1.757,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537448689,
+                "over": 2.5,
+                "under": 1.574,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537448690,
+                "over": 2.77,
+                "under": 1.48,
+                "max": 1875
+              },
+              "11.5": {
+                "points": 11.5,
+                "alt_line_id": 50537448691,
+                "over": 4.31,
+                "under": 1.213,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 2.2,
+                "under": 1.699
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.925,
+                "under": 1.909
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238110990,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T18:15:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.694,
+                "away": 2.23,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537009841,
+                "home": 1.327,
+                "away": 3.29,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537009842,
+                "home": 1.512,
+                "away": 2.59,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537009843,
+                "home": 1.99,
+                "away": 1.854,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537009844,
+                "home": 2.36,
+                "away": 1.595,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 2.04,
+                "under": 1.826,
+                "max": 950.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537009847,
+                "over": 1.591,
+                "under": 2.43,
+                "max": 950
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537009848,
+                "over": 1.769,
+                "under": 2.11,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537009849,
+                "over": 2.36,
+                "under": 1.621,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537009850,
+                "over": 2.64,
+                "under": 1.507,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.15,
+                "under": 1.699
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.8,
+                "under": 2.01
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238110926,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T18:15:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.51,
+              "draw": 1.763,
+              "away": 4.32
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.714,
+                "away": 2.17,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.98,
+                "under": 1.862,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614105933,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T20:05:00",
+        "last": 1756682460,
+        "home": "Chicago Cubs",
+        "away": "Atlanta Braves",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238107562,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T20:05:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.826,
+              "draw": null,
+              "away": 2.1
+            },
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "open_money_line": true,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614103679,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T20:10:00",
+        "last": 1756682460,
+        "home": "Milwaukee Brewers",
+        "away": "Philadelphia Phillies",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238153983,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T20:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.632,
+              "draw": null,
+              "away": 2.42
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.3,
+                "away": 1.68,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537873469,
+                "home": 1.364,
+                "away": 3.14,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537873470,
+                "home": 1.44,
+                "away": 2.86,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537873471,
+                "home": 1.892,
+                "away": 1.98,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537873472,
+                "home": 2.69,
+                "away": 1.502,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537873473,
+                "home": 2.95,
+                "away": 1.418,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537873474,
+                "home": 3.56,
+                "away": 1.294,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": null,
+                "over": 1.847,
+                "under": 2.03,
+                "max": 1875.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537873476,
+                "over": 1.232,
+                "under": 4.11,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537873477,
+                "over": 1.429,
+                "under": 2.95,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537873478,
+                "over": 1.609,
+                "under": 2.42,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537873479,
+                "over": 1.704,
+                "under": 2.23,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537873480,
+                "over": 2.07,
+                "under": 1.819,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537873481,
+                "over": 2.3,
+                "under": 1.666,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537873482,
+                "over": 2.54,
+                "under": 1.555,
+                "max": 1875
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537873483,
+                "over": 4.09,
+                "under": 1.233,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.877,
+                "under": 1.961
+              },
+              "away": {
+                "points": 3.5,
+                "over": 1.8,
+                "under": 2.05
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238153985,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T20:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.628,
+                "away": 2.35,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537873501,
+                "home": 1.311,
+                "away": 3.39,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537873502,
+                "home": 1.48,
+                "away": 2.69,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537873503,
+                "home": 1.884,
+                "away": 1.952,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537873504,
+                "home": 2.18,
+                "away": 1.694,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": null,
+                "over": 2.01,
+                "under": 1.847,
+                "max": 950.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537873515,
+                "over": 1.568,
+                "under": 2.48,
+                "max": 950
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537873516,
+                "over": 1.787,
+                "under": 2.09,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537873517,
+                "over": 2.27,
+                "under": 1.671,
+                "max": 950
+              },
+              "6.0": {
+                "points": 6.0,
+                "alt_line_id": 50537873518,
+                "over": 2.67,
+                "under": 1.497,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 1.9,
+                "under": 1.9
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.714,
+                "under": 2.13
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238153986,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T20:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.33,
+              "draw": 1.819,
+              "away": 4.29
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.675,
+                "away": 2.23,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.909,
+                "under": 1.925,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614112271,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T23:35:00",
+        "last": 1756682460,
+        "home": "Tampa Bay Rays",
+        "away": "Seattle Mariners",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238157017,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T23:35:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 2.02,
+              "draw": null,
+              "away": 1.892
+            },
+            "spreads": {
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": null,
+                "home": 1.598,
+                "away": 2.47,
+                "max": 2500.0
+              },
+              "3.0": {
+                "hdp": 3.0,
+                "alt_line_id": 50537934709,
+                "home": 1.248,
+                "away": 3.95,
+                "max": 2500
+              },
+              "2.5": {
+                "hdp": 2.5,
+                "alt_line_id": 50537934710,
+                "home": 1.363,
+                "away": 3.21,
+                "max": 2500
+              },
+              "2.0": {
+                "hdp": 2.0,
+                "alt_line_id": 50537934711,
+                "home": 1.432,
+                "away": 2.94,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537934712,
+                "home": 1.751,
+                "away": 2.16,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537934713,
+                "home": 2.51,
+                "away": 1.555,
+                "max": 2500
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537934714,
+                "home": 2.95,
+                "away": 1.408,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.934,
+                "max": 1875.0
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537934716,
+                "over": 1.263,
+                "under": 3.81,
+                "max": 1875
+              },
+              "7.0": {
+                "points": 7.0,
+                "alt_line_id": 50537934717,
+                "over": 1.485,
+                "under": 2.75,
+                "max": 1875
+              },
+              "7.5": {
+                "points": 7.5,
+                "alt_line_id": 50537934718,
+                "over": 1.675,
+                "under": 2.29,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537934719,
+                "over": 1.781,
+                "under": 2.11,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537934720,
+                "over": 2.18,
+                "under": 1.735,
+                "max": 1875
+              },
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": 50537934721,
+                "over": 2.43,
+                "under": 1.602,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537934722,
+                "over": 2.72,
+                "under": 1.495,
+                "max": 1875
+              },
+              "12.5": {
+                "points": 12.5,
+                "alt_line_id": 50537934723,
+                "over": 4.48,
+                "under": 1.2,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 3.5,
+                "over": 1.735,
+                "under": 2.14
+              },
+              "away": {
+                "points": 4.5,
+                "over": 2.09,
+                "under": 1.775
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238157021,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-01T23:35:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.99,
+                "away": 1.869,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537934805,
+                "home": 1.492,
+                "away": 2.62,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537934806,
+                "home": 1.714,
+                "away": 2.17,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537934807,
+                "home": 2.3,
+                "away": 1.641,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537934808,
+                "home": 2.8,
+                "away": 1.434,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": null,
+                "over": 1.869,
+                "under": 1.99,
+                "max": 950.0
+              },
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": 50537934815,
+                "over": 1.502,
+                "under": 2.66,
+                "max": 950
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537934816,
+                "over": 1.632,
+                "under": 2.34,
+                "max": 950
+              },
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": 50537934817,
+                "over": 2.12,
+                "under": 1.763,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537934818,
+                "over": 2.39,
+                "under": 1.609,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 2.25,
+                "under": 1.641
+              },
+              "away": {
+                "points": 2.5,
+                "over": 2.17,
+                "under": 1.689
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238157022,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-01T23:35:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.73,
+              "draw": 1.8,
+              "away": 3.87
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.877,
+                "away": 1.961,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.9,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614107265,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-02T00:10:00",
+        "last": 1756682460,
+        "home": "Arizona Diamondbacks",
+        "away": "Texas Rangers",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238133229,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-02T00:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.689,
+              "draw": null,
+              "away": 2.31
+            },
+            "spreads": {
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": null,
+                "home": 2.38,
+                "away": 1.641,
+                "max": 2500.0
+              },
+              "1.5": {
+                "hdp": 1.5,
+                "alt_line_id": 50537448857,
+                "home": 1.413,
+                "away": 2.93,
+                "max": 2500
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537448858,
+                "home": 1.497,
+                "away": 2.67,
+                "max": 2500
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537448859,
+                "home": 1.97,
+                "away": 1.9,
+                "max": 2500
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537448860,
+                "home": 2.78,
+                "away": 1.476,
+                "max": 2500
+              },
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": 50537448861,
+                "home": 3.03,
+                "away": 1.401,
+                "max": 2500
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537448862,
+                "home": 3.64,
+                "away": 1.284,
+                "max": 2500
+              }
+            },
+            "totals": {
+              "9.5": {
+                "points": 9.5,
+                "alt_line_id": null,
+                "over": 1.99,
+                "under": 1.884,
+                "max": 1875.0
+              },
+              "6.5": {
+                "points": 6.5,
+                "alt_line_id": 50537448864,
+                "over": 1.263,
+                "under": 3.81,
+                "max": 1875
+              },
+              "8.0": {
+                "points": 8.0,
+                "alt_line_id": 50537448865,
+                "over": 1.52,
+                "under": 2.64,
+                "max": 1875
+              },
+              "8.5": {
+                "points": 8.5,
+                "alt_line_id": 50537448866,
+                "over": 1.641,
+                "under": 2.35,
+                "max": 1875
+              },
+              "9.0": {
+                "points": 9.0,
+                "alt_line_id": 50537448867,
+                "over": 1.781,
+                "under": 2.11,
+                "max": 1875
+              },
+              "10.0": {
+                "points": 10.0,
+                "alt_line_id": 50537448868,
+                "over": 2.16,
+                "under": 1.751,
+                "max": 1875
+              },
+              "10.5": {
+                "points": 10.5,
+                "alt_line_id": 50537448869,
+                "over": 2.31,
+                "under": 1.657,
+                "max": 1875
+              },
+              "11.0": {
+                "points": 11.0,
+                "alt_line_id": 50537448870,
+                "over": 2.67,
+                "under": 1.51,
+                "max": 1875
+              },
+              "13.5": {
+                "points": 13.5,
+                "alt_line_id": 50537448871,
+                "over": 4.38,
+                "under": 1.208,
+                "max": 1875
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 4.5,
+                "over": 1.757,
+                "under": 2.11
+              },
+              "away": {
+                "points": 4.5,
+                "over": 2.06,
+                "under": 1.793
+              }
+            },
+            "meta": {
+              "number": 0,
+              "max_money_line": 2500.0,
+              "max_spread": 2500.0,
+              "max_total": 1875.0,
+              "max_team_total": 500.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_1": {
+            "line_id": 3238110717,
+            "number": 1,
+            "description": "1st Half",
+            "cutoff": "2025-09-02T00:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.617,
+                "away": 2.37,
+                "max": 1250.0
+              },
+              "1.0": {
+                "hdp": 1.0,
+                "alt_line_id": 50537004638,
+                "home": 1.319,
+                "away": 3.34,
+                "max": 1250
+              },
+              "0.5": {
+                "hdp": 0.5,
+                "alt_line_id": 50537004640,
+                "home": 1.478,
+                "away": 2.69,
+                "max": 1250
+              },
+              "-0.5": {
+                "hdp": -0.5,
+                "alt_line_id": 50537004642,
+                "home": 1.862,
+                "away": 1.98,
+                "max": 1250
+              },
+              "-1.0": {
+                "hdp": -1.0,
+                "alt_line_id": 50537004644,
+                "home": 2.15,
+                "away": 1.719,
+                "max": 1250
+              }
+            },
+            "totals": {
+              "5.0": {
+                "points": 5.0,
+                "alt_line_id": null,
+                "over": 1.884,
+                "under": 1.97,
+                "max": 950.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537004639,
+                "over": 1.49,
+                "under": 2.7,
+                "max": 950
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537004641,
+                "over": 1.694,
+                "under": 2.22,
+                "max": 950
+              },
+              "5.5": {
+                "points": 5.5,
+                "alt_line_id": 50537004643,
+                "over": 2.12,
+                "under": 1.763,
+                "max": 950
+              },
+              "6.0": {
+                "points": 6.0,
+                "alt_line_id": 50537004645,
+                "over": 2.45,
+                "under": 1.581,
+                "max": 950
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 2.5,
+                "over": 1.819,
+                "under": 1.99
+              },
+              "away": {
+                "points": 1.5,
+                "over": 1.641,
+                "under": 2.25
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_spread": 1250.0,
+              "max_total": 950.0,
+              "max_team_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          },
+          "num_3": {
+            "line_id": 3238110718,
+            "number": 3,
+            "description": "1st Inning",
+            "cutoff": "2025-09-02T00:10:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 3.22,
+              "draw": 1.884,
+              "away": 4.17
+            },
+            "spreads": {
+              "0.0": {
+                "hdp": 0.0,
+                "alt_line_id": null,
+                "home": 1.675,
+                "away": 2.24,
+                "max": 250.0
+              }
+            },
+            "totals": {
+              "0.5": {
+                "points": 0.5,
+                "alt_line_id": null,
+                "over": 1.833,
+                "under": 2.01,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 3,
+              "max_money_line": 250.0,
+              "max_spread": 250.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614549993,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T23:10:00",
+        "last": 1756682460,
+        "home": "Philadelphia Phillies  (Hits+Runs+Errors)",
+        "away": "Atlanta Braves  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614064491,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238152158,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T23:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "26.0": {
+                "points": 26.0,
+                "alt_line_id": null,
+                "over": 1.699,
+                "under": 2.22,
+                "max": 500.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614550501,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T19:10:00",
+        "last": 1756683434,
+        "home": "Colorado Rockies  (Hits+Runs+Errors)",
+        "away": "Chicago Cubs  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614059014,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238106456,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T19:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876703,
+            "settled_at": "2025-08-31T21:50:39Z",
+            "team_1_score": 12,
+            "team_2_score": 17,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614550247,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:40:00",
+        "last": 1756683434,
+        "home": "New York Mets  (Hits+Runs+Errors)",
+        "away": "Miami Marlins  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614064436,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238036198,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875949,
+            "settled_at": "2025-08-31T20:26:26Z",
+            "team_1_score": 15,
+            "team_2_score": 7,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614551517,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Kansas City Royals  (Hits+Runs+Errors)",
+        "away": "Detroit Tigers  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614064442,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238052259,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876107,
+            "settled_at": "2025-08-31T20:42:18Z",
+            "team_1_score": 14,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614551263,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Houston Astros  (Hits+Runs+Errors)",
+        "away": "Los Angeles Angels  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614057782,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238065485,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876233,
+            "settled_at": "2025-08-31T20:57:31Z",
+            "team_1_score": 9,
+            "team_2_score": 3,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614551009,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:40:00",
+        "last": 1756683434,
+        "home": "Cleveland Guardians  (Hits+Runs+Errors)",
+        "away": "Seattle Mariners  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614057771,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238014036,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:40:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875833,
+            "settled_at": "2025-08-31T20:09:26Z",
+            "team_1_score": 13,
+            "team_2_score": 4,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614550755,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:10:00",
+        "last": 1756683434,
+        "home": "Los Angeles Dodgers  (Hits+Runs+Errors)",
+        "away": "Arizona Diamondbacks  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614059037,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238139224,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876957,
+            "settled_at": "2025-08-31T22:41:32Z",
+            "team_1_score": 11,
+            "team_2_score": 15,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614552285,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:35:00",
+        "last": 1756682460,
+        "home": "Washington Nationals  (Hits+Runs+Errors)",
+        "away": "Tampa Bay Rays  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614064432,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3237636105,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "27.0": {
+                "points": 27.0,
+                "alt_line_id": null,
+                "over": 2.48,
+                "under": 1.571,
+                "max": 500.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614551774,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T18:10:00",
+        "last": 1756683434,
+        "home": "Chicago White Sox  (Hits+Runs+Errors)",
+        "away": "New York Yankees  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614059006,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238056971,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T18:10:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21876124,
+            "settled_at": "2025-08-31T20:47:02Z",
+            "team_1_score": 8,
+            "team_2_score": 9,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614552031,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:05:00",
+        "last": 1756683434,
+        "home": "Athletics  (Hits+Runs+Errors)",
+        "away": "Texas Rangers  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614059026,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238160457,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877144,
+            "settled_at": "2025-08-31T23:15:38Z",
+            "team_1_score": 18,
+            "team_2_score": 17,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614552796,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:37:00",
+        "last": 1756683434,
+        "home": "Toronto Blue Jays  (Hits+Runs+Errors)",
+        "away": "Milwaukee Brewers  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614064433,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238037020,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:37:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875956,
+            "settled_at": "2025-08-31T20:27:14Z",
+            "team_1_score": 18,
+            "team_2_score": 23,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614553050,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T20:05:00",
+        "last": 1756683434,
+        "home": "San Francisco Giants  (Hits+Runs+Errors)",
+        "away": "Baltimore Orioles  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614059027,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238164892,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T20:05:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21877177,
+            "settled_at": "2025-08-31T23:22:38Z",
+            "team_1_score": 15,
+            "team_2_score": 29,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614552539,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-08-31T17:35:00",
+        "last": 1756683434,
+        "home": "Boston Red Sox  (Hits+Runs+Errors)",
+        "away": "Pittsburgh Pirates  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614056644,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": false,
+        "periods": {
+          "num_0": {
+            "line_id": 3238015575,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-08-31T17:35:00",
+            "period_status": 2,
+            "money_line": null,
+            "spreads": null,
+            "totals": null,
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 500.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": false,
+              "open_team_total": false
+            }
+          }
+        },
+        "period_results": [
+          {
+            "number": 0,
+            "status": 1,
+            "settlement_id": 21875840,
+            "settled_at": "2025-08-31T20:10:23Z",
+            "team_1_score": 9,
+            "team_2_score": 13,
+            "cancellation_reason": null
+          }
+        ]
+      },
+      {
+        "event_id": 1614598721,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T20:10:00",
+        "last": 1756682460,
+        "home": "Milwaukee Brewers  (Hits+Runs+Errors)",
+        "away": "Philadelphia Phillies  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614103679,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238153990,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T20:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "26.5": {
+                "points": 26.5,
+                "alt_line_id": null,
+                "over": 1.892,
+                "under": 1.961,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614599654,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T17:10:00",
+        "last": 1756682460,
+        "home": "Cincinnati Reds  (Hits+Runs+Errors)",
+        "away": "Toronto Blue Jays  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614103634,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238134275,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "26.0": {
+                "points": 26.0,
+                "alt_line_id": null,
+                "over": 2.04,
+                "under": 1.826,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614600245,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T17:10:00",
+        "last": 1756682460,
+        "home": "Detroit Tigers  (Hits+Runs+Errors)",
+        "away": "New York Mets  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614103633,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238132354,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T17:10:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "26.5": {
+                "points": 26.5,
+                "alt_line_id": null,
+                "over": 2.04,
+                "under": 1.826,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614600499,
+        "sport_id": 9,
+        "league_id": 246,
+        "league_name": "MLB",
+        "starts": "2025-09-01T23:35:00",
+        "last": 1756682460,
+        "home": "Tampa Bay Rays  (Hits+Runs+Errors)",
+        "away": "Seattle Mariners  (Hits+Runs+Errors)",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": 1614112271,
+        "resulting_unit": "Hits + Runs + Errors",
+        "is_actual": true,
+        "home_team_type": "Team2",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238157020,
+            "number": 0,
+            "description": "Game",
+            "cutoff": "2025-09-01T23:35:00",
+            "period_status": 1,
+            "money_line": null,
+            "spreads": null,
+            "totals": {
+              "26.0": {
+                "points": 26.0,
+                "alt_line_id": null,
+                "over": 1.952,
+                "under": 1.9,
+                "max": 250.0
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_total": 250.0,
+              "open_money_line": false,
+              "open_spreads": false,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

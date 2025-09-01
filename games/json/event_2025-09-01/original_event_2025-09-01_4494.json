@@ -1,0 +1,451 @@
+{
+  "timestamp": "2025-09-01T08:38:50.396685",
+  "data": {
+    "sport_id": 5,
+    "sport_name": "Volleyball",
+    "last": 1756683504,
+    "last_call": 1756683529,
+    "events": [
+      {
+        "event_id": 1614255182,
+        "sport_id": 5,
+        "league_id": 4494,
+        "league_name": "World Championship - Women",
+        "starts": "2025-09-01T13:30:00",
+        "last": 1756682214,
+        "home": "Turkiye (Points)",
+        "away": "Slovenia (Points)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614203885,
+        "resulting_unit": "Points",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_1": {
+            "line_id": 3234423888,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-09-01T13:30:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.161,
+              "draw": null,
+              "away": 5.36
+            },
+            "spreads": {
+              "-5.5": {
+                "hdp": -5.5,
+                "alt_line_id": null,
+                "home": 1.847,
+                "away": 1.892,
+                "max": 50.0
+              },
+              "-6.5": {
+                "hdp": -6.5,
+                "alt_line_id": 50464198768,
+                "home": 2.16,
+                "away": 1.645,
+                "max": 50
+              },
+              "-6.0": {
+                "hdp": -6.0,
+                "alt_line_id": 50464198769,
+                "home": 2.01,
+                "away": 1.751,
+                "max": 50
+              },
+              "-5.0": {
+                "hdp": -5.0,
+                "alt_line_id": 50464198770,
+                "home": 1.714,
+                "away": 2.06,
+                "max": 50
+              },
+              "-4.5": {
+                "hdp": -4.5,
+                "alt_line_id": 50464198771,
+                "home": 1.617,
+                "away": 2.22,
+                "max": 50
+              }
+            },
+            "totals": {
+              "44.0": {
+                "points": 44.0,
+                "alt_line_id": null,
+                "over": 1.833,
+                "under": 1.9,
+                "max": 50.0
+              },
+              "43.0": {
+                "points": 43.0,
+                "alt_line_id": 50464198772,
+                "over": 1.564,
+                "under": 2.32,
+                "max": 50
+              },
+              "43.5": {
+                "points": 43.5,
+                "alt_line_id": 50464198773,
+                "over": 1.699,
+                "under": 2.08,
+                "max": 50
+              },
+              "44.5": {
+                "points": 44.5,
+                "alt_line_id": 50464198774,
+                "over": 2.0,
+                "under": 1.751,
+                "max": 50
+              },
+              "45.0": {
+                "points": 45.0,
+                "alt_line_id": 50464198775,
+                "over": 2.25,
+                "under": 1.598,
+                "max": 50
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 25.0,
+                "over": 2.49,
+                "under": 1.45
+              },
+              "away": {
+                "points": 19.5,
+                "over": 1.854,
+                "under": 1.813
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 50.0,
+              "max_spread": 50.0,
+              "max_total": 50.0,
+              "max_team_total": 50.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614203885,
+        "sport_id": 5,
+        "league_id": 4494,
+        "league_name": "World Championship - Women",
+        "starts": "2025-09-01T13:30:00",
+        "last": 1756682214,
+        "home": "Turkiye",
+        "away": "Slovenia",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238092914,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T13:30:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.059,
+              "draw": null,
+              "away": 9.65
+            },
+            "spreads": {
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": null,
+                "home": 1.564,
+                "away": 2.47,
+                "max": 500.0
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50536660242,
+                "home": 1.194,
+                "away": 4.86,
+                "max": 500
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50536660243,
+                "home": 1.139,
+                "away": 6.06,
+                "max": 500
+              }
+            },
+            "totals": {
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": null,
+                "over": 2.52,
+                "under": 1.537,
+                "max": 250.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50536660246,
+                "over": 5.47,
+                "under": 1.156,
+                "max": 250
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50536660247,
+                "over": 6.78,
+                "under": 1.11,
+                "max": 250
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_money_line": 250.0,
+              "max_spread": 500.0,
+              "max_total": 250.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614255186,
+        "sport_id": 5,
+        "league_id": 4494,
+        "league_name": "World Championship - Women",
+        "starts": "2025-09-01T10:00:00",
+        "last": 1756682214,
+        "home": "USA (Points)",
+        "away": "Canada (Points)",
+        "event_type": "prematch",
+        "live_status_id": 0,
+        "parent_id": 1614203888,
+        "resulting_unit": "Points",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_1": {
+            "line_id": 3238113890,
+            "number": 1,
+            "description": "1st Set",
+            "cutoff": "2025-09-01T10:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.323,
+              "draw": null,
+              "away": 3.43
+            },
+            "spreads": {
+              "-4.0": {
+                "hdp": -4.0,
+                "alt_line_id": null,
+                "home": 1.84,
+                "away": 1.9,
+                "max": 100.0
+              },
+              "-5.0": {
+                "hdp": -5.0,
+                "alt_line_id": 50537064720,
+                "home": 2.13,
+                "away": 1.666,
+                "max": 100
+              },
+              "-4.5": {
+                "hdp": -4.5,
+                "alt_line_id": 50537064724,
+                "home": 1.961,
+                "away": 1.781,
+                "max": 100
+              },
+              "-3.5": {
+                "hdp": -3.5,
+                "alt_line_id": 50537064728,
+                "home": 1.729,
+                "away": 2.03,
+                "max": 100
+              },
+              "-3.0": {
+                "hdp": -3.0,
+                "alt_line_id": 50537064732,
+                "home": 1.625,
+                "away": 2.2,
+                "max": 100
+              }
+            },
+            "totals": {
+              "45.0": {
+                "points": 45.0,
+                "alt_line_id": null,
+                "over": 1.934,
+                "under": 1.806,
+                "max": 100.0
+              },
+              "44.0": {
+                "points": 44.0,
+                "alt_line_id": 50537064721,
+                "over": 1.609,
+                "under": 2.23,
+                "max": 100
+              },
+              "44.5": {
+                "points": 44.5,
+                "alt_line_id": 50537064725,
+                "over": 1.763,
+                "under": 1.99,
+                "max": 100
+              },
+              "45.5": {
+                "points": 45.5,
+                "alt_line_id": 50537064729,
+                "over": 2.12,
+                "under": 1.671,
+                "max": 100
+              },
+              "46.0": {
+                "points": 46.0,
+                "alt_line_id": 50537064733,
+                "over": 2.45,
+                "under": 1.51,
+                "max": 100
+              }
+            },
+            "team_total": {
+              "home": {
+                "points": 25.0,
+                "over": 3.1,
+                "under": 1.301
+              },
+              "away": {
+                "points": 21.0,
+                "over": 1.862,
+                "under": 1.8
+              }
+            },
+            "meta": {
+              "number": 1,
+              "max_money_line": 100.0,
+              "max_spread": 100.0,
+              "max_total": 100.0,
+              "max_team_total": 100.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": true
+            }
+          }
+        }
+      },
+      {
+        "event_id": 1614203888,
+        "sport_id": 5,
+        "league_id": 4494,
+        "league_name": "World Championship - Women",
+        "starts": "2025-09-01T10:00:00",
+        "last": 1756682214,
+        "home": "USA",
+        "away": "Canada",
+        "event_type": "prematch",
+        "live_status_id": 2,
+        "parent_id": null,
+        "resulting_unit": "Regular",
+        "is_actual": true,
+        "home_team_type": "Team1",
+        "is_have_odds": true,
+        "is_have_periods": true,
+        "is_have_open_markets": true,
+        "periods": {
+          "num_0": {
+            "line_id": 3238113888,
+            "number": 0,
+            "description": "Match",
+            "cutoff": "2025-09-01T10:00:00",
+            "period_status": 1,
+            "money_line": {
+              "home": 1.113,
+              "draw": null,
+              "away": 6.7
+            },
+            "spreads": {
+              "-2.5": {
+                "hdp": -2.5,
+                "alt_line_id": null,
+                "home": 2.09,
+                "away": 1.769,
+                "max": 1000.0
+              },
+              "-2.0": {
+                "hdp": -2.0,
+                "alt_line_id": 50537064688,
+                "home": 1.51,
+                "away": 2.62,
+                "max": 1000
+              },
+              "-1.5": {
+                "hdp": -1.5,
+                "alt_line_id": 50537064690,
+                "home": 1.312,
+                "away": 3.56,
+                "max": 1000
+              }
+            },
+            "totals": {
+              "3.5": {
+                "points": 3.5,
+                "alt_line_id": null,
+                "over": 1.84,
+                "under": 1.98,
+                "max": 500.0
+              },
+              "4.0": {
+                "points": 4.0,
+                "alt_line_id": 50537064689,
+                "over": 3.17,
+                "under": 1.366,
+                "max": 500
+              },
+              "4.5": {
+                "points": 4.5,
+                "alt_line_id": 50537064691,
+                "over": 4.41,
+                "under": 1.218,
+                "max": 500
+              }
+            },
+            "team_total": null,
+            "meta": {
+              "number": 0,
+              "max_spread": 1000.0,
+              "open_money_line": true,
+              "open_spreads": true,
+              "open_totals": true,
+              "open_team_total": false,
+              "max_money_line": 500.0,
+              "max_total": 500.0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
