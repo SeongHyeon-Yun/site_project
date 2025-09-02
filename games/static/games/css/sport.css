@@ -1,136 +1,180 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 * {
-    font-family: 'GmarketSansMedium', "Malgun Gothic", sans-serif;
-}
-
-.sport_area {
-    height: calc(100% - 35px);
-    background-color: #000;
-    overflow-y: auto;
-    color: #fff;
-    font-size: 12px;
-}
-
-
-.sport_title {
-    display: inline-block;
-    padding: 10px;
-}
-
-.sport_info {
-    width: 100%;
-    background-color: #191919;
-    position: relative;
-
-}
-
-.sport_info .time {
-    background: #1e2428;
-    position: absolute;
-    z-index: 10;
-    top: -12px;
-    left: 4px;
-    font-size: 12px;
-    padding: 4px 9px;
-}
-
-.sport_info .game_info {
-    width: 100%;
-    background-color: #191919;
-    border: 2px solid #222733;
-    position: relative;
-    padding: 15px 2px 5px 2px;
-    margin: 5px 0 4px 0;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-.sport_info .game_info>div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr)
+.sport_area {
+    width: 100%;
+    height: 770px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.game {
-    background: #1b1f20;
-    border-radius: 3px;
-    border: 1px solid #2d353c;
-    border-color: #2d353c #000 #000 #2d353c;
-    color: #a2adbd;
-    text-align: center;
+.sport_con {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: rgb(46, 46, 46);
+    overflow-y: auto;
 }
 
-.game.home,
-.game.away {
-    width: 350px;
-    max-width: 300px;
+.sport_con .league {
+    background-color: #acacac;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.game_con {
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+    display: flex;
+}
+
+.between {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.game span {
-    display: inline-block;
-    padding: 3px;
+.game_con .time {
+    width: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.game_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.game_title .teams.home,
+.game_title .teams.away {
+    width: 300px;
+    min-width: 100px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-sizing: border-box;
+    font-size: 12px;
+    padding: 3px;
 }
 
-.sport_odd {
-    width: 45px;
-    position: relative;
+.game_odd {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.red {
-    position: absolute;
-    right: 32px;
-    color: red;
-    font-weight: 400;
+.teams.odd {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
 }
 
-.up {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    color: rgb(67, 67, 255);
-    font-weight: 400;
+/* 리그명 */
+.sport_con .league {
+    background-color: #4e4e4e;
+    color: #ffc800;
+    /* 노란색 */
+    font-weight: 700;
 }
 
-.red.green,
-.up.green {
-    color: rgb(2, 255, 2);
+/* 경기 시간 */
+.game_con .time {
+    color: #bbb;
+    /* 연한 회색 */
 }
 
-@media (max-width:500px) {
+/* 팀 이름 */
+.game_title .teams.home,
+.game_title .teams.away {
+    color: #fff;
+    /* 흰색 유지 */
+}
 
-    .sport_list {
+/* 배당 (odd) 값 */
+.teams.odd span:last-child {
+    color: #4dabf7;
+    /* 파란색 */
+}
+
+/* 무승부 / 기준점 */
+.teams.draw span:last-child {
+    color: #ccc;
+    /* 흐린 회색 */
+}
+
+/* 언더 / 오버 */
+.teams.home.odd span:first-child {
+    color: #fa5252;
+}
+
+/* 언더 → 빨강 */
+.teams.away.odd span:first-child {
+    color: #40c057;
+}
+
+.select_active:hover {
+    background-color: #ffc800;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #000 !important;
+    cursor: pointer;
+}
+
+/* 홈/원정 태그 공통 */
+.tag {
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+/* 홈 태그 */
+.teams.home .tag {
+    background-color: #4dabf7;
+    /* 파랑 */
+    color: #fff;
+}
+
+/* 원정 태그 */
+.teams.away .tag {
+    background-color: #fa5252;
+    /* 빨강 */
+    color: #fff;
+}
+
+/* 모바일 (최대 400px) */
+@media (max-width: 500px) {
+
+    .game_title .teams.home,
+    .game_title .teams.away {
+        width: 130px;
         font-size: 10px;
     }
 
-    .game.home,
-    .game.away {
-        width: 130px;
+    .game_odd {
+        width: 120px;
     }
 
-    .red {
-        position: absolute;
-        left: 2px;
-        color: red;
-        font-weight: 400;
+
+    .teams.odd {
+        font-size: 10px;
     }
 
-    .up {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        color: rgb(67, 67, 255);
-        font-weight: 400;
+    .game_con .time {
+        font-size: 10px;
     }
 }

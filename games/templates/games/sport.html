@@ -1,80 +1,144 @@
 {% extends "games/sub_base.html" %}
-{% load static %}
+{% load static tz %}
 {% block sub_extra_css %}
     {{ block.super }}
     <link rel="stylesheet" href="{% static 'games/css/sport.css' %}">
 {% endblock sub_extra_css %}
 {% block sub_content %}
     <div class="sport_area">
-        <div class="sport_list">
-            <div>
-                <span class="sport_title">아제르바이젠 프리미어리그</span>
-                <div class="sport_info">
-                    <div class="time">08월31일(일) 01:30</div>
-                    <div class="game_info">
-                        <div>
-                            <div class="game">
-                                <span>승무패</span>
-                            </div>
-                            <div class="game home">
-                                <span>리버풀</span>
-                                <span class="sport_odd">3.5</span>
-                            </div>
-                            <div class="game draw">
-                                <span>3.5</span>
-                            </div>
-                            <div class="game away">
-                                <span class="sport_odd">2.5</span>
-                                <span>맨체스터 유나이티드</span>
-                            </div>
+        <div class="sport_con">
+            {% for e in event %}
+                {% if e.markets.all %}
+                    <div class="list">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                        <!-- 리그명 -->
+                        <div class="league">
+                            <span>
+                                {% if sport_type == "0" %}
+                                    {{ e.sport_display }} | {{ e.league.display_name }}
+                                {% else %}
+                                    {{ sport_name }} | {{ e.league.display_name }}
+                                {% endif %}
+                            </span>
                         </div>
-                        <div>
-                            <div class="game">
-                                <span>언더오바</span>
+                        <!-- ───── 승무패 (money_line) ───── -->
+                        {% for m in e.markets.all %}
+                            {% if m.market_type == "money_line" and m.period == "num_0" %}
+                                <div class="game_con">
+                                    <div class="time">{{ e.starts|date:"Y-m-d H:i" }}</div>
+                                    <div class="between">
+                                        <!-- 팀 이름 -->
+                                        <div class="game_title">
+                                            <span class="teams home"><span class="tag">홈</span>{{ e.home_display }}</span>
+                                            <span class="teams away"><span class="tag">원정</span>{{ e.away_display }}</span>
+                                        </div>
+                                        <!-- 배당 -->
+                                        <input type="hidden" value="승무패" class="market_type">
+                                        <div class="game_odd">
+                                            <span class="teams home odd select_active"
+                                                  data-event-id="{{ e.id }}"
+                                                  data-market-id="{{ m.id }}"
+                                                  data-pick="home">
+                                                <span>승</span>
+                                                <span>{{ m.home|floatformat:2 }}</span>
+                                            </span>
+                                            <span class="teams draw odd {% if m.draw %}select_active{% endif %}"
+                                                  {% if m.draw %}data-event-id="{{ e.id }}" data-market-id="{{ m.id }}" data-pick="draw"{% endif %}>
+                                                {% if m.draw %}
+                                                    <span>무</span>
+                                                    <span>{{ m.draw|floatformat:2 }}</span>
+                                                {% else %}
+                                                    <span>VS</span>
+                                                    <span>-</span>
+                                                {% endif %}
+                                            </span>
+                                            <span class="teams away odd select_active"
+                                                  data-event-id="{{ e.id }}"
+                                                  data-market-id="{{ m.id }}"
+                                                  data-pick="away">
+                                                <span>패</span>
+                                                <span>{{ m.away|floatformat:2 }}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <!-- ───── 핸디캡 (spread → best_spread만) ───── -->
+                        {% if e.best_spread %}
+                            <div class="game_con">
+                                <div class="time">{{ e.starts|date:"Y-m-d H:i" }}</div>
+                                <div class="between">
+                                    <div class="game_title">
+                                        <span class="teams home"><span class="tag">홈</span>{{ e.home_display }}</span>
+                                        <span class="teams away"><span class="tag">원정</span>{{ e.away_display }}</span>
+                                    </div>
+                                    <input type="hidden" value="핸디캡" class="market_type">
+                                    <div class="game_odd">
+                                        <span class="teams home odd select_active"
+                                              data-event-id="{{ e.id }}"
+                                              data-market-id="{{ e.best_spread.id }}"
+                                              data-pick="handicap_home"
+                                              data-point="{{ e.best_spread.hdp }}">
+                                            <span>핸승</span>
+                                            <span>{{ e.best_spread.home|floatformat:2 }}</span>
+                                        </span>
+                                        <span class="teams draw odd">
+                                            <span>기준점</span>
+                                            <span>{{ e.best_spread.hdp }}</span>
+                                        </span>
+                                        <span class="teams away odd select_active"
+                                              data-event-id="{{ e.id }}"
+                                              data-market-id="{{ e.best_spread.id }}"
+                                              data-pick="handicap_away">
+                                            <span>핸패</span>
+                                            <span>{{ e.best_spread.away|floatformat:2 }}</span>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="game home">
-                                <span>리버풀</span>
-                                <span class="sport_odd">
-                                    <div class="red">↓</div>
-                                    <div>3.5</div>
-                                </span>
+                        {% endif %}
+                        <!-- ───── 언더오버 (total → best_total만) ───── -->
+                        {% if e.best_total %}
+                            <div class="game_con">
+                                <div class="time">{{ e.starts|date:"Y-m-d H:i" }}</div>
+                                <div class="between">
+                                    <div class="game_title">
+                                        <span class="teams home"><span class="tag">홈</span>{{ e.home_display }}</span>
+                                        <span class="teams away"><span class="tag">원정</span>{{ e.away_display }}</span>
+                                    </div>
+                                    <input type="hidden" value="언더오버" class="market_type">
+                                    <div class="game_odd">
+                                        <span class="teams home odd select_active"
+                                              data-event-id="{{ e.id }}"
+                                              data-market-id="{{ e.best_total.id }}"
+                                              data-pick="under"
+                                              data-point="{{ e.best_total.points }}">
+                                            <span>언더</span>
+                                            <span>{{ e.best_total.under|floatformat:2 }}</span>
+                                        </span>
+                                        <span class="teams draw odd">
+                                            <span>기준점</span>
+                                            <span>{{ e.best_total.points|floatformat:2 }}</span>
+                                        </span>
+                                        <span class="teams away odd select_active"
+                                              data-event-id="{{ e.id }}"
+                                              data-market-id="{{ e.best_total.id }}"
+                                              data-pick="over">
+                                            <span>오버</span>
+                                            <span>{{ e.best_total.over|floatformat:2 }}</span>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="game draw">
-                                <span>3.5</span>
-                            </div>
-                            <div class="game away">
-                                <span class="sport_odd">
-                                    <div>3.5</div>
-                                    <div class="up">↑</div>
-                                </span>
-                                <span>맨체스터 유나이티드</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="game">
-                                <span>핸디캡</span>
-                            </div>
-                            <div class="game home">
-                                <span>리버풀</span>
-                                <span class="sport_odd">
-                                    <div class="red green">H</div>
-                                    <div>3.5</div>
-                                </span>
-                            </div>
-                            <div class="game draw">
-                                <span>3.5</span>
-                            </div>
-                            <div class="game away">
-                                <span class="sport_odd">
-                                    <div>3.5</div>
-                                    <div class="up green">H</div>
-                                </span>
-                                <span>맨체스터 유나이티드</span>
-                            </div>
-                        </div>
+                        {% endif %}
                     </div>
+                {% endif %}
+            {% empty %}
+                <div class="no_game">
+                    <p>금일 경기가 없습니다.</p>
                 </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock sub_content %}

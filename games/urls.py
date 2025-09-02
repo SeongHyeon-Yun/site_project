@@ -11,4 +11,5 @@ urlpatterns = [
     path("slot_detail/", views.slot_detail, name="slot_detail"),
     path("runCasino/", views.casino_start, name="casino_start"),
     path("runSlot/", views.slot_start, name="slot_start"),
+    path("betting/", views.betting, name="betting"),
 ]

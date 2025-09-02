@@ -178,6 +178,7 @@ a {
     background-color: #000000be;
     font-size: 12px;
     overflow-y: auto;
+    z-index: 10;
 }
 
 .game_list {
@@ -267,6 +268,29 @@ a {
     font-weight: 700;
 }
 
+
+.bet_list {
+    border-bottom: 1px solid #ccc;
+    padding: 3px;
+}
+
+.bet_teams {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.white_over {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: start;
+}
+
+
 @media (max-width:500px) {
     .title {
         font-size: 12px;
@@ -305,6 +329,7 @@ a {
         width: 100%;
         position: absolute;
         top: 0;
+        z-index: 10;
     }
 
     .right_con .top_menu .item,
@@ -315,6 +340,7 @@ a {
 
     .bt_menu {
         height: 150px;
+        background-color: #000000;
     }
 
     .game_list {
