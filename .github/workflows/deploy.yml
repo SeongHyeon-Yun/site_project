@@ -18,6 +18,7 @@ jobs:
             cd /srv/onepick/site_project
             git fetch origin main
             git reset --hard origin/main
+            /srv/onepick/venv/bin/python manage.py makemigrations --noinput
             /srv/onepick/venv/bin/python manage.py migrate --noinput
             /srv/onepick/venv/bin/python manage.py collectstatic --noinput --clear
             sudo systemctl restart gunicorn

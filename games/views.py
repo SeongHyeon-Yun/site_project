@@ -28,94 +28,64 @@ from .casino_fun import (
 )
 
 
-@csrf_exempt
 @require_POST
 @login_required(login_url="recoards:login")
 def betting(request):
     try:
         data = json.loads(request.body)
-        stake = Decimal(str(data.get("amount", "0")))
-        cart = data.get("cart", [])
+        game_list = data.get("game_list", [])
 
-        if not cart:
-            return JsonResponse({"success": False, "message": "카트가 비어있습니다."})
+        if not game_list:
+            return JsonResponse({"success": False, "message": "베팅할 경기가 없습니다."})
 
+        # ✅ 유저
         user = request.user
-        balance_before = user.money
 
-        # 👉 전체 배당 계산
-        total_odds = 1.0
-        for item in cart:
-            try:
-                total_odds *= float(item.get("odds", 1))
-            except (TypeError, ValueError):
-                return JsonResponse(
-                    {"success": False, "message": "잘못된 배당 값이 포함됨"}
-                )
+        # ✅ 공통 값 (모든 게임에 동일)
+        bet_money = Decimal(str(game_list[0]["bet_money"]))
+        win_money = Decimal(str(game_list[0]["win_money"]))
 
-        expected_amount = stake * Decimal(str(total_odds))
+        # ✅ 총 배당 (win_money / bet_money)
+        try:
+            total_odds = float(win_money / bet_money)
+        except ZeroDivisionError:
+            total_odds = 1.0
+
+        balance_before = Decimal(user.money)
+        balance_after = balance_before - bet_money
+
+        if balance_after < 0:
+            return JsonResponse({"success": False, "message": "보유 금액이 부족합니다."})
 
         with transaction.atomic():
-            # ✅ 슬립 생성
+            # ✅ 유저 잔액 차감
+            user.money = balance_after
+            user.save()
+
+            # ✅ BetSlip 생성
             slip = BetSlip.objects.create(
                 user=user,
-                stake=stake,
+                stake=bet_money,
                 total_odds=total_odds,
-                expected_amount=expected_amount,
+                expected_amount=win_money,
                 balance_before=balance_before,
-                balance_after=balance_before - stake,
+                balance_after=balance_after,
             )
 
-            # ✅ 개별 Bet 생성
-            for item in cart:
-                event_id = item.get("event_id")
-                market_id = item.get("market_id")
-
-                if not event_id or not market_id:
-                    return JsonResponse(
-                        {"success": False, "message": "잘못된 경기 데이터"}
-                    )
-
-                try:
-                    event = Event.objects.get(id=event_id)
-                    market = Market.objects.get(id=market_id)
-                except Event.DoesNotExist:
-                    return JsonResponse(
-                        {"success": False, "message": f"Event {event_id} 없음"}
-                    )
-                except Market.DoesNotExist:
-                    return JsonResponse(
-                        {"success": False, "message": f"Market {market_id} 없음"}
-                    )
-
-                desc = f"{event.home} vs {event.away} | Pick: {item['pick']}"
-
+            # ✅ Bet 생성 (슬립 안에 여러 경기)
+            for g in game_list:
                 Bet.objects.create(
                     slip=slip,
-                    event=event,
-                    market=market,
-                    pick=item["pick"],
-                    odds=float(item["odds"]),
-                    description=desc,
+                    event=int(g["event_id"]),
+                    pick=g["pick"],
+                    odds=float(g["odds"]),
+                    description=f"{g['team']} {g['market']} {g['point']}",
                 )
 
-            # ✅ 유저 머니 차감
-            user.money = balance_before - stake
-            user.save(update_fields=["money"])
-
-        return JsonResponse(
-            {
-                "success": True,
-                "message": "베팅 완료",
-                "slip_id": slip.id,
-                "expected_amount": str(expected_amount),
-                "balance_after": str(user.money),
-            }
-        )
+        return JsonResponse({"success": True, "message": "베팅 성공", "slip_id": slip.id})
 
     except Exception as e:
-        print("❌ betting error:", e)
-        return JsonResponse({"success": False, "message": str(e)}, status=400)
+        return JsonResponse({"success": False, "message": "베팅 접수 중 오류가 발생했습니다."})
 
 
 def get_events(sport_id, hours, exclude_corners=True):

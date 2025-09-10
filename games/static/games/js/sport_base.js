@@ -30,117 +30,114 @@ function calculateBetResult() {
     result_money.innerText = multiply ? multiply.toLocaleString() : "0";
 }
 
+// 👉 베팅금액 입력 시 계산
 bet_price.addEventListener('input', calculateBetResult);
 
-// ============================
-// 📌 베팅 하기
-// ============================
+// 👉 cart_odds 값 변경 감지해서 자동 계산
+const observer = new MutationObserver(() => {
+    calculateBetResult();
+});
+observer.observe(cart_odds, { childList: true, characterData: true, subtree: true });
+
 const submit_btn = document.getElementById('submit_btn');
-submit_btn.addEventListener('click', function () {
-    const oddsList = document.querySelectorAll('.special_game');
-    let bettingData = [];
-    const userMoney = Number(submit_btn.dataset.money) || 0;
-    const username = submit_btn.dataset.username || "";
+submit_btn.addEventListener('click', function (event) {
+    event.preventDefault();  // ✅ 버튼 클릭 시 form 기본 제출 막기
 
-    console.log("🟢 베팅 시도 by", username);
-    console.log("🟢 보유 금액:", userMoney.toLocaleString());
+    const selected_games = document.getElementById('selected_games');
+    const games = selected_games.querySelectorAll('.special_game');
+    const game_list = [];
 
-    // ✅ 최소 1경기 이상 선택
-    if (oddsList.length < 1) {
-        alert("최소 1경기 이상 선택하세요");
-        return;
-    }
+    // 유저 정보
+    const user_money = parseInt(submit_btn.dataset.money);
+    const user_id = submit_btn.dataset.username;
+    const bet_money = parseInt(bet_price.value.replace(/,/g, ""), 10) || 0;
+    const win_money = parseInt(result_money.innerText.replace(/,/g, ""), 10) || 0;
 
-    // ✅ 경기 데이터 수집
-    oddsList.forEach(div => {
-        bettingData.push({
-            market_id: div.querySelector('[data-marketid]')?.dataset.marketid,
-            event_id: div.querySelector('[data-eventid]')?.dataset.eventid,
-            sport_id: div.querySelector('[data-sportid]')?.dataset.sportid,
-            pick: div.querySelector('[data-pick]')?.dataset.pick,
-            teamname: div.querySelector('[data-teamname]')?.dataset.teamname,
-            odds: div.querySelector('[data-odds]')?.dataset.odds,
-            point: div.querySelector('[data-point]')?.dataset.point,
-            smarket: div.querySelector('[data-smarket]')?.dataset.smarket
+    games.forEach(btn => {
+        const market_id = btn.querySelector('input[name="market_id"]').value;
+        const event_id = btn.querySelector('input[name="event_id"]').value;
+        const pick = btn.querySelector('.pick').innerText;
+        const team = btn.querySelector('.ateam').innerText;
+        const odds = btn.querySelector('.odds').innerText;
+        const point = btn.querySelector('.point').innerText;
+        const market = btn.querySelector('.smarket').innerText;
+
+        game_list.push({
+            market_id: market_id,
+            event_id: event_id,
+            pick: pick,
+            team: team,
+            odds: odds,
+            point: point,
+            market: market,
+            user_id: user_id,
+            bet_money: bet_money,
+            win_money: win_money
         });
     });
 
-    // ✅ 베팅 금액 확인
-    let betMoney = Number(bet_price.value.replace(/,/g, "")) || 0;
-    if (betMoney <= 0) {
-        alert("베팅 금액을 입력하세요");
+    // 베팅 유효성 검사
+    if (bet_money < 10000) {
+        alert("베팅 금액을 10,000원 이상 입력하세요");
+        return;
+    }
+    if (bet_money > user_money) {
+        alert("보유 금액이 부족합니다");
+        return;
+    }
+    if (bet_money > 3000000) {
+        alert("베팅 금액은 3,000,000원 이하로 입력하세요");
+        return;
+    }
+    if (games.length == 1 && bet_money > 1000000) {
+        alert("단폴 베팅은 100만원 이하만 가능합니다.");
+        return;
+    }
+    if (game_list.length === 0) {
+        alert("베팅할 경기를 선택하세요");
+        return;
+    }
+    if (win_money > 10000000) {
+        alert("예상 당첨금은 10,000,000원 이하만 가능합니다.");
+        return;
+    }
+    if (games.length == 1 && win_money > 3000000) {
+        alert("단폴 베팅은 3,000,000원 이하만 가능합니다.");
         return;
     }
 
-    // ✅ 예상 당첨금 계산
-    const float_cart_odds = parseFloat(cart_odds.innerText) || 1;
-    let multiply = Math.trunc(float_cart_odds * betMoney);
+    console.log(game_list);
 
-    // ✅ 단폴 / 2폴 이상 구분
-    let maxBet, maxWin;
-    if (oddsList.length === 1) {
-        maxBet = 1000000;   // 단폴 최대 베팅
-        maxWin = 3000000;   // 단폴 최대 당첨
-    } else {
-        maxBet = 3000000;   // 2폴 이상 최대 베팅
-        maxWin = 10000000;  // 2폴 이상 최대 당첨
-    }
-
-    // ✅ 베팅금액 검증
-    if (betMoney > maxBet) {
-        alert(`최대 베팅 금액은 ${maxBet.toLocaleString()}원 입니다.`);
-        return;
-    }
-
-    // ✅ 보유 금액 검증
-    if (betMoney > userMoney) {
-        alert("보유 금액이 부족합니다.");
-        return;
-    }
-
-    // ✅ 당첨금액 검증
-    if (multiply > maxWin) {
-        alert(`최대 당첨 금액은 ${maxWin.toLocaleString()}원 입니다.`);
-        return;
-    }
-
-    // ✅ 최종 데이터
-    const payload = {
-        bet_money: betMoney,
-        expected_win: multiply,
-        games: bettingData
-    };
-
-    // ✅ Django 뷰로 POST 전송
-    fetch("/games/submit/", {
-        method: "POST",
+    // ✅ fetch 구문 수정
+    fetch('/games/betting/', {
+        method: 'POST',
         headers: {
-            "Content-Type": "application/json",
-            "X-CSRFToken": getCookie("csrftoken") // CSRF 토큰 필요
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken')
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify({
+            game_list: game_list
+        })
     })
         .then(res => res.json())
         .then(data => {
             if (data.success) {
-                alert("베팅이 완료되었습니다!");
-                sessionStorage.clear();
+                alert(data.message);
                 window.location.reload();
-                // console.log("✅ 저장된 베팅:", data);
             } else {
-                alert("베팅 실패");
-                sessionStorage.clear();
-                window.location.reload();
-                // console.error("❌ 서버 응답:", data);
+                alert(data.message);
             }
         })
-        .catch(err => {
-            console.error("베팅 전송 오류:", err);
-            alert("서버 오류가 발생했습니다.");
+        .catch(error => {
+            console.error('Error:', error);
+            alert("베팅 중 오류가 발생했습니다. 다시 시도해주세요.");
         });
 });
 
 
+// ============================
+// 📌 CSRF 토큰 설정
+// ============================
 // ✅ CSRF 토큰 가져오기 헬퍼 함수
 function getCookie(name) {
     let cookieValue = null;

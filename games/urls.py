@@ -13,4 +13,5 @@ urlpatterns = [
     path("runSlot/", views.slot_start, name="slot_start"),
     path("submit/", views.submit_bet, name="submit"),
     path("money_change/", views.casino_money_change, name="money_change"),
+    path("betting/", views.betting, name="betting"),
 ]
