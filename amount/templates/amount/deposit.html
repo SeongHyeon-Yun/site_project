@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+{% load static humanize %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'amount/css/deposit.css' %}">
+{% endblock extra_css %}
+{% block extra_con %}
+    <div class="deposit-title">입금신청</div>
+    <div class="deposit-container">
+        <div class="deposit-text">
+            <div class="deposit-price">
+                <span>입금금액</span>
+                <input type="text" id="id_price" placeholder="금액을 입력해주세요.">
+            </div>
+            <div class="deposit-bankNum">
+                <span>입금계좌</span>
+                <input type="text" value="지역농협 352-1920-9394-13" readonly>
+            </div>
+            <div class="deposit-bonus">
+                <span>보너스 선택</span>
+                <select name="bonus">
+                    <option class="bonus-option" value="yes">보너스 지급</option>
+                    <option class="bonus-option" value="no">보너스 미지급</option>
+                </select>
+            </div>
+            <div class="deposit-table-list">
+                <table class="deposit-table">
+                    <thead>
+                        <tr>
+                            <td>입금 여부</td>
+                            <td>입금 금액</td>
+                            <td>입금 시간</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in amount %}
+                        <tr>
+                            <td>{{ item.yes_no }}</td>
+                            <td>{{ item.amount|intcomma }}</td>
+                            <td>{{ item.created_at|date:"Y-m-d H:i" }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="deposit-price-btn">
+                <div class="dp-btn">1만원</div>
+                <div class="dp-btn">5만원</div>
+                <div class="dp-btn">10만원</div>
+                <div class="dp-btn">30만원</div>
+                <div class="dp-btn">50만원</div>
+                <div class="dp-btn">100만원</div>
+                <div class="dp-btn">150만원</div>
+                <div class="dp-btn">200만원</div>
+                <div class="dp-btn">정정하기</div>
+            </div>
+            <button class="create-btn"
+                    data-username="{{ user.username }}"
+                    data-type="deposit"
+                    id="money-btn">입금하기</button>
+        </div>
+    </div>
+{% endblock extra_con %}
+{% block extra_js %}
+    <script src="{% static "amount/js/deposit.js" %}"></script>
+{% endblock extra_js %}

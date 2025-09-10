@@ -1,0 +1,31 @@
+<div class="games game-list">
+    <div class="game time">{{ e.starts|date:"Y-m-d H:i" }}</div>
+    <div class="game teams">
+        <div class="home">
+            <span>{{ e.home_display|default:e.home }}</span>
+        </div>
+        <div class="away">
+            <span>{{ e.away_display|default:e.away }}</span>
+        </div>
+    </div>
+    <div class="game odds">
+        {# 👉 Period 설명 추가 #}
+        <div class="period-label">
+            {{ p.description }}
+        </div>
+
+        {% for line in m.lines.all %}
+            <div class="odd pick"
+                 data-event-id="{{ e.id }}"
+                 data-market-id="{{ m.id }}"
+                 data-pick="special">
+                <span class="label">
+                    {{ m.get_market_type_display }} {{ line.hdp|default:line.points }}
+                </span>
+                <span class="odd_value">
+                    {{ line.home_price|default:line.away_price|default:line.over_price|default:line.under_price|default:"-" }}
+                </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -4,10 +4,7 @@ import base64
 import requests
 import time
 import random
-
-
-secret_key = "319a6412ffdfa757efec34f5cc9242b0"
-url = "https://gate.nxzone.net"
+from django.conf import settings as set
 
 
 # 해쉬값 만들기
@@ -142,7 +139,7 @@ def get_slot_list(secret_key, url):
 
 # 슬롯 게임 리스트 페이지 이동
 def get_slot_page(secret_key, url, vendorKey):
-    url = f"{url}/games"
+    url = f"{set.GAME_API_BASE}/games"
 
     body = {"vendorKey": vendorKey, "skin": "SLOT", "type": "Slot"}
 
@@ -205,10 +202,7 @@ def casino_run(key, skin, ip, username, secret_key, url):
 def bacara_money(secret_key, url, username):
     url = f"{url}/balance"
 
-    body = {
-        "username": username,
-    }
-
+    body = {"username": username}
     hash = make_hash(body, secret_key)
 
     headers = {
@@ -223,7 +217,51 @@ def bacara_money(secret_key, url, username):
         resp = requests.post(url, data=body, headers=headers, timeout=10)
         resp.raise_for_status()
         resp_data = resp.json()
-    except Exception as e:
-        return e
-    
-    return resp_data['balance']
+
+        # balance 키 안전하게 가져오기
+        return resp_data.get("balance", 0)
+
+    except requests.exceptions.RequestException as e:
+        # 네트워크, 타임아웃 등 에러
+        print(f"[ERROR] API 요청 실패: {e}")
+        return 0
+    except ValueError as e:
+        # JSON 파싱 실패
+        print(f"[ERROR] 응답 파싱 실패: {e}")
+        return 0
+
+
+# 카지노 머니 전환
+def money_in_out(username, money, money_type):
+    if money_type == "in":
+        url = f"{set.GAME_API_BASE}/deposit"
+    else:
+        url = f"{set.GAME_API_BASE}/withdraw"
+    requestKey = make_request_key()
+    secret_key = set.GAME_SECRET_KEY
+
+    body = {
+        "username": username,
+        "siteUsername": username,
+        "amount": int(money),
+        "cashtype": "cash",
+        "requestKey": requestKey,
+    }
+    hash = make_hash(body, secret_key)
+
+    headers = {
+        "agent": "onePiece",
+        "secretKey": secret_key,
+        "User-agent": "Mozilla",
+        "hash": hash,
+        "Content-Type": "application/x-www-form-urlencoded",
+    }
+
+    try:
+        resp = requests.post(url, data=body, headers=headers, timeout=10)
+        resp.raise_for_status()
+        resp_data = resp.json()
+        return resp_data
+    except requests.exceptions.RequestException as e:
+        print("request error:", e)
+        return None

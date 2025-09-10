@@ -1,0 +1,37 @@
+.money-change {
+    margin: auto;
+    width: 95%;
+    background-color: #222831;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #222831;
+}
+
+.current-money {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.current-money input {
+    text-align: end;
+    color: #222831;
+    width: 100px;
+}
+
+.current-money select {
+    width: 110px;
+    color: #222831;
+
+}
+
+.money-change-btn{
+    width: 100%;
+    padding: 4px;
+    border: none;
+    background-color: #00ADB5;
+}
+
+.black {
+    color: #222831;
+}

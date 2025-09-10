@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     "games",
     "about",
     "notes",
-    "recoards"
+    "recoards",
+    "amount",
 ]
 
 AUTH_USER_MODEL = "accounts.User"
@@ -70,6 +71,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "main.context_processors.common_context"
             ],
         },
     },

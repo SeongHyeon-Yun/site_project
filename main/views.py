@@ -1,19 +1,8 @@
 from django.shortcuts import render
+from django.views.decorators.cache import never_cache
+from django.contrib.auth.decorators import login_required
 
-
+@never_cache
+@login_required(login_url="recoards:login")
 def home(request):
-    if request.user.is_authenticated:
-        username = request.user.username
-        nickname = request.user.nickname  # 커스텀 User 필드도 접근 가능
-    else:
-        username = None
-        nickname = None
-
-    return render(
-        request,
-        "main/main.html",
-        {
-            "username": username,
-            "nickname": nickname,
-        },
-    )
+    return render(request, "main/main.html")

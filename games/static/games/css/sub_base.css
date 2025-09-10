@@ -1,368 +1,127 @@
+:root {
+    --back: #000;
+    --back_2: #111;
+    --back_3: #363636;
+    --color: #1f9dcd;
+
+    --success: #2e7d32;
+    --success-hover: #43a047;
+
+    --warning: #ff9800;
+    --warning-hover: #ffb74d;
+
+    --danger: #d32f2f;
+    --danger-hover: #e53935;
+
+    --primary: #1976d2;
+    --primary-hover: #2196f3;
+}
+
 a {
-    color: #000;
-    font-weight: 500;
-}
-
-.titles {
-    background-color: #F5F7F8;
-}
-
-.title {
-    font-size: 18px;
-    font-weight: 700;
-    gap: 10px;
-    padding: 10px 20px;
-    display: inline-block;
-    color: #4a4a4a;
-}
-
-.title:hover {
+    all: unset;
     cursor: pointer;
-    background-color: #FFFCFB;
 }
 
-.money-change {
+.sport-wrap {
     width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
-.current-money {
-    background: #13367d;
-    padding: 8px;
+
+.game-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.game-type a {
+    flex: 0 0 auto;
+    min-width: 80px;
     text-align: center;
-    border-radius: 4px;
-    margin: 5px 0;
-    font-size: 16px;
-    color: #FFFFFF;
+    padding: 6px 12px;
+    border: 2px solid #444;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
 }
 
-.money-btn-area {
+.game-type a:hover {
+    border-color: var(--color);
+    color: var(--color);
+}
+
+.game-type a.border_active {
+    border-bottom: 2px solid var(--color);
+    color: #fff;
+}
+
+.border_active {
+    border-bottom: 2px solid var(--color);
+}
+
+.sport-type {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 5px 0;
+    scrollbar-width: none;
+}
+
+.sport_acitve {
+    background-color: #2e7d32;
+    width: 100px;
+}
+
+.sport-type::-webkit-scrollbar {
+    display: none;
+}
+
+.sport-type a {
+    flex: 0 0 auto;
+    min-width: 80px;
+    text-align: center;
+    padding: 6px 12px;
+    background: #444;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.sport-type a:hover {
+    background: #555;
+}
+
+.sport-type a.sport_active {
+    background-color: #2e7d32;
+}
+
+.sport-list {
+    width: 100%;
     display: flex;
     gap: 5px;
-    justify-content: center;
 }
 
-.money-top-menu {
-    padding: 10px;
-    background-color: #312d2d;
-    color: #FFFFFF;
-    border-radius: 3px 3px 0 0;
-    width: 200px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.money-price-btn {
-    background-color: #312d2d;
-    border-top: 2px solid #e01010;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
-}
-
-.money-btns {
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    gap: 4px;
-    justify-content: center;
-}
-
-.money-btns span {
-    background-color: #434343;
-    color: #ebebeb;
-    border: 0;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.blue {
-    background-color: #115a90 !important;
-}
-
-.money-input {
-    margin-bottom: 10px;
-}
-
-.money-input input {
-    padding: 4px;
-    background: #292929;
-    border: 1px solid #676767;
-    color: #fff;
-    text-align: right;
-    height: 20px;
-    border-radius: 0 4px 4px 0;
-}
-
-.money-input button {
-    height: 30px;
-    border: 0 solid #676767;
-    padding: 0 10px;
-    background: #ffeb00;
-    margin: 0 0 0 4px;
-    border-radius: 4px;
-}
-
-.contents {
-    display: flex;
-    height: 800px;
-}
-
-/* 경기 일정 */
-.left_con {
-    width: calc(100% - 300px);
-}
-
-/* 베팅 창 */
-.right_con {
-    width: 300px;
-    color: #fff;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    flex-direction: column;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
-}
-
-.right_con .top_menu,
-.cart_info {
-    width: 100%;
-    background-color: #f7f7f7;
-    border-bottom: 2px solid #ddd;
-    overflow: hidden;
-}
-
-.right_con .top_menu .item,
-.cart_info .item {
-    padding: 12px 15px;
-    border-bottom: 1px solid #e5e5e5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    color: #333;
-    font-weight: 500;
-}
-
-.right_con .top_menu .item:last-child {
-    border-bottom: none;
-    /* 마지막 줄 구분선 제거 */
-}
-
-.right_con .top_menu .item.button:hover,
-.cart_info .item.button:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.right_con .top_menu .item span,
-.cart_info .item span {
-    flex: 1;
-}
-
-.right_con .top_menu .item i {
-    margin-left: 10px;
-    font-size: 1rem;
-    opacity: 0.6;
-    transition: opacity 0.2s;
-}
-
-.right_con .top_menu .item:hover i {
-    opacity: 1;
-}
-
-.display_center {
-    text-align: center !important;
-}
-
-.bt_menu {
-    width: 100%;
-    height: 350px;
-    background-color: #000000be;
-    font-size: 12px;
-    overflow-y: auto;
-    z-index: 10;
-}
-
-.game_list {
-    display: flex;
-    border-bottom: 1px solid #ccc;
+.sport-item {
+    width: 100px;
     padding: 5px;
-    justify-content: space-between;
-}
-
-.teams {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.order,
-.odds {
-    width: 40px;
+    font-size: 8px;
     text-align: center;
+    border: 1px solid var(--back_3);
 }
 
-.odds {
-    width: 40px
+.sport_active {
+    background-color: var(--color);
 }
 
-.open {
-    display: none;
-    margin-top: 25px;
-    padding: 12px 25px;
-    background: #007bff;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    user-select: none;
-    /* 텍스트 드래그 방지 */
-}
-
-.open:hover {
-    background: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.open:active {
-    background: #00408d;
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#bet_price {
-    width: 140px;
-}
-
-.left_con .game_items {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    color: #000;
-    background-color: #fff;
-    gap: 2px;
-}
-
-.left_con .game_items .item {
-    width: 80px;
-    padding: 5px;
-    font-weight: 800;
-}
-
-/* hover 시 */
-.left_con .game_items .item:hover {
-    background-color: #e01010;
-    color: #ffeb82;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.active {
-    background-color: #e01010;
-    color: #ffeb82;
-    font-weight: 700;
-}
-
-
-.bet_list {
-    border-bottom: 1px solid #ccc;
-    padding: 3px;
-}
-
-.bet_teams {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 5px;
-    text-align: center;
-
-}
-
-.white_over {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-align: start;
-}
-
-
-@media (max-width:500px) {
-    .title {
-        font-size: 12px;
-    }
-
-    .money-top-menu {
-        font-size: 12px;
-        width: 150px;
-    }
-
-    .money-btns {
-        font-size: 12px;
-        grid-template-columns: repeat(4, 90px);
-    }
-
-    .money-input input {
-        height: 30px;
-    }
-
-    .contents {
-        display: block;
-        position: relative;
-        height: 700px;
-    }
-
-    /* 경기 일정 */
-    .left_con {
-        width: 100%;
-        height: calc(100% - 100px);
-        position: absolute;
-        top: 100px;
-    }
-
-    /* 베팅 창 */
-    .right_con {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 10;
-    }
-
-    .right_con .top_menu .item,
-    .cart_info .item {
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .bt_menu {
-        height: 150px;
-        background-color: #000000;
-    }
-
-    .game_list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .close {
-        display: none;
-    }
-
-    .open {
-        display: block;
-    }
-
-    #bet_price {
-        width: 50%;
-    }
-
-    .left_con .game_items .item {
-        font-size: 10px;
-        width: 55px;
-        padding: 2px;
-    }
+.red {
+    color: red;
+    font-weight: 600;
 }

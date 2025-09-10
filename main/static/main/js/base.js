@@ -1,24 +1,47 @@
-const service = document.getElementById('service');
-const use_menual = document.getElementById('use-menual');
+const menuBtn = document.getElementById('menu-btn');
+const userBtn = document.getElementById('user-btn');
+const leftBox = document.getElementById('left_box');
+const rightBox = document.getElementById('right_box');
 
-service.addEventListener('click', function () {
-    const service_menu = document.getElementById('service_menu');
-    const use_menu = document.getElementById('use_menu');
+menuBtn.addEventListener('click', function () {
+    leftBox.classList.toggle("active");   // 왼쪽 토글
+    rightBox.classList.remove("active");  // 오른쪽 토글
 
-    // service_menu 토글
-    service_menu.classList.toggle('hidden');
-
-    // 다른 메뉴는 무조건 닫기
-    use_menu.classList.add('hidden');
 });
 
-use_menual.addEventListener('click', function () {
-    const service_menu = document.getElementById('service_menu');
-    const use_menu = document.getElementById('use_menu');
+userBtn.addEventListener('click', function () {
+    rightBox.classList.toggle("active");  // 오른쪽 토글
+    leftBox.classList.remove("active");   // 왼쪽 토글
+});
 
-    // use_menu 토글
-    use_menu.classList.toggle('hidden');
 
-    // 다른 메뉴는 무조건 닫기
-    service_menu.classList.add('hidden');
+const sport_con = document.querySelectorAll('.sport-con');
+sport_con.forEach(btn => {
+    btn.addEventListener('click', function () {
+        const sport_location = btn.querySelector('.sport_location').innerText;
+
+        switch (sport_location.trim()) {
+            case '축구':
+                window.location.href = '/games/sport/?type=1';
+                break;
+            case '야구':
+                window.location.href = '/games/sport/?type=9';
+                break;
+            case '농구':
+                window.location.href = '/games/sport/?type=3';
+                break;
+            case '배구':
+                window.location.href = '/games/sport/?type=5';
+                break;
+            case '하키':
+                window.location.href = '/games/sport/?type=4';
+                break;
+            case '미식축구':
+                window.location.href = '/games/sport/?type=7';
+                break;
+            case 'E-SPORT':
+                window.location.href = '/games/sport/?type=10';
+                break;
+        }
+    });
 });

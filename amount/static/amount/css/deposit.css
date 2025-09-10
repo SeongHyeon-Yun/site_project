@@ -1,0 +1,110 @@
+.deposit-container {
+    margin-top: 8px;
+    width: 100%;
+    color: #222831;
+}
+
+.deposit-text {
+    margin: auto;
+    width: 300px;
+    background-color: #222831;
+    padding: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.deposit-text input,
+select,
+select option {
+    width: 120px;
+    height: 14px;
+    box-sizing: border-box;
+    font-size: 8px;
+    color: #222831;
+}
+
+.deposit-text :-ms-input-placeholder {
+    color: #222831;
+    font-size: 8px;
+}
+
+.deposit-text input:focus,
+select:focus {
+    outline: none;
+}
+
+.deposit-price,
+.deposit-bankNum,
+.deposit-bonus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.deposit-title {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.deposit-table-list {
+    height: 100px;
+    background-color: #fff;
+    font-size: 8px;
+    color: #222831;
+    overflow-y: auto;
+    border-radius: 4px;
+
+}
+
+.deposit-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.deposit-table thead tr td {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    color: #222831;
+}
+
+.deposit-table tbody tr td {
+    border-bottom: 1px solid #ccc;
+    color: #222831;
+    text-align: center;
+}
+
+.deposit-table tbody tr td:first-child {
+    width: 60px;
+}
+
+.deposit-table tbody tr td:last-child {
+    width: 90px;
+}
+
+.deposit-price-btn {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.dp-btn {
+    background-color: #393E46;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.create-btn {
+    width: 100%;
+    background-color: #00ADB5;
+    margin-top: 8px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+}

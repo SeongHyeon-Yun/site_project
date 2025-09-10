@@ -1,0 +1,43 @@
+.bet_list_wrap {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 8px;
+}
+
+.bet_list_area {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bet_list_area tr td {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.bet_item {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+.bet_item tr td {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.betItem {
+    width: 50px;
+}
+
+.green {
+    color: green;
+}
+
+.gray {
+    color: gray;
+}

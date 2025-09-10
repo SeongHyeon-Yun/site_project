@@ -4,225 +4,91 @@
     <link rel="stylesheet" href="{% static "main/css/main.css" %}">
 {% endblock extra_css %}
 {% block extra_con %}
-    <div class="main-header">
-        <div class="main-header-left">
-            <div class="main-header-img">
-                <img src="{% static "main/img/bg-main.png" %}" alt="" width="" height="">
-                <div class="main-header-con">
-                    <span class="main-header-con-title">
-                        언제 어디서나 즐기는
-                        <br>
-                        정식 카지노 & 슬롯
-                    </span>
-                    <span class="main-header-con-text">
-                        안전하고 공정한 게임 환경!
-                        <br>
-                        다양한 이벤트와 혜택을 지금 경험해보세요
-                    </span>
-                    <a href="{% url "games:sport" %}">
-                        <div class="game-start">게임 시작하기</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main-header-right">
-            {% if user.is_authenticated %}
-                <span class="main-right-title">
-                    {{ user.nickname }} 님
-                    <br>
-                    환영 합니다.
-                </span>
-                <a href="{% url "games:sport" %}">
-                    <div class="main-btn main-service-btn">게임 시작하기</div>
-                </a>
-                <div class="main-header-user-check">
-                    이제 그만하시겠어요? <a href="{% url "recoards:logout" %}">로그아웃</a>
-                </div>
+    <div class="bt-menu">
+        <div class="login">
+            {% if username %}
             {% else %}
-                <span class="main-right-title">
-                    ONEPICK
-                    <br>
-                    처음이신가요?
-                </span>
-                <a href="{% url "games:sport" %}">
-                    <div class="main-btn main-service-btn">게임 시작하기</div>
+                <a class="a_active" href="{% url "recoards:login" %}">
+                    <div class="login-btn">로그인</div>
                 </a>
-                <a href="{% url "recoards:sign_up" %}">
-                    <div class="main-btn main-sign-btn">회원가입</div>
+                <a class="a_active" href="{% url "recoards:sign_up" %}">
+                    <div class="join-btn">회원가입</div>
                 </a>
-                <div class="main-header-user-check">
-                    이미 회원이신가요? <a href="{% url "recoards:login" %}">로그인</a>
-                </div>
             {% endif %}
-            <div class="main-icons">
-                <a href="{% url "games:sport" %}">
-                    <div class="main-icon">
-                        <img src="{% static "main/img/게임.png" %}" alt="" width="" height="">
-                        <span>게임</span>
-                    </div>
-                </a>
-                <a href="{% url "recoards:customer" %}">
-                    <div class="main-icon">
-                        <img src="{% static "main/img/고객센터.png" %}" alt="" width="" height="">
-                        <span>고객센터</span>
-                    </div>
-                </a>
-                <a href="{% url "recoards:message" %}">
-                    <div class="main-icon">
-                        <img src="{% static "main/img/쪽지.png" %}" alt="" width="" height="">
-                        <span>쪽지</span>
-                    </div>
-                </a>
-                <a href="{% url "recoards:deposit" %}">
-                    <div class="main-icon">
-                        <img src="{% static "main/img/입출금.png" %}" alt="" width="" height="">
-                        <span>입출금</span>
-                    </div>
-                </a>
-                <a href="{% url "notes:notice" %}">
-                    <div class="main-icon">
-                        <img src="{% static "main/img/공지규정.png" %}" alt="" width="" height="">
-                        <span>공지규정</span>
-                    </div>
-                </a>
-                <div class="main-icon">
-                    <img src="{% static "main/img/텔레.png" %}" alt="" width="" height="">
-                    <span>텔레</span>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="main-event">
-        <span class="main-event-title">이벤트 / 혜택</span>
-        <div class="main-event-cons">
-            <div class="main-event-con main-event-left">
-                <div class="main-event-left-cont">
-                    <span>신규회원 이벤트</span>
-                    <span class="left-cont-text">
-                        오직 신규회원만!
-                        <br>
-                        단, 한번 최대 30% 추가적립
-                    </span>
+        <div class="main-menu">
+            <a class="a_active" href="{% url 'games:sport' %}">
+                <div class="con">
+                    <i class="fa-regular fa-futbol icon"></i>
+                    <span>스포츠</span>
                 </div>
-                <div class="main-event-left-img">
-                    <img src="{% static "main/img/event-left.png" %}"
-                         alt=""
-                         width=""
-                         height="">
+            </a>
+            <a class="a_active" href="{% url "games:casino" %}">
+                <div class="con">
+                    <i class="fa-solid fa-coins icon"></i>
+                    <span>카지노</span>
                 </div>
-            </div>
-            <div class="main-event-con main-event-right">
-                <div class="main-event-left-cont">
-                    <span>이벤트 혜택</span>
-                    <span class="left-cont-text">
-                        충전만 해도 무조건
-                        <br>
-                        최대 50만원 지급 드려요!
-                    </span>
+            </a>
+            <a class="a_active" href="{% url "games:slot" %}">
+                <div class="con">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>슬롯</span>
                 </div>
-                <div class="main-event-left-img">
-                    <img src="{% static "main/img/event-right.png" %}"
-                         alt=""
-                         width=""
-                         height="">
+            </a>
+            <a class="a_active" href="{% url "amount:amount" %}">
+                <div class="con">
+                    <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                    <span>입금</span>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="main-con-1">
-        <div class="main-con-titles">
-            <div class="main-con-title">차별화/특장점</div>
-            <div class="main-con-sub-title">한 눈에 보기</div>
-            <div class="main-con-imgs">
-                <div class="img top-first-bg">
-                    <div class="main-cpoy">
-                        <span class="main-copy-title">정식 라이선스</span>
-                        <span class="main-copy-sub-title">국제 인증 라이선스 보유</span>
-                        <span class="main-copy-sub-title">안전하고 공정한 게임</span>
-                    </div>
-                    <div class="top-first-img">
-                        <img src="{% static "main/img/main_1.png" %}" alt="" width="" height="">
-                    </div>
+            </a>
+            <a class="a_active" href="{% url "amount:money_exit" %}">
+                <div class="con">
+                    <i class="fa-solid fa-money-bills icon"></i>
+                    <span>출금</span>
                 </div>
-                <div class="img top-second-bg">
-                    <div class="main-cpoy">
-                        <span class="main-copy-title second-title-bg">세련된 UI</span>
-                        <span class="main-copy-sub-title second-sub-title-bg">쾌적하고 안정적인 서버</span>
-                        <span class="main-copy-sub-title second-sub-title-bg">언제나 최상의 플레이 경험</span>
-                    </div>
-                    <div class="top-first-img">
-                        <img src="{% static "main/img/main_2.png" %}" alt="" width="" height="">
-                    </div>
+            </a>
+            <a class="a_active" href="{% url "recoards:customer" %}">
+                <div class="con">
+                    <i class="fa-solid fa-comment-dots icon"></i>
+                    <span>1:1문의</span>
                 </div>
-            </div>
-            <div class="main-con-imgs">
-                <div class="img bt-first-bg">
-                    <div class="main-cpoy">
-                        <span class="main-copy-title bt-cpoy-title">신규가입 혜택</span>
-                        <span class="main-copy-sub-title bt-cpoy-sub-title">첫 충전 최대 30% 보너스</span>
-                        <span class="main-copy-sub-title bt-cpoy-sub-title">참여할수록 쌓이는 보상</span>
-                    </div>
-                    <div class="top-first-img">
-                        <img src="{% static "main/img/main_3.png" %}" alt="" width="" height="">
-                    </div>
+            </a>
+            <a class="a_active" href="{% url "notes:event" %}">
+                <div class="con">
+                    <i class="fa-solid fa-gift icon"></i>
+                    <span>이벤트</span>
                 </div>
-                <div class="img bt-second-bg">
-                    <div class="main-cpoy">
-                        <span class="main-copy-title bt-cpoy-title-2">365일 이벤트</span>
-                        <span class="main-copy-sub-title bt-cpoy-sub-title-2">즐길수록 커지는 혜택</span>
-                        <span class="main-copy-sub-title bt-cpoy-sub-title-2">놓치면 아쉬운 특별 보상</span>
-                    </div>
-                    <div class="top-first-img">
-                        <img src="{% static "main/img/main_4.png" %}" alt="" width="" height="">
-                    </div>
+            </a>
+            {% comment %} <a class="a_active" href="#">
+                <div class="con">
+                    <i class="fa-solid fa-clipboard-check icon"></i>
+                    <span>출석현황</span>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="main-con-2">
-        <div class="main-con-title">더 안심하고 사용하세요</div>
-        <div class="main-con-sub-title">서비스 안정성, 품질보증</div>
-        <div class="main-con-boxs">
-            <div class="main-con-left-box">
-                <img src="{% static "main/img/main_2_icon_1.png" %}"
-                     alt=""
-                     width=""
-                     height="">
-                <span>국내 <span class="blue">최고 등급</span></span>
-                <span><span class="blue">정보보안</span> 인증</span>
-            </div>
-            <div class="main-con-right-boxs">
-                <div class="main-con-right-box">
-                    <img src="{% static "main/img/main_2_icon_2.png" %}"
-                         alt=""
-                         width=""
-                         height="">
-                    <span>SSL 보안인증</span>
+            </a> {% endcomment %}
+            <a class="a_active" href="{% url "notes:notice" %}">
+                <div class="con">
+                    <i class="fa-solid fa-bullhorn icon"></i>
+                    <span>공지규정</span>
                 </div>
-                <div class="main-con-right-box">
-                    <img src="{% static "main/img/main_2_icon_3.png" %}"
-                         alt=""
-                         width=""
-                         height="">
-                    <span>개인정보 보호마크</span>
+            </a>
+            <a class="a_active" href="{% url "notes:bet_list" %}">
+                <div class="con">
+                    <i class="fa-solid fa-receipt icon"></i>
+                    <span>베팅내역</span>
                 </div>
-                <div class="main-con-right-box">
-                    <img src="{% static "main/img/main_2_icon_4.png" %}"
-                         alt=""
-                         width="150"
-                         height="">
-                    <span>IT 인증마크</span>
+            </a>
+            <a class="a_active" href="#">
+                <div class="con">
+                    <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
+                    <span>포인트전환</span>
                 </div>
-                <div class="main-con-right-box">
-                    <img src="{% static "main/img/main_2_icon_5.png" %}"
-                         alt=""
-                         width="150"
-                         height="">
-                    <span>CC 인증마크</span>
+            </a>
+            <a class="a_active" href="#">
+                <div class="con">
+                    <i class="fa-solid fa-envelope-open-text icon"></i>
+                    <span>쪽지함</span>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 {% endblock extra_con %}
-{% block extra_js %}
-{% endblock extra_js %}

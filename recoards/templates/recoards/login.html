@@ -4,26 +4,26 @@
     <link rel="stylesheet" href="{% static "recoards/css/login.css" %}">
 {% endblock extra_css %}
 {% block extra_con %}
-    <div class="login_area">
-        {% if messages %}
-            {% for message in messages %}<div class="error">{{ message }}</div>{% endfor %}
-        {% endif %}
-        <span class="title">로그인</span>
-        <form action="{% url 'recoards:login' %}" method="post">
+    <div class="login-wrap">
+        {% for error in messages %}<div class="error">{{ error }}</div>{% endfor %}
+        <form method="post" action="{% url 'recoards:login' %}">
             {% csrf_token %}
-            <div class="input_area">
-                <label for="{{ form.username.id_for_label }}">아이디</label>
-                {{ form.username }}
+            <div class="input">
+                <label for="id">아이디</label>
+                <input id="id" type="text" name="username">
             </div>
-            <div class="input_area">
-                <label for="{{ form.password.id_for_label }}">비밀번호</label>
-                {{ form.password }}
+            <div class="input">
+                <label for="pw">비밀번호</label>
+                <input id="pw" type="password" name="password">
             </div>
-            <button type="submit" class="login_btn">로그인</button>
+            <div class="login">
+                <!-- 로그인 버튼 -->
+                <button type="submit" class="login-btn">로그인</button>
+                <!-- 회원가입 버튼 -->
+                <a class="join-btn" href="{% url 'recoards:sign_up' %}">회원가입</a>
+            </div>
         </form>
-        <a href="{% url 'recoards:sign_up' %}">
-            <div class="sign_up">회원가입</div>
-        </a>
+        
     </div>
 {% endblock extra_con %}
 {% block extra_js %}

@@ -1,0 +1,45 @@
+<div class="games game-list">
+    <div class="game time">{{ e.starts|date:"Y-m-d H:i" }}</div>
+    <div class="game teams">
+        <div class="home">
+            <span>홈</span>
+            <span class="home_name">{{ e.home_display|default:e.home }}</span>
+        </div>
+        <div class="away">
+            <span>원정</span>
+            <span class="away_name">{{ e.away_display|default:e.away }}</span>
+        </div>
+    </div>
+    <div class="game odds">
+        {# 홈 (승 / 핸승 / 언더) #}
+        {% if pick_home %}
+            <div class="odd home_odd pick"
+                 data-event-id="{{ e.id }}"
+                 data-market-id="{{ m.id }}"
+                 data-pick="{{ pick_home }}">
+                <span class="label">{{ home_label }}</span>
+                <span class="odd_value">{{ odd_home|default:"-"|floatformat:2 }}</span>
+            </div>
+        {% endif %}
+        {# 기준점(무 / 기준점) → 선택 불가도 있음 #}
+        {% if draw_label %}
+            <div class="odd draw_odd {% if pick_draw %}pick{% endif %}"
+                 data-event-id="{{ e.id }}"
+                 data-market-id="{{ m.id }}"
+                 {% if pick_draw %}data-pick="{{ pick_draw }}"{% endif %}>
+                <span class="label">{{ draw_label }}</span>
+                <span class="odd_value point">{{ odd_draw|default:"-"|floatformat:2 }}</span>
+            </div>
+        {% endif %}
+        {# 원정 (패 / 핸패 / 오버) #}
+        {% if pick_away %}
+            <div class="odd away_odd pick"
+                 data-event-id="{{ e.id }}"
+                 data-market-id="{{ m.id }}"
+                 data-pick="{{ pick_away }}">
+                <span class="label">{{ away_label }}</span>
+                <span class="odd_value">{{ odd_away|default:"-"|floatformat:2 }}</span>
+            </div>
+        {% endif %}
+    </div>
+</div>

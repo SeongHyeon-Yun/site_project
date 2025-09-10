@@ -2,47 +2,30 @@
 {% load humanize %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static "games/css/sub_base.css" %}">
+    <link rel="stylesheet" href="{% static "games/css/sub_casino.css" %}">
     {% block sub_extra_css %}
     {% endblock sub_extra_css %}
 {% endblock extra_css %}
 {% block extra_con %}
-    <div class="titles">
-        <a href="{% url "games:sport" %}">
-            <span class="title">스포츠(크로스)</span>
-        </a>
-        <a href="{% url "games:special" %}">
-            <span class="title">스포츠(스페셜)</span>
-        </a>
-        <a href="{% url "games:casino" %}">
-            <span class="title">카지노</span>
-        </a>
-        <a href="{% url "games:slot" %}">
-            <span class="title">슬롯</span>
-        </a>
-    </div>
     <div class="money-change">
-        <div id="currenMoney" class="current-money">현재 카지노·슬롯 머니 : {{ money|intcomma }}</div>
-        <div class="money-btn-area">
-            <div class="money-top-menu active">카지노·슬롯 머니로 이동</div>
-            <div class="money-top-menu">보유머니로 이동</div>
+        <div id="currenMoney" class="current-money">
+            <span>보유 카지노·슬롯 금액</span>
+            <input type="text" id="get_money" value="{{ money }}" readonly>
         </div>
-        <div class="money-price-btn">
-            <div class="money-input">
-                <input id="moneyinput" type="text" value=0>
-                <button>전환 하기</button>
-            </div>
-            <div class="money-btns">
-                <span class="moneyBtn">5천원</span>
-                <span class="moneyBtn">1만원</span>
-                <span class="moneyBtn">3만원</span>
-                <span class="moneyBtn">5만원</span>
-                <span class="moneyBtn">10만원</span>
-                <span class="moneyBtn">50만원</span>
-                <span class="moneyBtn">100만원</span>
-                <span class="moneyBtn blue">전액</span>
-            </div>
+        <div class="current-money">
+            <span>전환 금액</span>
+            <input type="input" id="input_money" placeholder="금액을 입력해주세요">
         </div>
+        <div class="current-money">
+            <span>전환 선택</span>
+            <select id="moneySelect">
+                <option class="black" value="in">카지노, 슬롯 금액</option>
+                <option class="black" value="out">보유 금액</option>
+            </select>
+        </div>
+        <button class="money-change-btn" id="moneyChangeBtn"
+                data-user-money="{{ user.money }}"
+                data-user-name="{{ user.username }}">전환하기</button>
     </div>
     {% block sub_content %}
     {% endblock sub_content %}

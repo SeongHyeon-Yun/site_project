@@ -1,129 +1,147 @@
-{% load static %}
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 검색엔진 최적화(SEO) -->
         <meta name="description"
-              content="ONEPICK는 정식 카지노, 슬롯 서비스를 제공하며 다양한 이벤트와 안정적인 운영을 약속드립니다.">
-        <meta name="keywords" content="카지노, 슬롯, 이벤트, 머니전환, 온라인게임">
-        <title>원픽</title>
-        <link rel="stylesheet"
-              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-        <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+              content="원픽(onepick)은 스포츠 토토, 카지노, 배팅을 안전하게 즐길 수 있는 전문 플랫폼입니다. 먹튀 걱정 없는 안전한 사이트에서 다양한 스포츠와 카지노 게임을 경험하세요.">
+        <meta name="keywords" content="토토, 스포츠, 카지노, 배팅, 사이트, 토지노, 안전한 사이트, 먹튀 없음">
+        <meta name="author" content="onepick">
+        <!-- 소셜 미디어 (Open Graph) -->
+        <meta property="og:title" content="onepick - 안전한 스포츠 & 카지노 배팅">
+        <meta property="og:description"
+              content="토토와 카지노를 신뢰할 수 있는 환경에서 즐겨보세요. 원픽(onepick)은 먹튀 없는 안전한 사이트를 지향하며, 스포츠 배팅부터 카지노까지 다양한 재미를 제공합니다.">
+        <meta property="og:image" content="{% static 'main/img/logo.png' %}">
+        <meta property="og:url" content="https://247pick.pro">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="{% static "main/css/base.css" %}">
         {% block extra_css %}
         {% endblock extra_css %}
+        <title>onepick</title>
     </head>
     <body>
-        <div class="wrap">
-            <header>
-                <div class="top-wrap">
-                    <div class="top-menus">
-                        <div class="top-left-menus">
-                            <a href="{% url "main:home" %}">
-                                <div class="logo">ONEPICK</div>
-                            </a>
-                            <div class="top-left-menu left-item" id="service">
-                                <span>서비스 소개</span>
-                                <div class="top-sub-menu hidden" id="service_menu">
-                                    <a href="{% url "about:sport" %}">
-                                        <span>스포츠 서비스 소개</span>
+        <div class="base_wrap">
+            <div class="top-menus">
+                <div class="side-menus">
+                    <div class="left-menu">
+                        <i id="menu-btn" class="fa-solid fa-bars menu"></i>
+                        {% if username %}
+                            <div id="left_box" class="hidden">
+                                <div class="left-sub-menu">
+                                    <a href="{% url 'amount:amount' %}">
+                                        <div class="left-con">입금</div>
                                     </a>
-                                    <a href="{% url "about:casino" %}">
-                                        <span>카지노 서비스 소개</span>
+                                    <a href="{% url "amount:money_exit" %}">
+                                        <div class="left-con">출금</div>
                                     </a>
-                                    <a href="{% url "about:slot" %}">
-                                        <span>슬롯 서비스 소개</span>
+                                    <a href="{% url "recoards:customer" %}">
+                                        <div class="left-con">문의</div>
                                     </a>
+                                    <a href="{% url "games:sport" %}">
+                                        <div class="left-con">스포츠</div>
+                                    </a>
+                                    <a href="{% url "games:casino" %}">
+                                        <div class="left-con">카지노</div>
+                                    </a>
+                                    <a href="{% url "games:slot" %}">
+                                        <div class="left-con">슬롯</div>
+                                    </a>
+                                    <a href="{% url "notes:event" %}">
+                                        <div class="left-con">이벤트</div>
+                                    </a>
+                                    {% comment %} <div class="left-con">출석현황</div> {% endcomment %}
+                                    <a href="{% url "notes:notice" %}">
+                                        <div class="left-con">공지규정</div>
+                                    </a>
+                                    <a href="{% url "notes:bet_list" %}">
+                                        <div class="left-con">베팅내역</div>
+                                    </a>
+                                    <div class="left-con">포인트전환</div>
+                                </div>
+                                <div class="left-sport-menu">
+                                    {% for item in sport_count_list %}
+                                        <div class="sport-con">
+                                            <span class="sport_location">{{ item.name }}</span>
+                                            <span>{{ item.count }}</span>
+                                        </div>
+                                    {% endfor %}
                                 </div>
                             </div>
-                            <div class="top-left-menu left-item" id="use-menual">
-                                <span>이용 안내</span>
-                                <div class="top-sub-menu hidden" id="use_menu">
-                                    <a href="{% url "notes:notice" %}"><span>공지/규정</span></a>
-                                    <a href="{% url "recoards:customer" %}"><span>고객센터</span></a>
-                                    <a href="{% url "notes:check_day" %}"><span>출석체크</span></a>
-                                    <a href="{% url "recoards:deposit" %}"><span>입/출금</span></a>
-                                    <a href="{% url "notes:event" %}"><span>이벤트</span></a>
-                                    {% comment %} <a href="{% url "recoards:message" %}"><span>쪽지함</span></a> {% endcomment %}
+                        {% endif %}
+                    </div>
+                    <div class="right-menu">
+                        {% if username %}
+                            <div id="user-btn" class="menu fonts">베팅내역</div>
+                            <div id="right_box" class="hidden">
+                                <div class="user-name">
+                                    <span>{{ grade }} {{ username }}</span>
+                                </div>
+                                <div class="right-sub-menu">
+                                    <div class="rigth-menu">
+                                        <span>보유머니</span>
+                                        <span id="user_money" data-money="{{ user.money }}">{{ user.money|intcomma }} 원</span>
+                                    </div>
+                                    <div class="rigth-menu">
+                                        <span>카지노.슬롯 머니</span>
+                                        <span>{{ casino_money|intcomma }} 원</span>
+                                    </div>
+                                    <div class="rigth-menu">
+                                        <span>포인트</span>
+                                        <span>{{ user.bonus|intcomma }} 원</span>
+                                    </div>
+                                    <div class="right-sub-con">
+                                        <a href="#">
+                                            <div class="right-sub">입금</div>
+                                        </a>
+                                        <div class="right-sub">출금</div>
+                                        <div class="right-sub">쪽지</div>
+                                        <a href="{% url "recoards:logout" %}">
+                                            <div class="right-sub">로그아웃</div>
+                                        </a>
+                                    </div>
+                                    <div class="bt_menu">
+                                        <div id="selected_games"></div>
+                                    </div>
+                                    <div class="cart_info">
+                                        <div class="item">
+                                            <span>합계 배당</span>
+                                            <span id="cart_odds">0</span>
+                                        </div>
+                                        <div class="item">
+                                            <span>베팅금액</span>
+                                            <input id="bet_price" type="text">
+                                        </div>
+                                        <div class="item">
+                                            <span>예상 당첨금</span>
+                                            <span id="result_money">0</span>
+                                        </div>
+                                        <div class="item button">
+                                            <span id="submit_btn"
+                                                  data-money="{{ user.money }}"
+                                                  data-username="{{ user.username }}">베팅하기</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="top-right-menus">
-                            {% if user.is_authenticated %}
-                                <a href="{% url "recoards:logout" %}">
-                                    <div class="top-left-menu login-item">로그아웃</div>
-                                </a>
-                                <a href="{% url "recoards:customer" %}">
-                                    <div class="top-left-menu">고객센터</div>
-                                </a>
-                            {% else %}
-                                <a href="{% url "recoards:sign_up" %}">
-                                    <div class="top-left-menu join-item">회원가입</div>
-                                </a>
-                                <a href="{% url "recoards:login" %}">
-                                    <div class="top-left-menu login-item">로그인</div>
-                                </a>
-                                <a href="{% url "recoards:customer" %}">
-                                    <div class="top-left-menu">고객센터</div>
-                                </a>
-                            {% endif %}
-                        </div>
+                        {% endif %}
                     </div>
                 </div>
-            </header>
-            <main>
-                <div class="main-wrap">
-                    {% block extra_con %}
-                    {% endblock extra_con %}
-                </div>
-            </main>
-{% comment %} 
-            <footer>
-                <div class="bt-wrap">
-                    <div class="bt-top-menus">
-                        <div class="bt-top-menu">회사소개</div>
-                        <div class="bt-top-menu">이용약관</div>
-                        <div class="bt-top-menu">개인정보처리방침</div>
-                        <div class="bt-top-menu">청소년보호정책</div>
-                        <div class="bt-top-menu">스팸방지정책</div>
-                        <div class="bt-top-menu">이메일무단수집거부</div>
+                <a href="{% url "main:home" %}">
+                    <div class="logo">
+                        <img src="{% static "main/img/logo.png" %}" alt="" width="" height="">
                     </div>
-                    <div class="bt-ft-menus">
-                        <div class="bt-left-menu">
-                            <h1>ONEPICK</h1>
-                            <p class="casino-info">
-                                저희는 정식 카지노·슬롯 게임만을 취급하며,
-                                <br>
-                                공정하고 안전한 게임 환경을 제공합니다.
-                                <br>
-                                24시간 안정적인 서비스와 다양한 이벤트를 경험해보세요.
-                            </p>
-                        </div>
-                        <div class="bt-right-menu">
-                            <h1>고객센터</h1>
-                            <div class="bt-icons">
-                                <div class="bt-icon">
-                                    <img src="{% static "main/img/ft_icon_1.png" %}" alt="" width="" height="">
-                                    <span>고객센터</span>
-                                </div>
-                                <div class="bt-icon">
-                                    <img src="{% static "main/img/ft_icon_2.png" %}" alt="" width="" height="">
-                                    <span>1:1문의</span>
-                                </div>
-                                <div class="bt-icon">
-                                    <img src="{% static "main/img/ft_icon_3.png" %}" alt="" width="" height="">
-                                    <span>텔레문의</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-             {% endcomment %}
+                </a>
+            </div>
+            {% block extra_con %}
+            {% endblock extra_con %}
         </div>
-        <script src="{% static 'main/js/base.js' %}"></script>
-        {% block extra_js %}
-        {% endblock extra_js %}
     </body>
+    <script src="https://kit.fontawesome.com/85402c86d6.js"
+            crossorigin="anonymous"></script>
+    <script src="{% static "main/js/base.js" %}"></script>
+    <script src="{% static "games/js/sport_base.js" %}"></script>
+    {% block extra_js %}
+    {% endblock extra_js %}
 </html>

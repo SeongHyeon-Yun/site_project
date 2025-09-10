@@ -1,14 +1,10 @@
-{% extends "games/sub_base.html" %}
 {% load static %}
-{% block sub_extra_css %}
-    {{ block.super }}
-    <link rel="stylesheet" href="{% static 'games/css/slot_detail.css' %}">
-{% endblock sub_extra_css %}
-{% block sub_content %}
-    <h1>{{ data.vendor }}</h1>
+<link rel="stylesheet" href="{% static 'games/css/slot_detail.css' %}">
+<h1>{{ data.vendor }}</h1>
+<div class="slot-area">
     <div class="slot_list">
         {% for game in slot_detail.games %}
-            <form action="{% url "games:slot_start" %}" method="post">
+            <form class="form" action="{% url "games:slot_start" %}" method="post">
                 {% csrf_token %}
                 <input type="hidden" name="key" value="{{ game.key }}">
                 <input type="hidden" name="gameName" value="{{ data.key }}">
@@ -21,4 +17,4 @@
             </form>
         {% endfor %}
     </div>
-{% endblock sub_content %}
+</div>

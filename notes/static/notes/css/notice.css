@@ -1,9 +1,9 @@
 .notice-title {
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #222831;
     padding: 20px 30px;
-    border-top: 1px solid #dce0e6;
-    border-bottom: 1px solid #dce0e6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .notice-con {
@@ -17,9 +17,9 @@
 .notice-list {
     display: grid;
     grid-template-columns: 100px 1fr 200px;
-    background-color: #F7F7F7;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #d1d1d1;
+    background-color: #222831;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .notice-titles span,
@@ -29,21 +29,21 @@
     text-align: center;
     font-size: 14px;
     font-weight: 700;
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid #ccc;
 }
 
 .notice-list span {
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid #ccc;
 }
 
 .notice-list {
     border-top: none;
-    background-color: #ffffff;
+    background-color: #222831;
 }
 
 .notice-list a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
 
 .notice-con button {
@@ -83,7 +83,7 @@
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #222831;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -114,6 +114,7 @@
 
 .title-input {
     font-weight: 500;
+    color: #222831;
 }
 
 .content-input {
@@ -123,6 +124,7 @@
     border-radius: 6px;
     resize: vertical;
     box-sizing: border-box;
+    color: #222831;
 }
 
 .error-message {
@@ -150,7 +152,7 @@
     padding: 15px;
     font-size: 18px;
     font-weight: 600;
-    background: #f5f5f5;
+    background-color: #222831;
     border-radius: 8px 8px 0 0;
 }
 
@@ -164,4 +166,6 @@
     white-space: pre-wrap;
     border-radius: 0 0 8px 8px;
     overflow-y: auto;
+    background-color: #222831;
+    color: #fff;
 }

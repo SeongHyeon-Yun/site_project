@@ -1,91 +1,28 @@
 {% extends "main/base.html" %}
-{% load static humanize %}
+{% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static "games/css/sub_base.css" %}">
-    {% block sub_extra_css %}
-    {% endblock sub_extra_css %}
+   <link rel="stylesheet" href="{% static "games/css/sub_base.css" %}">
+   {% block sub_css %}
+   {% endblock sub_css %}
 {% endblock extra_css %}
 {% block extra_con %}
-    <div class="titles">
-        <a href="{% url "games:sport" %}">
-            <span class="title">스포츠(크로스)</span>
-        </a>
-        <a href="{% url "games:special" %}">
-            <span class="title">스포츠(스페셜)</span>
-        </a>
-        <a href="{% url "games:casino" %}">
-            <span class="title">카지노</span>
-        </a>
-        <a href="{% url "games:slot" %}">
-            <span class="title">슬롯</span>
-        </a>
-    </div>
-    <div class="contents">
-        <div class="left_con">
-            <div class="game_items">
-                {% for k, v in type_list.items %}
-                    <a href="?type={{ k }}">
-                        <div class="item {% if k == sport_type %}active{% endif %}">{{ v }}</div>
-                    </a>
-                {% endfor %}
-            </div>
-            {% block sub_content %}
-            {% endblock sub_content %}
-        </div>
-        <div class="right_con">
-            <div class="open" id="open">
-                <span>카트 열기</span>
-            </div>
-            <div class="close" id="close">
-                <div class="top_menu">
-                    <div class="item">
-                        <span>등급</span>
-                        <span>1</span>
-                    </div>
-                    <div class="item">
-                        <span>반갑습니다.</span>
-                        <span>{{ user.nickname }}</span>
-                    </div>
-                    <div class="item">
-                        <span>보유머니</span>
-                        <span>{{ user.money|intcomma }}</span>
-                    </div>
-                    <div class="item">
-                        <span>포인트</span>
-                        <span>{{ user.bonus|intcomma }}</span>
-                    </div>
-                    <div class="item display_center button">
-                        <span>포인트 전환</span>
-                    </div>
-                </div>
-                <div class="bt_menu">
-                    <div id="selected_games">
-                        <input type="hidden" value="{{ user.username }}" id="test">
-                    </div>
-                </div>
-                <div class="cart_info">
-                    <div class="item">
-                        <span>합계 배당</span>
-                        <span id="cart_odds">0</span>
-                    </div>
-                    <div class="item">
-                        <span>베팅금액</span>
-                        <input id="bet_price" type="text">
-                    </div>
-                    <div class="item">
-                        <span>예상 당첨금</span>
-                        <span id="result_money">0</span>
-                    </div>
-                    <div class="item display_center button">
-                        <span id="submit_btn" dat-money="{{ user.money }}">베팅하기</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <div class="sport-wrap">
+      <div class="game-type">
+         <a href="{% url "games:sport" %}"
+            class="{% if sport_type == 'sport' %}border_active{% endif %}">크로스</a>
+         <a href="{% url "games:special" %}"
+            class="{% if sport_type == 'special' %}border_active{% endif %}">스페셜</a>
+      </div>
+      <div class="sport-list">
+         {% for item in sport_count_list %}
+            <a class="sport-item {% if item.id == get_type %}sport_active{% endif %}"
+               href="?type={{ item.id }}">{{ item.name }} <span class="red">{{ item.count }}</span></a>
+         {% endfor %}
+      </div>
+   </div>
+   {% block sub_con %}
+   {% endblock sub_con %}
 {% endblock extra_con %}
 {% block extra_js %}
-    <script src="{% static "games/js/sport_base.js" %}"></script>
-    {% block sub_js %}
-    {% endblock sub_js %}
+   <script src="{% static "games/js/sport_base.js" %}"></script>
 {% endblock extra_js %}

@@ -11,6 +11,7 @@ urlpatterns = [
     path("games/", include("games.urls")),
     path("about/", include("about.urls")),
     path("notes/", include("notes.urls")),
+    path("amount/", include("amount.urls")),
 ]
 
 if settings.DEBUG:

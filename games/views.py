@@ -1,48 +1,57 @@
-from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
-from django.views.decorators.cache import never_cache
-from django.views.decorators.http import require_POST
-from django.shortcuts import redirect
-from django.conf import settings as set
-from django.utils import timezone
+import json
+import math
 from datetime import timedelta
+from decimal import Decimal
+
+from django import template
+from django.conf import settings as set
+from django.contrib.auth.decorators import login_required
+from django.core.cache import cache
+from django.db import transaction
+from django.db.models import Q, Prefetch
+from django.http import JsonResponse
+from django.shortcuts import redirect, render
+from django.utils import timezone
+from django.views.decorators.cache import never_cache
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_POST
+
+from accounts.models import Leagues, Market, Event, BetSlip, Bet, Period, Line, User
+from games.mapping import LEAGUE_KO, TEAM_KO, PERIOD_KO, MARKET_KO
 from .casino_fun import (
     get_casino_list,
     get_slot_list,
     casino_run,
     get_slot_page,
     bacara_money,
+    money_in_out,
 )
-from games.mapping import LEAGUE_KO, TEAM_KO
-from accounts.models import Leagues, Market, Event, BetSlip, Bet
-from django.db.models import Q
-from django import template
-import math, json
-from django.http import JsonResponse
-from django.db import transaction
-from decimal import Decimal
-
-register = template.Library()
 
 
-@login_required
+@csrf_exempt
 @require_POST
+@login_required(login_url="recoards:login")
 def betting(request):
     try:
         data = json.loads(request.body)
-        stake = Decimal(data.get("amount", "0"))
+        stake = Decimal(str(data.get("amount", "0")))
         cart = data.get("cart", [])
 
         if not cart:
             return JsonResponse({"success": False, "message": "카트가 비어있습니다."})
 
         user = request.user
-        balance_before = user.money  # ✅ 커스텀 User 모델에 money 있다고 가정
+        balance_before = user.money
 
         # 👉 전체 배당 계산
         total_odds = 1.0
         for item in cart:
-            total_odds *= float(item["odds"])
+            try:
+                total_odds *= float(item.get("odds", 1))
+            except (TypeError, ValueError):
+                return JsonResponse(
+                    {"success": False, "message": "잘못된 배당 값이 포함됨"}
+                )
 
         expected_amount = stake * Decimal(str(total_odds))
 
@@ -59,10 +68,26 @@ def betting(request):
 
             # ✅ 개별 Bet 생성
             for item in cart:
-                event = Event.objects.get(id=item["event_id"])
-                market = Market.objects.get(id=item["market_id"])
+                event_id = item.get("event_id")
+                market_id = item.get("market_id")
 
-                # 경기 설명: 홈 vs 원정 + pick
+                if not event_id or not market_id:
+                    return JsonResponse(
+                        {"success": False, "message": "잘못된 경기 데이터"}
+                    )
+
+                try:
+                    event = Event.objects.get(id=event_id)
+                    market = Market.objects.get(id=market_id)
+                except Event.DoesNotExist:
+                    return JsonResponse(
+                        {"success": False, "message": f"Event {event_id} 없음"}
+                    )
+                except Market.DoesNotExist:
+                    return JsonResponse(
+                        {"success": False, "message": f"Market {market_id} 없음"}
+                    )
+
                 desc = f"{event.home} vs {event.away} | Pick: {item['pick']}"
 
                 Bet.objects.create(
@@ -76,7 +101,7 @@ def betting(request):
 
             # ✅ 유저 머니 차감
             user.money = balance_before - stake
-            user.save()
+            user.save(update_fields=["money"])
 
         return JsonResponse(
             {
@@ -90,129 +115,187 @@ def betting(request):
 
     except Exception as e:
         print("❌ betting error:", e)
-        return JsonResponse({"success": False, "message": str(e)})
+        return JsonResponse({"success": False, "message": str(e)}, status=400)
 
 
-@register.filter
-def get_item(dictionary, key):
-    return dictionary.get(str(key))
+def get_events(sport_id, hours, exclude_corners=True):
+    """
+    이벤트 + Period + Market + Line 구조를 딕셔너리로 정리해서 반환.
+    """
+    now_time = timezone.now()
+    before_time = now_time + timedelta(hours=hours)
 
+    # Market 필터
+    markets_qs = Market.objects.filter(
+        market_type__in=["money_line", "spread", "total"]
+    ).prefetch_related(Prefetch("lines", queryset=Line.objects.all()))
 
-# 경기 한글 매핑
-def korea_mapping(name: str) -> str:
-    # 필요하다면 문자열 정규화 (공백/대소문자/다른 하이픈 등)
-    clean = (
-        name.strip()
-        .replace("–", "-")  # en dash → 일반 하이픈
-        .replace("\u00a0", " ")  # non-breaking space → 일반 스페이스
-    )
-    return TEAM_KO.get(clean, LEAGUE_KO.get(clean, name))
-
-
-# 경기 배당 기준점 수정
-def round_half(x: float) -> float:
-    if x is None:
-        return None
-    return math.floor(x * 2 + 0.5) / 2
-
-
-# 스포츠 종목 리스트 + 경기 가져오기
-def game_base(request, template_name):
-    sport_type = request.GET.get("type", "0")
-
-    type_list = {
-        "0": "ALL",
-        "1": "축구",
-        "3": "농구",
-        "4": "하키",
-        "5": "배구",
-        "7": "미식축구",
-        "9": "야구",
-        "10": "E스포츠",
-    }
-
-    now_utc = timezone.now()
-    ten_hours_later = now_utc + timedelta(hours=10)
-
-    # 기본 쿼리셋
-    event_qs = (
-        Event.objects.filter(
-            starts__gte=now_utc,
-            starts__lte=ten_hours_later,
-        )
-        .filter(markets__period="num_1")  # num_1 마켓이 있는 경기만
-        .select_related("league")
-        .prefetch_related("markets")
-        .order_by("starts")
-        .exclude(
-            Q(league__name__icontains="Corners")
-            | Q(home__icontains="Hits+Runs+Errors")
-            | Q(away__icontains="Hits+Runs+Errors")
-        )
-        .distinct()
+    # Periods → Markets
+    periods_qs = Period.objects.prefetch_related(
+        Prefetch("markets", queryset=markets_qs)
     )
 
-    # sport_type이 "0"이 아닐 때만 sport_id 필터 적용
-    if sport_type != "0":
-        event_qs = event_qs.filter(league__sport_id=sport_type)
+    # Events → Periods
+    events = Event.objects.filter(
+        starts__gt=now_time,
+        starts__lte=before_time,
+        sport_id=sport_id,
+    ).prefetch_related(Prefetch("periods", queryset=periods_qs))
 
-    event = event_qs
-
-    # ✅ 매핑 및 best spread/total 계산
-    for e in event:
-        # 리그 이름 매핑
-        e.league.display_name = korea_mapping(e.league.name)
-
-        # 팀 이름 매핑
-        e.home_display = korea_mapping(e.home)
-        e.away_display = korea_mapping(e.away)
-
-        # 마켓 값 라운딩
-        for m in e.markets.all():
-            m.hdp = round_half(m.hdp)
-            m.points = round_half(m.points)
-
-        # 종목명 매핑
-        e.sport_display = type_list.get(str(e.league.sport_id), "")
-
-        # ✅ 핸디캡(spread) 중 배당 차이가 가장 작은 것
-        spreads = [m for m in e.markets.all() if m.market_type == "spread"]
-        e.best_spread = (
-            min(spreads, key=lambda m: abs((m.home or 0) - (m.away or 0)))
-            if spreads
-            else None
+    if exclude_corners:
+        events = (
+            events.exclude(league_name__icontains="Corners")
+            .exclude(league_name__icontains="Bookings")
+            .exclude(league_name__icontains="Hits+Runs+Errors")
+            .order_by("starts")
         )
 
-        # ✅ 오버언더(total) 중 배당 차이가 가장 작은 것
-        totals = [m for m in e.markets.all() if m.market_type == "total"]
-        e.best_total = (
-            min(totals, key=lambda m: abs((m.over or 0) - (m.under or 0)))
-            if totals
-            else None
-        )
+    # ================= 변환 =================
+    all_events = []
+    for e in events:
+        event_dict = {
+            "event_id": e.id,
+            "league": LEAGUE_KO.get(e.league_name, e.league_name),
+            "starts": e.starts,
+            "home": TEAM_KO.get(e.home, e.home),
+            "away": TEAM_KO.get(e.away, e.away),
+            "periods": [],
+        }
 
-    context = {
-        "type_list": type_list,
-        "sport_type": sport_type,
-        "sport_name": type_list.get(sport_type, "ALL"),
-        "event": event,
-    }
+        for p in e.periods.all():
+            period_dict = {
+                "code": p.code,
+                "description": PERIOD_KO.get(p.description, p.description),
+                "markets": [],
+            }
 
-    return render(request, template_name, context)
+            for m in p.markets.all():
+                market_dict = {
+                    "market_id": m.id,
+                    "type": m.market_type,
+                    "type_ko": MARKET_KO.get(m.market_type, m.market_type),
+                    "values": [],
+                }
+
+                if m.market_type == "money_line":
+                    if any([m.home, m.away, m.draw]):
+                        market_dict["values"].append(
+                            {"home": m.home, "draw": m.draw, "away": m.away}
+                        )
+
+                elif m.market_type == "spread":
+                    for l in m.lines.all():
+                        if l.home_price or l.away_price:
+                            market_dict["values"].append(
+                                {
+                                    "hdp": l.hdp,
+                                    "home_price": l.home_price,
+                                    "away_price": l.away_price,
+                                }
+                            )
+
+                elif m.market_type == "total":
+                    for l in m.lines.all():
+                        if l.under_price or l.over_price:
+                            market_dict["values"].append(
+                                {
+                                    "points": l.points,
+                                    "under_price": l.under_price,
+                                    "over_price": l.over_price,
+                                }
+                            )
+
+                # ✅ 값이 있으면 마켓 추가
+                if market_dict["values"]:
+                    period_dict["markets"].append(market_dict)
+
+            # ✅ 마켓이 있으면 period 추가
+            if period_dict["markets"]:
+                event_dict["periods"].append(period_dict)
+
+        # ✅ period가 있으면 event 추가
+        if event_dict["periods"]:
+            all_events.append(event_dict)
+    return all_events
 
 
-# 스포츠 크로스
+# ✅ 메인 뷰
 @never_cache
 @login_required(login_url="recoards:login")
 def sport(request):
-    return game_base(request, "games/sport.html")
+    if request.GET.get:
+        get_type = request.GET.get("type", 1)
+
+    sport_type = {
+        "1": "축구",
+        "9": "야구",
+        "3": "농구",
+        "5": "배구",
+        "4": "하키",
+        "7": "미식축구",
+        "10": "E-SPORT",
+    }
+
+    if get_type == "4":
+        target_code = "num_6"
+    else:
+        target_code = "num_0"
+
+    events = get_events(sport_id=int(get_type), hours=5, exclude_corners=True)
+
+    context = {
+        "sport_type": sport_type,
+        "get_type": get_type,
+        "events": events,
+        "target_code": target_code,
+    }
+
+    return render(request, "games/sport.html", context)
 
 
-# 스포츠 스페셜
+# ✅ 스페셜 뷰
 @never_cache
 @login_required(login_url="recoards:login")
 def special(request):
-    return game_base(request, "games/special.html")
+    get_type = request.GET.get("type", 1)
+
+    sport_type = {
+        "1": "축구",
+        "9": "야구",
+        "3": "농구",
+        "5": "배구",
+        "4": "하키",
+        "7": "미식축구",
+        "10": "E-SPORT",
+    }
+    # 👉 DB에 존재하는 period 코드 전부 수집
+    exist_codes = list(Period.objects.values_list("code", flat=True).distinct())
+
+    if get_type == "4":
+        target_codes = ["num_6"]
+
+    elif get_type == "10":
+        # num_3 이상만 필터
+        target_codes = [
+            c for c in exist_codes if c.startswith("num_") and int(c.split("_")[1]) >= 3
+        ]
+
+    if get_type == "9":
+        target_codes = ["num_1", "num_3"]
+
+    else:
+        target_codes = ["num_1"]
+
+    events = get_events(sport_id=int(get_type), hours=5, exclude_corners=True)
+
+    context = {
+        "sport_type": sport_type,
+        "get_type": get_type,
+        "events": events,
+        "target_codes": target_codes,
+    }
+
+    return render(request, "games/special.html", context)
 
 
 # 카지노 벤더 리스트
@@ -301,3 +384,95 @@ def get_client_ip(request):
     else:
         ip = request.META.get("REMOTE_ADDR")
     return ip
+
+
+@require_POST
+@login_required
+def submit_bet(request):
+    try:
+        data = json.loads(request.body)
+
+        bet_money = Decimal(data.get("bet_money", 0))
+        expected_win = Decimal(data.get("expected_win", 0))
+        games = data.get("games", [])
+
+        if not games:
+            return JsonResponse({"success": False, "message": "경기 정보가 없습니다."})
+
+        # ✅ 합산 배당 계산 (프론트에서 안 보내주므로 서버에서 직접 계산)
+        total_odds = 1.0
+        for g in games:
+            try:
+                total_odds *= float(g.get("odds", 1))
+            except Exception:
+                continue
+
+        # ✅ 유저 잔액 확인
+        balance_before = request.user.money or 0
+        balance_after = balance_before - int(bet_money)
+
+        if balance_after < 0:
+            return JsonResponse(
+                {"success": False, "message": "보유 금액이 부족합니다."}
+            )
+
+        # ✅ 부모: BetSlip 생성
+        slip = BetSlip.objects.create(
+            user=request.user,
+            stake=bet_money,
+            total_odds=total_odds,
+            expected_amount=expected_win,
+            balance_before=balance_before,
+            balance_after=balance_after,
+        )
+
+        # ✅ 자식: Bet 생성
+        for g in games:
+            Bet.objects.create(
+                slip=slip,
+                event_id=g["event_id"],  # FK → id로 저장 가능
+                market_id=g["market_id"],  # FK → id로 저장 가능
+                pick=g["pick"],
+                odds=float(g["odds"]),
+                description=f"{g['teamname']} {g['smarket']} {g['point']}",
+            )
+
+        # ✅ 유저 잔액 차감
+        request.user.money = balance_after
+        request.user.save(update_fields=["money"])
+
+        return JsonResponse({"success": True, "slip_id": slip.id})
+
+    except Exception as e:
+        return JsonResponse({"success": False, "message": str(e)})
+
+
+# 카지노 머지 입출금
+def casino_money_change(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        username = data.get("username")
+        money = data.get("money")
+        money_type = data.get("money_type")
+
+        result = money_in_out(username, money, money_type)
+
+        user = User.objects.get(username=username)
+
+        print(result["code"])
+        print(user.money)
+        if money_type == "out":
+            if result.get("code") != 0:
+                return JsonResponse({"success": False, "message": "머니 전환 실패"})
+            else:
+                user.money += int(money)
+                user.save()
+                return JsonResponse({"success": True, "message": "머니 전환 완료"})
+
+        else:
+            if result.get("code") != 0:
+                return JsonResponse({"success": False, "message": "머니 전환 실패"})
+            else:
+                user.money -= int(money)
+                user.save()
+                return JsonResponse({"success": True, "message": "머니 전환 완료"})

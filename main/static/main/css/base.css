@@ -1,291 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&family=Noto+Sans+KR:wght@400;700&display=swap');
+
 * {
     margin: 0;
+    color: #fff;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    font-weight: 100;
     text-decoration: none;
 }
 
-.wrap {
-    min-width: 1500px;
-    box-sizing: border-box;
+:root {
+    --back: #000;
+    --back_2: #111;
+    --back_3: #363636;
+    --color: #1f9dcd;
+
+    --success: #2e7d32;
+    --success-hover: #43a047;
+
+    --warning: #ff9800;
+    --warning-hover: #ffb74d;
+
+    --danger: #d32f2f;
+    --danger-hover: #e53935;
+
+    --primary: #1976d2;
+    --primary-hover: #2196f3;
 }
 
-.top-wrap {
-    width: 1500px;
-    height: 80px;
-    margin: auto;
+body {
+    background-color: var(--back);
+    width: 100%;
+    height: calc(100vh - 150px);
 }
 
 .top-menus {
-    width: 1200px;
+    top: 0;
+    display: flex;
+    height: 70px;
+    background-color: var(--back_2);
+    width: 100%;
+    z-index: 900;
+}
+
+.side-menus {
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu {
+    font-size: 25px;
+}
+
+.menu.fonts {
+    font-size: 12px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     margin: auto;
+}
+
+
+.logo img {
+    height: 70px;
+    display: block;
+}
+
+
+#left_box {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 160px);
+    background-color: var(--back_2);
+    z-index: 999;
+}
+
+
+.left-sub-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3px;
+    gap: 3px;
+}
+
+.left-con {
+    background-color: var(--back_2);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--color);
+}
+
+.left-sport-menu {
+    padding: 0 3px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sport-con {
+    padding: 10px;
+    background-color: var(--back_2);
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    border: 1px solid var(--back_3);
     display: flex;
     justify-content: space-between;
 }
 
-.top-left-menus,
-.top-right-menus {
+.sport-con span:last-child {
+    width: 25px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--danger-hover);
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.top-left-menu {
-    padding: 5px 20px;
-    margin-left: 10px;
-    color: #2a2a2a;
-    font-weight: 700;
-    cursor: pointer;
-    position: relative;
+.sport-con:hover,
+.left-con:hover {
+    background-color: var(--primary-hover);
 }
 
-.top-sub-menu {
-    left: 0;
-    top: 35px;
+
+#right_box {
     position: absolute;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    color: #4a4a4a;
-    border: 1px solid #e3e3e3;
-    padding: 5px 0;
-    border-radius: 15px;
-    z-index: 200;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    background-color: #ffffff;
-}
-
-.top-sub-menu span {
-    display: block;
-    padding: 16px 20px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #404040;
-}
-
-.top-sub-menu span:hover {
-    background-color: #f1f5f9;
-}
-
-.left-item:hover {
-    cursor: pointer;
-    border-radius: 30px;
-    background-color: #F5F7F8;
-}
-
-.logo {
-    font-size: 48px;
-    font-weight: 900;
-    color: #4351ff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(90deg, #4351ff, #00d4ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: flex;
-    align-items: center;
-}
-
-.join-item {
-    border: 1px solid #4351ff;
-    border-radius: 30px;
-    color: #4351ff;
-    font-weight: 500;
-}
-
-.login-item {
-    border-radius: 30px;
-    background-color: #4351ff;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.hidden {
-    display: none;
-}
-
-main,
-footer {
-    min-width: 1500px;
-    margin: auto;
-}
-
-footer {
-    background-color: #F7F9FC;
-    border-top: 1px solid #e5e8eb;
-}
-
-.bt-wrap,
-.main-wrap {
-    width: 1200px;
-    margin: auto;
-    color: #2a2a2a;
-    padding-bottom: 15px;
-}
-
-.bt-top-menus {
-    display: flex;
-}
-
-.bt-top-menu {
-    padding: 10px 20px;
-    color: #2a2a2a;
-    font-weight: 600;
-}
-
-.bt-ft-menus {
-    margin-top: 30px;
-    display: flex;
+    top: 70px;
+    right: 0;
+    width: 300px;
     height: 100%;
-    padding-left: 20px;
+    background-color: var(--back_2);
+    border-left: 1px solid var(--back_3);
+    z-index: 999;
+
 }
 
-.bt-left-menu {
-    width: 430px;
-    height: 100%;
+.user-name {
+    margin-bottom: 5px;
 }
 
-.bt-right-menu {
-    width: 700px;
-    height: 100%;
+.right-sub-menu {
+    width: 100%;
+    background-color: var(--back_2);
 }
 
-.casino-info {
-    color: #2a2a2a;
-}
-
-.bt-icons {
+.rigth-menu {
+    padding: 5px;
+    border-bottom: 1px solid var(--back_3);
     display: flex;
+    justify-content: space-between;
 }
 
-.bt-icon {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+.right-sub-con {
+    display: grid;
+    padding: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.bt-icon img {
-    width: 20px;
+.right-sub {
+    padding: 12px 5px;
+    background-color: #1f9dcd;
+    font-size: 12px;
+    text-align: center;
 }
 
-.bt-icon span {
+.bt_menu {
+    padding: 5px;
+}
+
+#selected_games {
+    width: 100%;
+    height: 200px;
+    background-color: var(--back);
+    overflow-y: auto;
+}
+
+.cart_info {
     padding: 0 5px;
-    color: #2a2a2a;
-    font-weight: 600;
-    margin-right: 10px;
 }
 
+.item {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--back_3);
+    display: flex;
+    justify-content: space-between;
+}
 
-@media (max-width: 430px) {
-    * {
-        box-sizing: border-box;
-    }
+#bet_price {
+    background-color: var(--back);
+    border: none;
+}
 
-    .wrap,
-    .top-wrap,
-    main,
-    footer {
-        width: 100%;
-        min-width: 100%;
-    }
+.item.button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color);
+}
 
-    .top-wrap {
-        height: auto;
-        padding: 10px;
-    }
+#left_box,
+#right_box {
+    display: none;
+    /* 기본은 안 보이게 */
+}
 
-    .top-menus {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
+#left_box.active,
+#right_box.active {
+    display: block;
+    /* active 붙었을 때만 보이게 */
+}
 
-    .top-left-menus,
-    .top-right-menus {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+.cart-css {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    border: 1px solid var(--back_3);
+}
 
-    .top-left-menu {
-        margin: 0;
-        padding: 8px 12px;
-        font-size: 14px;
-        position: relative; /* ✅ 이게 있어야 span absolute 사용 가능 */
-    }
+.game_delete {
+    text-align: end;
+}
 
-    .top-sub-menu {
-        position: absolute;  /* ✅ 다시 absolute로 해야 "펼쳐지는 메뉴" 느낌 */
-        top: 100%;
-        left: 0;
-        width: max-content;
-        border-radius: 10px;
-        box-shadow: none;
-        padding: 0;
-        z-index: 100;
-        background: #fff;
-    }
-
-    .top-sub-menu span {
-        padding: 12px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 28px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .join-item,
-    .login-item {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .bt-wrap,
-    .main-wrap {
-        width: 100%;
-        padding: 20px 10px;
-    }
-
-    .bt-top-menus {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bt-ft-menus {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        margin-top: 20px;
-    }
-
-    .bt-left-menu,
-    .bt-right-menu {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .bt-icons {
-        justify-content: center;
-    }
-
-    .bt-icon {
-        justify-content: center;
-        padding: 8px 0;
-    }
-
-    .bt-icon img {
-        width: 18px;
-        height: auto;
-    }
-
-    .bt-icon span {
-        font-size: 13px;
-    }
+.game_info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.fa-trash-can {
+    color: var(--danger-hover);
+    background-color: none;
+    font-size: 12px;
 }

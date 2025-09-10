@@ -5,6 +5,7 @@ from accounts.models import Post
 import calendar
 from datetime import date
 from django.utils import timezone
+from accounts.models import Bet, BetSlip
 
 
 # 공지/규정 페이지
@@ -53,3 +54,8 @@ def event(request):
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, "notes/post_detail.html", {"post": post})
+
+
+def bet_list(request):
+    bets = BetSlip.objects.filter(user=request.user).order_by("-placed_at")
+    return render(request, "notes/bet_list.html", {"bets": bets})
