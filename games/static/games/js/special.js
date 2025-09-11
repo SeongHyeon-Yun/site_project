@@ -1,8 +1,8 @@
 let selectedGames = [];
 const pick = document.querySelectorAll('.pick');
 
-// ✅ 항상 "special" 이라는 key로 관리
-const STORAGE_KEY = "special";
+// ✅ 항상 "sport" 이라는 key로 관리
+const STORAGE_KEY = "sport";
 
 // ============================
 // 📌 로컬스토리지 핸들러
@@ -35,13 +35,15 @@ function renderBettingList() {
         let item = document.createElement("div");
         item.className = "special_game";
         item.innerHTML = `
-            <input type="hidden" name="market_id" value="${game.marketId}">
-            <input type="hidden" name="event_id" value="${game.eventId}">
-            <span class="pick">${game.pick}</span>
-            <span class="ateam">${game.teamName}</span>
-            <span class="odds">${game.odds}</span>
-            <span class="point">${game.point || "-"}</span>
-            <span class="smarket">(${game.pick})</span>
+            <input type="hidden" data-marketId="${game.marketId}" name="market_id" value="${game.marketId}">
+            <input type="hidden" data-eventId="${game.eventId}" name="event_id" value="${game.eventId}">
+            <input type="hidden" data-sportId="${game.sportType}" name="sport_id" value="${game.sportType}">
+            <input type="hidden" data-sport-number="${game.sportNumber}" name="sport_number" value="${game.sportNumber}">
+            <span data-pick="${game.pick}" class="pick">${game.pick}</span>
+            <span data-teamname="${game.teamName}" class="ateam">${game.teamName}</span>
+            <span data-odds="${game.odds}" class="odds">${game.odds}</span>
+            <span data-point="${game.point || "-"}" class="point">${game.point || "-"}</span>
+            <span data-smarket="(${game.pick})" class="smarket">(${game.pick})</span>
         `;
         bettingListEl.appendChild(item);
     });
@@ -77,7 +79,8 @@ pick.forEach(element => {
         let select_point = element.dataset.point;
         let select_marketId = element.dataset.marketId;
         let select_eventId = element.dataset.eventId;
-
+        let select_sportType = element.dataset.sportType;
+        let select_sportNumber = element.dataset.sportNumber;
         // 로컬스토리지 가져오기
         let selected = getSelectedGames();
 
@@ -86,7 +89,6 @@ pick.forEach(element => {
             element.classList.toggle("pick_active");
             selected = selected.filter(game => game.marketId !== select_marketId);
 
-            console.log("해제:", select_marketId);
         } else {
             // 같은 marketId 그룹 전부 해제
             document.querySelectorAll(`.pick[data-market-id="${select_marketId}"]`)
@@ -103,15 +105,15 @@ pick.forEach(element => {
                 odds: select_odds,
                 point: select_point,
                 marketId: select_marketId,
-                eventId: select_eventId
+                eventId: select_eventId,
+                sportType: select_sportType,
+                sportNumber: select_sportNumber
             });
 
-            // console.log("선택:", select_marketId);
         }
 
         saveSelectedGames(selected);
         renderBettingList(); // ✅ renderBettingList 안에서 cart_odds 갱신됨
-        // console.log("📌 현재 selected_games:", selected);
     });
 });
 
@@ -122,7 +124,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // ✅ 새로고침이면 저장소 초기화
     if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
         localStorage.removeItem(STORAGE_KEY);
-        console.log("새로고침 감지 → 초기화");
     }
 
     renderBettingList();

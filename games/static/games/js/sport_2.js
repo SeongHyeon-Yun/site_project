@@ -38,6 +38,7 @@ function renderBettingList() {
             <input type="hidden" data-marketId="${game.marketId}" name="market_id" value="${game.marketId}">
             <input type="hidden" data-eventId="${game.eventId}" name="event_id" value="${game.eventId}">
             <input type="hidden" data-sportId="${game.sportType}" name="sport_id" value="${game.sportType}">
+            <input type="hidden" data-sport-number="${game.sportNumber}" name="sport_number" value="${game.sportNumber}">
             <span data-pick="${game.pick}" class="pick">${game.pick}</span>
             <span data-teamname="${game.teamName}" class="ateam">${game.teamName}</span>
             <span data-odds="${game.odds}" class="odds">${game.odds}</span>
@@ -79,7 +80,7 @@ pick.forEach(element => {
         let select_marketId = element.dataset.marketId;
         let select_eventId = element.dataset.eventId;
         let select_sportType = element.dataset.sportType;
-
+        let select_sportNumber = element.dataset.sportNumber;
         // 로컬스토리지 가져오기
         let selected = getSelectedGames();
 
@@ -88,7 +89,6 @@ pick.forEach(element => {
             element.classList.toggle("pick_active");
             selected = selected.filter(game => game.marketId !== select_marketId);
 
-            console.log("해제:", select_marketId);
         } else {
             // 같은 marketId 그룹 전부 해제
             document.querySelectorAll(`.pick[data-market-id="${select_marketId}"]`)
@@ -106,14 +106,14 @@ pick.forEach(element => {
                 point: select_point,
                 marketId: select_marketId,
                 eventId: select_eventId,
-                sportType: select_sportType
+                sportType: select_sportType,
+                sportNumber: select_sportNumber
             });
 
         }
 
         saveSelectedGames(selected);
         renderBettingList(); // ✅ renderBettingList 안에서 cart_odds 갱신됨
-        // console.log("📌 현재 selected_games:", selected);
     });
 });
 
@@ -124,7 +124,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // ✅ 새로고침이면 저장소 초기화
     if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
         localStorage.removeItem(STORAGE_KEY);
-        console.log("새로고침 감지 → 초기화");
     }
 
     renderBettingList();

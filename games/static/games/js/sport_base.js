@@ -61,6 +61,7 @@ submit_btn.addEventListener('click', function (event) {
         const odds = btn.querySelector('.odds').innerText;
         const point = btn.querySelector('.point').innerText;
         const market = btn.querySelector('.smarket').innerText;
+        const sport_number = btn.querySelector('input[name="sport_number"]').value;
 
         game_list.push({
             market_id: market_id,
@@ -72,7 +73,8 @@ submit_btn.addEventListener('click', function (event) {
             market: market,
             user_id: user_id,
             bet_money: bet_money,
-            win_money: win_money
+            win_money: win_money,
+            sport_number: sport_number
         });
     });
 
@@ -106,7 +108,6 @@ submit_btn.addEventListener('click', function (event) {
         return;
     }
 
-    console.log(game_list);
 
     // ✅ fetch 구문 수정
     fetch('/games/betting/', {

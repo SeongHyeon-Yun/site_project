@@ -34,7 +34,7 @@ def betting(request):
     try:
         data = json.loads(request.body)
         game_list = data.get("game_list", [])
-
+        print(game_list)
         if not game_list:
             return JsonResponse({"success": False, "message": "베팅할 경기가 없습니다."})
 
@@ -74,12 +74,19 @@ def betting(request):
 
             # ✅ Bet 생성 (슬립 안에 여러 경기)
             for g in game_list:
+                raw_point = g.get("point")
+                if raw_point == "-" or raw_point == "" or raw_point is None:
+                    point = None   # ✅ DB에 NULL 저장
+                else:
+                    point = float(raw_point)
                 Bet.objects.create(
                     slip=slip,
                     event=int(g["event_id"]),
                     pick=g["pick"],
                     odds=float(g["odds"]),
                     description=f"{g['team']} {g['market']} {g['point']}",
+                    game_num = f"{g['sport_number']}",
+                    point = point
                 )
 
         return JsonResponse({"success": True, "message": "베팅 성공", "slip_id": slip.id})

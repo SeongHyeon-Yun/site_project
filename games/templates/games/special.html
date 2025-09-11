@@ -9,7 +9,7 @@
         {% for event in events %}
             {% for period in event.periods %}
                 {% if period.code != "num_0" %}
-                    <div class="game-list">
+                    <div class="game-list" data-event-id="{{ event.id }}">
                         <div class="league_name">
                             <span class="event_name">{{ event.league }}</span>
                             <span class="time">{{ event.starts|date:"Y-m-d H:i" }}</span>
@@ -23,8 +23,10 @@
                                     {% for odds in markets.values %}
                                         <div class="market">{{ period.description }} [{{ markets.type_ko }}]</div>
                                         <div class="home pick"
+                                             data-sport-number="{{ period.code }}"
+                                             data-sport-type="{{ get_type }}"
                                              data-event-id="{{ event.event_id }}"
-                                             data-pick="전반승"
+                                             data-pick="홈승"
                                              data-teamName="{{ event.home }}"
                                              data-odds="{{ odds.home|floatformat:2 }}"
                                              data-market-id="{{ markets.market_id }}">
@@ -33,8 +35,10 @@
                                         </div>
                                         {% if odds.draw %}
                                             <div class="draw pick"
+                                                 data-sport-number="{{ period.code }}"
+                                                 data-sport-type="{{ get_type }}"
                                                  data-event-id="{{ event.event_id }}"
-                                                 data-pick="전반무"
+                                                 data-pick="무"
                                                  data-teamName="{{ event.home }}"
                                                  data-odds="{{ odds.draw|floatformat:2 }}"
                                                  data-market-id="{{ markets.market_id }}">
@@ -45,8 +49,10 @@
                                             <div class="draw">vs</div>
                                         {% endif %}
                                         <div class="away pick"
+                                             data-sport-number="{{ period.code }}"
+                                             data-sport-type="{{ get_type }}"
                                              data-event-id="{{ event.event_id }}"
-                                             data-pick="전반승"
+                                             data-pick="원정승"
                                              data-teamName="{{ event.away }}"
                                              data-odds="{{ odds.away|floatformat:2 }}"
                                              data-market-id="{{ markets.market_id }}">
@@ -58,10 +64,13 @@
                                 {% elif markets.type == "spread" %}
                                     {% with odds=markets.values|first %}
                                         {% if odds %}
+                                            
                                             <div class="market">{{ period.description }} [{{ markets.type_ko }}]</div>
                                             <div class="home pick"
+                                                 data-sport-number="{{ period.code }}"
+                                                 data-sport-type="{{ get_type }}"
                                                  data-event-id="{{ event.event_id }}"
-                                                 data-pick="전반 핸승"
+                                                 data-pick="홈핸승"
                                                  data-teamName="{{ event.home }}"
                                                  data-odds="{{ odds.home_price|floatformat:2 }}"
                                                  data-point="{{ odds.hdp|floatformat:2 }}"
@@ -71,8 +80,10 @@
                                             </div>
                                             <div class="draw">{{ odds.hdp|floatformat:2 }}</div>
                                             <div class="away pick"
+                                                 data-sport-number="{{ period.code }}"
+                                                 data-sport-type="{{ get_type }}"
                                                  data-event-id="{{ event.event_id }}"
-                                                 data-pick="전반 핸승"
+                                                 data-pick="원정핸승"
                                                  data-teamName="{{ event.away }}"
                                                  data-odds="{{ odds.away_price|floatformat:2 }}"
                                                  data-point="{{ odds.hdp|floatformat:2 }}"
@@ -88,8 +99,10 @@
                                         {% if odds %}
                                             <div class="market">{{ period.description }} [{{ markets.type_ko }}]</div>
                                             <div class="home pick"
+                                                 data-sport-number="{{ period.code }}"
+                                                 data-sport-type="{{ get_type }}"
                                                  data-event-id="{{ event.event_id }}"
-                                                 data-pick="전반 언더"
+                                                 data-pick="언더"
                                                  data-odds="{{ odds.under_price|floatformat:2 }}"
                                                  data-point="{{ odds.points|floatformat:2 }}"
                                                  data-teamName="{{ event.home }}"
@@ -97,10 +110,13 @@
                                                 <span class="name">{{ event.home }}</span>
                                                 <span class="odds">{{ odds.under_price|floatformat:2 }}</span>
                                             </div>
-                                            <div class="draw" data-pick="point">{{ odds.points|floatformat:2 }}</div>
+                                            <div class="draw"
+                                                 data-pick="point">{{ odds.points|floatformat:2 }}</div>
                                             <div class="away pick"
+                                                 data-sport-number="{{ period.code }}"
+                                                 data-sport-type="{{ get_type }}"
                                                  data-event-id="{{ event.event_id }}"
-                                                 data-pick="전반 오버"
+                                                 data-pick="오버"
                                                  data-odds="{{ odds.over_price|floatformat:2 }}"
                                                  data-point="{{ odds.points|floatformat:2 }}"
                                                  data-teamName="{{ event.away }}"
