@@ -13,15 +13,15 @@
             </div>
             <div class="deposit-bankNum">
                 <span>입금계좌</span>
-                <input type="text" value="지역농협 352-1920-9394-13" readonly>
+                <input type="text" value="지역농협 352-1920-9394-13 노승원" readonly>
             </div>
-            <div class="deposit-bonus">
+            {% comment %} <div class="deposit-bonus">
                 <span>보너스 선택</span>
                 <select name="bonus">
                     <option class="bonus-option" value="yes">보너스 지급</option>
                     <option class="bonus-option" value="no">보너스 미지급</option>
                 </select>
-            </div>
+            </div> {% endcomment %}
             <div class="deposit-table-list">
                 <table class="deposit-table">
                     <thead>
@@ -34,7 +34,7 @@
                     <tbody>
                         {% for item in amount %}
                         <tr>
-                            <td>{{ item.yes_no }}</td>
+                            <td>{% if item.yes_no == "yes" %}입금완료{% else %}입금대기{% endif %}</td>
                             <td>{{ item.amount|intcomma }}</td>
                             <td>{{ item.created_at|date:"Y-m-d H:i" }}</td>
                         </tr>

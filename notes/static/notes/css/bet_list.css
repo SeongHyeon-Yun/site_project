@@ -1,43 +1,80 @@
 .bet_list_wrap {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     font-size: 8px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #000000 !important;
+
 }
 
+/* ====== 상단 요약 테이블 ====== */
 .bet_list_area {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 6px;
+    background: #222f3e;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #ffffff !important;
+
 }
 
-.bet_list_area tr td {
-    border: 1px solid #fff;
+.bet_list_area tr:first-child {
+    background: #2c3e50;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.bet_list_area td {
+    border: 1px solid #ddd;
+    padding: 6px 4px;
     text-align: center;
 }
 
-.red {
-    color: red;
-}
-
+/* ====== 개별 베팅 항목 테이블 ====== */
 .bet_item {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0;
+    margin: 8px 0 16px;
+    background: #2c3e50;
+    color: #ffffff !important;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+
 }
 
-.bet_item tr td {
-    border: 1px solid #fff;
+.bet_item tr:nth-child(even) {
+    background: #2c3e50;
+    color: #ffffff !important;
+}
+
+.bet_item td {
+    border: 1px solid #eee;
+    padding: 5px;
     text-align: center;
+    font-size: 8px;
 }
 
-.betItem {
-    width: 50px;
+/* ====== 상태 색상 ====== */
+.red {
+    color: #e74c3c;
+    font-weight: bold;
 }
 
 .green {
-    color: green;
+    color: #27ae60;
+    font-weight: bold;
 }
 
 .gray {
-    color: gray;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* ====== 공통 ====== */
+.betItem {
+    min-width: 60px;
 }

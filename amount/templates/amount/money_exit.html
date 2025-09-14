@@ -31,7 +31,7 @@
                     <tbody>
                         {% for item in amount %}
                             <tr>
-                                <td>{{ item.yes_no }}</td>
+                                <td>{% if item.yes_no == "yes" %}출금완료{% else %}출금대기{% endif %}</td>
                                 <td>{{ item.amount|intcomma }}</td>
                                 <td>{{ item.created_at|date:"Y-m-d H:i" }}</td>
                             </tr>

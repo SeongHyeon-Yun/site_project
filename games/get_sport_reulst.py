@@ -2,13 +2,14 @@ import requests
 import django, os, sys
 from pathlib import Path
 
-
+# ---------------- Django 환경 설정 ----------------
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(BASE_DIR))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "new_bet.settings")
 django.setup()
 
-from accounts.models import Bet, BetSlip
+from accounts.models import Bet, GameResult, BetSlip
+from django.db import transaction
 
 # ---------------- API 설정 ----------------
 API_KEY = "0bff1c23f6msh61d123e9767cc5cp1bdd95jsn3db1e7cd86a1"
@@ -16,78 +17,116 @@ API_HOST = "pinnacle-odds.p.rapidapi.com"
 
 
 def get_sport_result():
-    bet = Bet.objects.all()
-    for i in bet:
-        if i.status == 'pending':
-            url = "https://pinnacle-odds.p.rapidapi.com/kit/v1/details"
-            querystring = {"event_id": i.event}
-            headers = {
-                "x-rapidapi-key": API_KEY,
-                "x-rapidapi-host": API_HOST,
-            }
-            response = requests.get(url, headers=headers, params=querystring)
-            data = response.json()
-            for event in data['events']:
-                try:
-                    print(event['period_results'])
-                    for score in event['period_results']:
-                        print(score)
-                        if score['cancellation_reason'] != None:
-                            print('경기가 취소되었습니다.')
-                            bet = Bet.objects.filter(event=i.event)
-                            for b in bet:
-                                b.status = 'canceled'
-                                b.save()
-                        else:
-                            game_num = Bet.objects.filter(event=i.event).filter(game_num=score['number'])
-                            print(game_num)
-                            for g in game_num:
-                                print(g)
+    # 1. 중복 없는 경기만 가져오기
+    events = (
+        Bet.objects.filter(status="pending").values_list("event", flat=True).distinct()
+    )
 
-                except KeyError:
-                    continue
-                # if event['period_results'][0]['team_1_score'] > event['period_results'][0]['team_2_score']:
-                #     winner = 'home'
-                # elif event['period_results'][0]['team_1_score'] < event['period_results'][0]['team_2_score']:
-                #     winner = 'away'
-                # else:
-                #     winner = 'draw'
-                
-                # if i.bet_type == winner:
-                #     i.status = 'win'
-                #     i.save()
-                #     bet_slips = BetSlip.objects.filter(bet=i)
-                #     for slip in bet_slips:
-                #         slip.status = 'win'
-                #         slip.save()
-                # else:
-                #     i.status = 'lose'
-                #     i.save()
-                #     bet_slips = BetSlip.objects.filter(bet=i)
-                #     for slip in bet_slips:
-                #         slip.status = 'lose'
-                #         slip.save()
-        # get_sport_reulst_api(i.event)
+    for event_id in events:
+        url = "https://pinnacle-odds.p.rapidapi.com/kit/v1/details"
+        querystring = {"event_id": event_id}
+        headers = {"x-rapidapi-key": API_KEY, "x-rapidapi-host": API_HOST}
+        response = requests.get(url, headers=headers, params=querystring)
+        data = response.json()
 
+        for event in data.get("events", []):
+            home_team_type = event.get("home_team_type", "Team1")  # 기본값 Team1
 
-# def get_sport_reulst_api(event_id):
-#     url = "https://pinnacle-odds.p.rapidapi.com/kit/v1/details"
+            for score in event.get("period_results", []):
+                # 2. 홈/원정 점수 매핑
+                if home_team_type == "Team1":
+                    home_score = score["team_1_score"]
+                    away_score = score["team_2_score"]
+                else:  # Team2
+                    home_score = score["team_2_score"]
+                    away_score = score["team_1_score"]
 
-#     querystring = {"event_id": event_id}
+                # 3. 경기 결과 저장
+                result, _ = GameResult.objects.update_or_create(
+                    event=event_id,
+                    game_num=f"num_{score['number']}",
+                    defaults={
+                        "home_score": home_score,
+                        "away_score": away_score,
+                        "status": (
+                            "canceled" if score["cancellation_reason"] else "finished"
+                        ),
+                        "settled_at": score.get("settled_at"),
+                    },
+                )
+    return
 
-#     headers = {
-#         "x-rapidapi-key": "0bff1c23f6msh61d123e9767cc5cp1bdd95jsn3db1e7cd86a1",
-#         "x-rapidapi-host": "pinnacle-odds.p.rapidapi.com",
-#     }
+def judge_bet(bet, result):
+    """
+    개별 베팅 결과 판정
+    bet: Bet 객체
+    result: GameResult 객체
+    return: "won" / "lost" / "canceled" / "push"
+    """
 
-#     response = requests.get(url, headers=headers, params=querystring)
+    home = result.home_score
+    away = result.away_score
+    total = home + away
 
-#     data = response.json()
-#     for event in data['events']:
-#         print(event['period_results'])
+    pick = bet.pick.strip()  # 문자열 안전 처리
+    point = bet.point
 
-#     return data
+    # 무효 경기
+    if result.status == "canceled":
+        return "canceled"
 
+    # ---- 승무패 ----
+    if pick in ["홈승", "home"]:
+        return "won" if home > away else "lost"
+    if pick in ["원정승", "away"]:
+        return "won" if away > home else "lost"
+    if pick in ["무", "draw"]:
+        return "won" if home == away else "lost"
 
-if __name__ == "__main__":  
+    # ---- 오버/언더 ----
+    if pick in ["오버", "오바", "over"]:
+        if point is None:
+            return "pending"
+        if total > point:
+            return "won"
+        elif total == point:  # 기준점과 같으면 → 적중특례
+            return "push"
+        else:
+            return "lost"
+
+    if pick in ["언더", "under"]:
+        if point is None:
+            return "pending"
+        if total < point:
+            return "won"
+        elif total == point:  # 기준점과 같으면 → 적중특례
+            return "push"
+        else:
+            return "lost"
+
+    # ---- 핸디캡 ----
+    if pick in ["홈핸승", "handicap_home"]:
+        if point is None:
+            return "pending"
+        if (home + point) > away:
+            return "won"
+        elif (home + point) == away:  # 무승부 → 적중특례
+            return "push"
+        else:
+            return "lost"
+
+    if pick in ["원정핸승", "handicap_away"]:
+        if point is None:
+            return "pending"
+        if (away + point) > home:
+            return "won"
+        elif (away + point) == home:  # 무승부 → 적중특례
+            return "push"
+        else:
+            return "lost"
+
+    # 정의되지 않은 pick → 판정 보류
+    return "pending"
+
+if __name__ == "__main__":
     get_sport_result()

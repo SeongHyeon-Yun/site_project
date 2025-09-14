@@ -6,7 +6,7 @@ from pathlib import Path
 
 # 현재 settings.py 기준
 BASE_DIR = Path(__file__).resolve().parent.parent
-ROOT_DIR = BASE_DIR.parent   # /srv/onepick
+ROOT_DIR = BASE_DIR.parent  # /srv/onepick
 
 # .env 로드
 load_dotenv(ROOT_DIR / ".env")
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
+    "django_seed",
     "main",
     "accounts",
     "payment",
@@ -71,7 +72,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "main.context_processors.common_context"
+                "main.context_processors.common_context",
             ],
         },
     },
@@ -129,12 +130,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+PROJECT_NAME = BASE_DIR.name
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.getenv("DJANGO_STATIC_ROOT", BASE_DIR / "static")
+STATIC_ROOT_BASE = os.getenv("DJANGO_STATIC_ROOT", BASE_DIR / "static")
+STATIC_ROOT = os.path.join(STATIC_ROOT_BASE, PROJECT_NAME)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -145,9 +148,11 @@ GAME_SECRET_KEY = "319a6412ffdfa757efec34f5cc9242b0"
 GAME_API_BASE = "https://gate.nxzone.net"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT  = os.getenv("DJANGO_MEDIA_ROOT", BASE_DIR / "media")
+MEDIA_ROOT_BASE = os.getenv("DJANGO_MEDIA_ROOT", BASE_DIR / "media")
+MEDIA_ROOT = os.path.join(MEDIA_ROOT_BASE, PROJECT_NAME)
+
 
 USE_X_FORWARDED_HOST = True
 
 # client IP 가져올 때 X-Forwarded-For 신뢰할지 여부
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")

@@ -1,13 +1,13 @@
 .notice-title {
     text-align: center;
     background-color: #222831;
-    padding: 20px 30px;
+    padding: 10px 15px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
 .notice-con {
-    padding: 10px;
+    padding: 5px;
     margin-top: 10px;
     height: 450px;
     overflow-y: auto;
@@ -16,7 +16,7 @@
 .notice-titles,
 .notice-list {
     display: grid;
-    grid-template-columns: 100px 1fr 200px;
+    grid-template-columns: 80px 1fr 80px;
     background-color: #222831;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -25,9 +25,9 @@
 .notice-titles span,
 .notice-list span,
 .notice-list a {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 700;
     border-bottom: 1px solid #ccc;
 }
@@ -52,12 +52,12 @@
     justify-content: center;
 
     margin-left: auto;
-    padding: 8px 16px;
+    padding: 4px 8px;
     min-width: 100px;
 
     background: linear-gradient(135deg, #4f9aff, #1d6dff);
     color: #fff;
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 600;
     border: none;
     border-radius: 8px;
@@ -82,7 +82,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     background-color: #222831;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -96,8 +96,8 @@
 
 .customer_create input,
 .customer_create textarea {
-    font-size: 14px;
-    padding: 10px 12px;
+    font-size: 7px;
+    padding: 5px 7px;
     border: 1px solid #ccc;
     border-radius: 6px;
     outline: none;
@@ -129,7 +129,7 @@
 
 .error-message {
     background-color: red;
-    padding: 10px;
+    padding: 5px;
     color: #fff;
     border-radius: 10px;
     text-align: center;
@@ -146,11 +146,10 @@
     overflow-y: auto;
 }
 
-
 .title_detail {
     border-bottom: 1px solid #ddd;
     padding: 15px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     background-color: #222831;
     border-radius: 8px 8px 0 0;
@@ -158,8 +157,8 @@
 
 .content_detail {
     height: 300px;
-    padding: 20px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 8px;
     line-height: 1.6;
     color: #444;
     overflow-y: auto;
