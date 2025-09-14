@@ -1,14 +1,16 @@
-name: Deploy
+name: project deploy
 
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - "site_project/**"   # ✅ site_project 코드가 바뀔 때만 실행
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to server
+      - name: Deploy site_project
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -16,10 +18,21 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /srv/onepick/site_project
+            source /srv/onepick/venv/bin/activate
+
+            # === 코드 갱신 ===
             git fetch origin main
             git reset --hard origin/main
-            /srv/onepick/venv/bin/python manage.py makemigrations --noinput
-            /srv/onepick/venv/bin/python manage.py migrate --noinput
-            /srv/onepick/venv/bin/python manage.py collectstatic --noinput --clear
-            sudo systemctl restart gunicorn
+
+            # === DB 마이그레이션 ===
+            python manage.py makemigrations --noinput
+            python manage.py migrate --noinput
+
+            # === 정적 파일 수집 ===
+            python manage.py collectstatic --noinput --clear
+
+            # === 서비스 재시작 ===
+            sudo systemctl restart gunicorn-project
+
+            # === Nginx 리로드 ===
             sudo systemctl reload nginx
