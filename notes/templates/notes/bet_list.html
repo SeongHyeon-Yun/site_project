@@ -23,6 +23,8 @@
                         <td class="betItem green">당첨</td>
                     {% elif bet.status == "lost" %}
                         <td class="betItem gray">낙첨</td>
+                    {% elif bet.status == "push" %}
+                        <td class="betItem blue">적특</td>
                     {% else %}
                         <td class="betItem">취소</td>
                     {% endif %}
@@ -43,6 +45,8 @@
                             <td class="betItem green">당첨</td>
                         {% elif item.status == "lost" %}
                             <td class="betItem gray">낙첨</td>
+                        {% elif item.status == "push" %}
+                            <td class="betItem blue">적특</td>
                         {% else %}
                             <td class="betItem">취소</td>
                         {% endif %}

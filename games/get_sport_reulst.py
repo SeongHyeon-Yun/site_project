@@ -1,6 +1,8 @@
 import requests
 import django, os, sys
 from pathlib import Path
+from decimal import Decimal
+from django.db import transaction
 
 # ---------------- Django 환경 설정 ----------------
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -17,116 +19,235 @@ API_HOST = "pinnacle-odds.p.rapidapi.com"
 
 
 def get_sport_result():
-    # 1. 중복 없는 경기만 가져오기
-    events = (
-        Bet.objects.filter(status="pending").values_list("event", flat=True).distinct()
+    bet = (
+        Bet.objects.values("event")
+        .distinct()
+        .filter(
+            status="pending",
+        )
     )
 
-    for event_id in events:
+    for i in bet:
+        event_id = i["event"]
+
         url = "https://pinnacle-odds.p.rapidapi.com/kit/v1/details"
+
         querystring = {"event_id": event_id}
+
         headers = {"x-rapidapi-key": API_KEY, "x-rapidapi-host": API_HOST}
+
         response = requests.get(url, headers=headers, params=querystring)
+
         data = response.json()
 
-        for event in data.get("events", []):
-            home_team_type = event.get("home_team_type", "Team1")  # 기본값 Team1
+        for i in data["events"]:
+            event_id = i["event_id"]
+            game_finish_check = i["is_have_open_markets"]
 
-            for score in event.get("period_results", []):
-                # 2. 홈/원정 점수 매핑
-                if home_team_type == "Team1":
-                    home_score = score["team_1_score"]
-                    away_score = score["team_2_score"]
-                else:  # Team2
-                    home_score = score["team_2_score"]
-                    away_score = score["team_1_score"]
+            if game_finish_check == False:
+                home_team = i["home_team_type"]
+                for j in i["period_results"]:
+                    num = j["number"]
+                    settled_at = j["settled_at"]
+                    if home_team == "Team1":
+                        home_score = j["team_1_score"]
+                        away_score = j["team_2_score"]
+                    else:
+                        home_score = j["team_2_score"]
+                        away_score = j["team_1_score"]
 
-                # 3. 경기 결과 저장
-                result, _ = GameResult.objects.update_or_create(
-                    event=event_id,
-                    game_num=f"num_{score['number']}",
-                    defaults={
-                        "home_score": home_score,
-                        "away_score": away_score,
-                        "status": (
-                            "canceled" if score["cancellation_reason"] else "finished"
-                        ),
-                        "settled_at": score.get("settled_at"),
-                    },
-                )
+                    # ✅ DB 저장
+                    obj, created = GameResult.objects.update_or_create(
+                        event=event_id,
+                        game_num=str(num),
+                        defaults={
+                            "home_score": home_score,
+                            "away_score": away_score,
+                            "status": "finished" if j["status"] == 1 else "pending",
+                            "settled_at": settled_at,
+                        },
+                    )
     return
 
-def judge_bet(bet, result):
-    """
-    개별 베팅 결과 판정
-    bet: Bet 객체
-    result: GameResult 객체
-    return: "won" / "lost" / "canceled" / "push"
-    """
 
-    home = result.home_score
-    away = result.away_score
-    total = home + away
+def bet_game_check():
+    bets = Bet.objects.filter(status="pending")
 
-    pick = bet.pick.strip()  # 문자열 안전 처리
-    point = bet.point
+    for bet in bets:
+        event_id = bet.event
+        point = bet.point
+        game_num = bet.game_num.replace("num_", "")
+        pick = bet.pick
+        status = bet.status
 
-    # 무효 경기
-    if result.status == "canceled":
-        return "canceled"
+        if status == "pending":
+            if pick == "홈승":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    print(j.home_score)
+                    print(j.away_score)
+                    if j.home_score > j.away_score:
+                        bet.status = "won"
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    # ---- 승무패 ----
-    if pick in ["홈승", "home"]:
-        return "won" if home > away else "lost"
-    if pick in ["원정승", "away"]:
-        return "won" if away > home else "lost"
-    if pick in ["무", "draw"]:
-        return "won" if home == away else "lost"
+            if pick == "원정승":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    print(j.home_score)
+                    print(j.away_score)
+                    if j.home_score < j.away_score:
+                        bet.status = "won"
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    # ---- 오버/언더 ----
-    if pick in ["오버", "오바", "over"]:
-        if point is None:
-            return "pending"
-        if total > point:
-            return "won"
-        elif total == point:  # 기준점과 같으면 → 적중특례
-            return "push"
-        else:
-            return "lost"
+            if pick == "무":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    print(j.home_score)
+                    print(j.away_score)
+                    if j.home_score == j.away_score:
+                        bet.status = "won"
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    if pick in ["언더", "under"]:
-        if point is None:
-            return "pending"
-        if total < point:
-            return "won"
-        elif total == point:  # 기준점과 같으면 → 적중특례
-            return "push"
-        else:
-            return "lost"
+            if pick == "오버":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    total_score = j.home_score + j.away_score
+                    print(total_score)
+                    if total_score > point:
+                        bet.status = "won"
+                        bet.save()
+                    elif total_score == point:
+                        bet.status = "push"
+                        bet.odds = 1.0
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    # ---- 핸디캡 ----
-    if pick in ["홈핸승", "handicap_home"]:
-        if point is None:
-            return "pending"
-        if (home + point) > away:
-            return "won"
-        elif (home + point) == away:  # 무승부 → 적중특례
-            return "push"
-        else:
-            return "lost"
+            if pick == "언더":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    total_score = j.home_score + j.away_score
+                    print(total_score)
+                    if total_score < point:
+                        bet.status = "won"
+                        bet.save()
+                    elif total_score == point:
+                        bet.status = "push"
+                        bet.odds = 1.0
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    if pick in ["원정핸승", "handicap_away"]:
-        if point is None:
-            return "pending"
-        if (away + point) > home:
-            return "won"
-        elif (away + point) == home:  # 무승부 → 적중특례
-            return "push"
-        else:
-            return "lost"
+            if pick == "홈핸승":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    handicap_home_score = j.home_score + point
+                    print(handicap_home_score)
+                    print(j.away_score)
+                    if handicap_home_score > j.away_score:
+                        bet.status = "won"
+                        bet.save()
+                    elif handicap_home_score == j.away_score:
+                        bet.status = "push"
+                        bet.odds = 1.0
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
 
-    # 정의되지 않은 pick → 판정 보류
-    return "pending"
+            if pick == "원정핸승":
+                game_result = GameResult.objects.filter(
+                    event=event_id, game_num=game_num
+                )
+                for j in game_result:
+                    handicap_away_score = j.away_score + point
+                    print(handicap_away_score)
+                    print(j.home_score)
+                    if handicap_away_score > j.home_score:
+                        bet.status = "won"
+                        bet.save()
+                    elif handicap_away_score == j.home_score:
+                        bet.status = "push"
+                        bet.odds = 1.0
+                        bet.save()
+                    else:
+                        bet.status = "lost"
+                        bet.save()
+
+
+def bet_slip_check():
+    bet_slips = BetSlip.objects.filter(status="pending")
+
+    for slip in bet_slips:
+        bets = Bet.objects.filter(slip=slip)
+        bet_status_list = list(bets.values_list("status", flat=True))
+
+        # 총 배당 계산 (push=1.0 자동 반영됨)
+        total_odds = Decimal(1.0)
+        for bet in bets:
+            total_odds *= Decimal(bet.odds)
+
+        # 예상 당첨금 계산
+        expected_amount = slip.stake * total_odds
+
+        # 상태 판정
+        if "lost" in bet_status_list:
+            slip.status = "lost"
+            slip.total_odds = float(total_odds)
+            slip.expected_amount = 0
+
+        elif all(status == "won" for status in bet_status_list):
+            slip.status = "won"
+            slip.total_odds = float(total_odds)
+            slip.expected_amount = expected_amount
+            with transaction.atomic():
+                user = slip.user
+                user.money += expected_amount
+                user.save()
+
+        elif "pending" in bet_status_list:
+            # 아직 진행 중
+            continue
+
+        elif "push" in bet_status_list and all(
+            status in ["won", "push"] for status in bet_status_list
+        ):
+            # ✅ won + push 조합 = 당첨 (push는 배당 1.0 반영됨)
+            slip.status = "won"
+            slip.total_odds = float(total_odds)
+            slip.expected_amount = expected_amount
+            with transaction.atomic():
+                user = slip.user
+                user.money += expected_amount
+                user.save()
+
+        slip.save()
+
 
 if __name__ == "__main__":
     get_sport_result()
+    bet_game_check()
+    bet_slip_check()

@@ -41,11 +41,6 @@ def user_login(request):
 
                 # ✅ 로그인 성공 시 IP 저장 + 로그 찍기
                 ip = get_client_ip(request)
-                print("🔎 로그인 META:", request.META)  # 전체 META 출력
-                print("🔎 X_FORWARDED_FOR:", request.META.get("HTTP_X_FORWARDED_FOR"))
-                print("🔎 X_REAL_IP:", request.META.get("HTTP_X_REAL_IP"))
-                print("🔎 REMOTE_ADDR:", request.META.get("REMOTE_ADDR"))
-                print("🔎 get_client_ip:", ip)
 
                 user.ip_address = ip
                 user.save(update_fields=["ip_address"])
