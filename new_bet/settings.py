@@ -148,9 +148,7 @@ GAME_SECRET_KEY = "319a6412ffdfa757efec34f5cc9242b0"
 GAME_API_BASE = "https://gate.nxzone.net"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT_BASE = os.getenv("DJANGO_MEDIA_ROOT", BASE_DIR / "media")
-MEDIA_ROOT = os.path.join(MEDIA_ROOT_BASE, PROJECT_NAME)
-
+MEDIA_ROOT = os.path.join(ROOT_DIR, "media")
 
 USE_X_FORWARDED_HOST = True
 
