@@ -159,28 +159,37 @@ def get_events(sport_id, hours, exclude_corners=True):
                         market_dict["values"].append(
                             {"home": m.home, "draw": m.draw, "away": m.away}
                         )
-
+                        
                 elif m.market_type == "spread":
                     for l in m.lines.all():
-                        if l.home_price or l.away_price:
-                            market_dict["values"].append(
-                                {
-                                    "hdp": l.hdp,
-                                    "home_price": l.home_price,
-                                    "away_price": l.away_price,
-                                }
-                            )
+                        if (l.home_price and l.away_price):
+                            # ✅ 기준점 필터 (.0 / .5만 허용)
+                            if l.hdp % 0.5 == 0:
+                                # ✅ 양쪽 배당 차이 필터 (예: 0.5 이하만 허용)
+                                if abs(l.home_price - l.away_price) <= 0.5:
+                                    market_dict["values"].append(
+                                        {
+                                            "hdp": l.hdp,
+                                            "home_price": l.home_price,
+                                            "away_price": l.away_price,
+                                        }
+                                    )
 
                 elif m.market_type == "total":
                     for l in m.lines.all():
-                        if l.under_price or l.over_price:
-                            market_dict["values"].append(
-                                {
-                                    "points": l.points,
-                                    "under_price": l.under_price,
-                                    "over_price": l.over_price,
-                                }
-                            )
+                        if (l.under_price and l.over_price):
+                            # ✅ 기준점 필터 (.0 / .5만 허용)
+                            if l.points % 0.5 == 0:
+                                # ✅ 오버/언더 배당 차이 필터 (예: 0.5 이하만 허용)
+                                if abs(l.over_price - l.under_price) <= 0.5:
+                                    market_dict["values"].append(
+                                        {
+                                            "points": l.points,
+                                            "under_price": l.under_price,
+                                            "over_price": l.over_price,
+                                        }
+                                    )
+
 
                 # ✅ 값이 있으면 마켓 추가
                 if market_dict["values"]:
@@ -218,7 +227,7 @@ def sport(request):
     else:
         target_code = "num_0"
 
-    events = get_events(sport_id=int(get_type), hours=5, exclude_corners=True)
+    events = get_events(sport_id=int(get_type), hours=12, exclude_corners=True)
 
     context = {
         "sport_type": sport_type,

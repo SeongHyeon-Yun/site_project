@@ -36,7 +36,7 @@ def common_context(request):
             )
             .filter(
                 Q(starts__gt=timezone.now())
-                & Q(starts__lte=timezone.now() + timedelta(hours=5))
+                & Q(starts__lte=timezone.now() + timedelta(hours=12))
             )
             .distinct()
             .count()

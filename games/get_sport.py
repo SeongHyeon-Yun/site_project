@@ -50,7 +50,7 @@ def fetch_events(sport_id, leagues):
     headers = {"x-rapidapi-key": API_KEY, "x-rapidapi-host": API_HOST}
 
     now_time = timezone.now()
-    until = now_time + timedelta(hours=500)
+    until = now_time + timedelta(hours=12)
 
     for lg in leagues:
         params = {
