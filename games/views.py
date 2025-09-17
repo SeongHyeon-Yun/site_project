@@ -159,7 +159,7 @@ def get_events(sport_id, hours, exclude_corners=True):
                         market_dict["values"].append(
                             {"home": m.home, "draw": m.draw, "away": m.away}
                         )
-                        
+
                 elif m.market_type == "spread":
                     for l in m.lines.all():
                         if (l.home_price and l.away_price):
@@ -272,7 +272,7 @@ def special(request):
     else:
         target_codes = ["num_1"]
 
-    events = get_events(sport_id=int(get_type), hours=5, exclude_corners=True)
+    events = get_events(sport_id=int(get_type), hours=12, exclude_corners=True)
 
     context = {
         "sport_type": sport_type,
