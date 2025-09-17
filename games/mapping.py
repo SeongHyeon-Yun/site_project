@@ -3311,6 +3311,8 @@ TEAM_KO = {
     "Washington Nationals": "워싱턴 내셔널스",
     "Miami Marlins": "마이애미 말린스",
     "San Diego Padres": "샌디에이고 파드리스",
+    "G1 NC Dinos": "NC 다이노스",
+    "G1 SSG Landers": "SSG 랜더스",
 }
 
 

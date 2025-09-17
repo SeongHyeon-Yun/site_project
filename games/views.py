@@ -117,6 +117,7 @@ def get_events(sport_id, hours, exclude_corners=True):
         starts__gt=now_time,
         starts__lte=before_time,
         sport_id=sport_id,
+        is_blocked=0
     ).prefetch_related(Prefetch("periods", queryset=periods_qs))
 
     if exclude_corners:
